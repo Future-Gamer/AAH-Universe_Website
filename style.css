@@ -49,10 +49,12 @@ body{
 .menu-list{
           display: flex;
           list-style: none;
+          
 }
 
 .menu-list-item{
           margin-right: 30px;
+          cursor: pointer;
 }
 
 .menu-list-item.active{
@@ -84,7 +86,7 @@ body{
           font-weight: bold;
           border-radius: 20px;
           display: flex;
-          ;
+          cursor: pointer;
 }
 
 /* .toggle{
