@@ -22,6 +22,7 @@ arrows.forEach((arrow, i) => {
           console.log(Math.floor(window.innerWidth / 270))
 })
 
+
 // Initialize Swiper
 
 const progressCircle = document.querySelector(".autoplay-progress svg");
@@ -37,10 +38,8 @@ swiperEl.addEventListener("autoplaytimeleft", (e) => {
 
 // read-more and read-less 
 function changeReadMore() {
-          const mycontent =
-                    document.getElementById('mybox1id');
-          const mybutton =
-                    document.getElementById('mybuttonid');
+          const mycontent = document.getElementById('mybox1id');
+          const mybutton = document.getElementById('mybuttonid');
           const span1 = document.getElementById("span1")
 
           if (mycontent.style.display === 'none'
@@ -55,3 +54,30 @@ function changeReadMore() {
           }
 }
 
+
+// function changeReadMore(contentId, buttonId, spanId) {
+//           const mycontent = document.getElementById(contentId);
+//           const mybutton = document.getElementById(buttonId);
+//           const span1 = document.getElementById(spanId);
+
+//           if (mycontent.style.display === 'none' || mycontent.style.display === '') {
+//                     mycontent.style.display = 'inline';
+//                     span1.style.display = "none";
+//                     mybutton.textContent = 'read less';
+//           } else {
+//                     mycontent.style.display = 'none';
+//                     mybutton.textContent = 'read more';
+//                     span1.style.display = "inline";
+//           }
+// }
+
+// const readmorebtn = document.querySelectorAll('.read-more-btn');
+// for (let i = 0; i < readmorebtn.length; i++) {
+//           readmorebtn[i].addEventListener('click', () => {
+//                     const contentId = readmorebtn[i].getAttribute('mybox1id');
+//                     const buttonId = readmorebtn[i].getAttribute('mybuttonid');
+//                     const spanId = readmorebtn[i].getAttribute('span1');
+//                     readmorebtn[i].parentNode.classList.toggle('active');
+//                     changeReadMore(contentId, buttonId, spanId);
+//           });
+// }
