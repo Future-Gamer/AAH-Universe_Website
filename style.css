@@ -1,19 +1,19 @@
-*{
+* {
           margin: 0;
 
 }
 
-body{
-          font-family: "Robot", sans-serif;          
+body {
+          font-family: "Robot", sans-serif;
 }
 
-.navbar{
+.navbar {
           width: 100%;
           height: 50px;
-          background-color:black;
+          background-color: black;
 }
 
-.navbar-container{
+.navbar-container {
           display: flex;
           align-items: center;
           padding: 0 50px;
@@ -22,46 +22,46 @@ body{
           font-family: "Sen", sans-serif;
 }
 
-.navbar-logo{
+.navbar-logo {
           width: 50px;
           height: 50px;
           padding-right: 10px;
 }
 
-.logo-container{
+.logo-container {
           flex: 2;
 
-          
+
 }
 
 
-.logo{
+.logo {
           font-size: 25px;
           color: greenyellow;
 }
 
-.menu-container{
+.menu-container {
           flex: 6;
 
 
 }
 
-.menu-list{
+.menu-list {
           display: flex;
           list-style: none;
-          
+
 }
 
-.menu-list-item{
+.menu-list-item {
           margin-right: 30px;
           cursor: pointer;
 }
 
-.menu-list-item.active{
+.menu-list-item.active {
           font-weight: bold;
 }
 
-.profile-container{
+.profile-container {
           flex: 2;
           display: flex;
           align-items: center;
@@ -69,17 +69,17 @@ body{
 
 }
 
-.profile-text-container{
+.profile-text-container {
           margin: 0 20px;
 }
 
-.profile-picture{
+.profile-picture {
           width: 32px;
           height: 32px;
           border-radius: 50%;
 }
 
-.login-btn{
+.login-btn {
           background-color: lightgray;
           color: black;
           padding: 10px 20px;
@@ -89,33 +89,8 @@ body{
           cursor: pointer;
 }
 
-/* .toggle{
-          width: 40px;
-          height: 20px;
-          background-color: white;
-          border-radius: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          position: relative;
 
-}
-
-.toggle-icon{
-          color: yellow;
-}
-
-.toggle-ball{
-          width: 18px;
-          height: 18px;
-          background-color: black;
-          position: absolute;
-          right: 1px;
-          border-radius: 50%;
-          cursor: pointer;
-} */
-
-.sidbar{
+.sidbar {
           width: 50px;
           height: 100%;
           background-color: black;
@@ -129,62 +104,127 @@ body{
 }
 
 
-.left-menu-icon{
+.left-menu-icon {
           color: white;
           font-size: 20px;
           margin-bottom: 40px;
           cursor: pointer;
 }
 
-.container{
+.container {
           background-color: #151515;
           min-height: calc(100vh - 50px);
           color: white;
 }
 
-.content-container{
+.content-container {
           margin-left: 50px;
+          
 }
 
-.featured-content{
+.mySwiper{
+          height: 75vh;
+}
+
+
+.featured-content {
           height: 50vh;
           background-color: aqua;
           padding: 50px;
+          position: relative;
 }
 
-.featured-title{
-          width: 200px;
-          height: 40%;
+
+.featured-title {
+          
+          font-weight: bolder;
+          font-size: 45px;
+          padding-left: 10px;
+          
+          top: 55%;
+
+
 
 }
 
-.featured-desc{
-          width: 85%;
+.featured-desc {
+          width: 75%;
           color: snow;
           margin: 30px 0;
+          padding-left: 10px;
+          top: 60%;
 }
 
-.featured-button{
+.mybox1 {
+          display: none;
+}
+
+.read-more-btn {
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: bold;
+          color: white;
+          border: none;
+          margin-top: 5px;
+          background: none;
+          
+}
+
+.featured-button {
           background-color: greenyellow;
           color: black;
-          padding: 10px 20px;
+          padding: 10px 40px;
+          margin-left: 10px;
           border-radius: 15px;
+          font-size: 16px;
           font-weight: bold;
+          bottom: 10%;
           cursor: pointer;
 }
 
-.movie-list-container{
+
+/* .autoplay-progress {
+          position: absolute;
+          right: 16px;
+          bottom: 16px;
+          z-index: 10;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          color: var(--swiper-theme-color);
+} */
+
+/* .autoplay-progress svg {
+          --progress: 0;
+          position: absolute;
+          left: 0;
+          top: 0px;
+          z-index: 10;
+          width: 60vh;
+          height: 60vh;
+          stroke-width: 4px;
+          stroke: var(--swiper-theme-color);
+          fill: none;
+          stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+          stroke-dasharray: 125.6;
+          transform: rotate(-90deg);
+} */
+
+.movie-list-container {
           padding: 0 20px;
 
 }
 
-.movie-list-wrapper{
+.movie-list-wrapper {
           position: relative;
           overflow: hidden;
-          
+
 }
 
-.movie-list{
+.movie-list {
           display: flex;
           align-items: center;
           height: 300px;
@@ -193,27 +233,27 @@ body{
 
 }
 
-.movie-list-item{
+.movie-list-item {
           margin-right: 30px;
           position: relative;
-          
+
 }
 
-.movie-list-item :hover.movie-list-item-img{
+.movie-list-item :hover.movie-list-item-img {
           transform: scale(1.2);
           margin: 0 30px;
           opacity: 0.5;
 
 }
 
-.movie-list-item:hover .movie-list-item-title, 
-.movie-list-item:hover .movie-list-item-desc, 
-.movie-list-item:hover .movie-list-item-button{
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
           opacity: 1;
 }
 
 
-.movie-list-item-img{
+.movie-list-item-img {
           transition: all 1s ease-in-out;
           width: 270px;
           height: 200px;
@@ -221,7 +261,7 @@ body{
           border-radius: 20px;
 }
 
-.movie-list-item-title{
+.movie-list-item-title {
           background-color: #333333a3;
           padding: 0 10px;
           font-size: 15px;
@@ -233,7 +273,7 @@ body{
           transition: 1s all ease-in-out;
 }
 
-.movie-list-item-desc{
+.movie-list-item-desc {
           background-color: #333333a3;
           height: 50px;
           padding: 10px;
@@ -247,7 +287,7 @@ body{
           overflow-y: scroll;
 }
 
-.movie-list-item-button{
+.movie-list-item-button {
           padding: 10px;
           background-color: rgba(172, 255, 47, 0.538);
           color: black;
@@ -261,7 +301,7 @@ body{
           transition: 1s all ease-in-out;
 }
 
-.arrow{
+.arrow {
           font-size: 120px;
           position: absolute;
           top: 90px;
@@ -300,4 +340,3 @@ body{
           background-color: white;
           transform: translateX(-20px);
 } */
-

@@ -1,30 +1,31 @@
 <html lang="en">
+
 <head>
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="style.css">
-          <link 
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap" 
-          rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+                    rel="stylesheet">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 
 
           <title>AAH Universe - Watch Movies, TV series, Anime Online Free</title>
 </head>
+
 <body>
           <div class="navbar">
                     <div class="navbar-container">
                               <div>
-                                        <img class="navbar-logo"  src="/Images/AAH-universe-icon.png" alt="">
+                                        <img class="navbar-logo" src="/Images/AAH-universe-icon.png" alt="">
                               </div>
                               <div class="logo-container">
                                         <h1 class="logo">AAH Universe</h1>
                               </div>
                               <div class="menu-container">
                                         <ul class="menu-list">
-                                                  <li class="menu-list-item active" >Home</li>
+                                                  <li class="menu-list-item active">Home</li>
                                                   <li class="menu-list-item">Movies</li>
                                                   <li class="menu-list-item">Series</li>
                                                   <li class="menu-list-item">Anime</li>
@@ -42,11 +43,7 @@
                                         <div>
                                                   <button class="login-btn">Login</button>
                                         </div>
-                                        <!-- <div class="toggle">
-                                                  <i class="fa-regular fa-moon toggle-icon"></i>
-                                                  <i class="fa-regular fa-sun toggle-icon"></i>
-                                                  <div class="toggle-ball"></div>
-                                        </div> -->
+
                               </div>
                     </div>
           </div>
@@ -61,71 +58,335 @@
           </div>
           <div class="container">
                     <div class="content-container">
-                              <div class="featured-content" 
+                              <!-- Swiper -->
+                              <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                                        navigation="true" space-between="30" autoplay-delay="2500"
+                                        autoplay-disabled-on-interaction="false">
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Money-Heist-S3.jpg');">
+                                                            <span class="featured-title">Money Heist Money Heist Money
+                                                                      Heist Money Heist </span>
+                                                            <div class="mybox">
+                                                                      <div>
+                                                                                <p class="featured-desc">Lorem ipsum
+                                                                                          dolor sit amet consectetur
+                                                                                          adipisicing
+                                                                                          elit. Nam animi laudantium
+                                                                                          nemo totam illo voluptate odio
+                                                                                          voluptates,
+                                                                                          rerum cupiditate temporibus
+                                                                                          adipisci quibusdam facilis et
+                                                                                          eligendi
+                                                                                          illo voluptate odio
+                                                                                          voluptates,<span id="span1"></span>
+                                                                                          <span class="mybox1" id="mybox1id">
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates,
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam
+                                                                                          </span>
+                                                                                          <button class="read-more-btn" id="mybuttonid" onclick="changeReadMore()">read more...</button>
+                                                                                </p>
+                                                                      </div>
+                                                            </div>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
+                                                            <span class="featured-title">Monarch: Legacy of
+                                                                      Monsters</span>
+                                                            <div class="mybox">
+                                                                      <div>
+                                                                                <p class="featured-desc">Lorem ipsum
+                                                                                          dolor sit amet consectetur
+                                                                                          adipisicing
+                                                                                          elit. Nam animi laudantium
+                                                                                          nemo totam illo voluptate odio
+                                                                                          voluptates,
+                                                                                          rerum cupiditate temporibus
+                                                                                          adipisci quibusdam facilis et
+                                                                                          eligendi
+                                                                                          illo voluptate odio
+                                                                                          voluptates,<span id="span1"></span>
+                                                                                          <span class="mybox1" id="mybox1id">
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates,
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam
+                                                                                          </span>
+                                                                                          <button class="read-more-btn" id="mybuttonid" onclick="changeReadMore()">read more...</button>
+                                                                                </p>
+                                                                      </div>
+                                                            </div>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/All-of-us-are-dead.jpg');">
+                                                            <span class="featured-title">All Of Us Are Dead</span>
+                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing
+                                                                      elit. Nam animi laudantium nemo totam illo
+                                                                      voluptate odio voluptates,
+                                                                      rerum
+                                                                      cupiditate temporibus adipisci quibusdam facilis
+                                                                      et eligendi
+                                                                      accusantiumv itae harum? Dolor, ut?</p>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/friends.jpg');">
+                                                            <span class="featured-title">Friends</span>
+                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing
+                                                                      elit. Nam animi laudantium nemo totam illo
+                                                                      voluptate odio voluptates,
+                                                                      rerum
+                                                                      cupiditate temporibus adipisci quibusdam facilis
+                                                                      et eligendi
+                                                                      accusantiumv itae harum? Dolor, ut?</p>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Loki-S2.jpg');">
+                                                            <span class="featured-title">Loki Season-2</span>
+                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing
+                                                                      elit. Nam animi laudantium nemo totam illo
+                                                                      voluptate odio voluptates,
+                                                                      rerum
+                                                                      cupiditate temporibus adipisci quibusdam facilis
+                                                                      et eligendi
+                                                                      accusantiumv itae harum? Dolor, ut?</p>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/how-i-met-your-mother.jpg');">
+                                                            <span class="featured-title">How I Met Your Mother</span>
+                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing
+                                                                      elit. Nam animi laudantium nemo totam illo
+                                                                      voluptate odio voluptates,
+                                                                      rerum
+                                                                      cupiditate temporibus adipisci quibusdam facilis
+                                                                      et eligendi
+                                                                      accusantiumv itae harum? Dolor, ut?</p>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Legacies.jpg');">
+                                                            <span class="featured-title">Legacies</span>
+                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing
+                                                                      elit. Nam animi laudantium nemo totam illo
+                                                                      voluptate odio voluptates,
+                                                                      rerum
+                                                                      cupiditate temporibus adipisci quibusdam facilis
+                                                                      et eligendi
+                                                                      accusantiumv itae harum? Dolor, ut?</p>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <div class="autoplay-progress" slot="container-end">
+                                                  <svg viewBox="0 0 48 48">
+                                                            <circle cx="24" cy="24" r="20"></circle>
+                                                  </svg>
+                                                  <span></span>
+                                        </div>
+
+                                        <!-- Swiper JS -->
+                                        <script
+                                                  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+                                        </script>
+
+                              </swiper-container>
+
+
+                              <!-- <div class="featured-content"
                                         style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Money-Heist-S4.2.jpg');">
-                                        <img  class="featured-title" src="/Images/Money-Heist-Logo-Background.png" alt="">
-                                        <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi laudantium nemo totam illo voluptate odio voluptates, rerum 
-                                                  cupiditate temporibus adipisci quibusdam facilis et eligendi accusantiumv itae harum? Dolor, ut?</p>
-                                                  <button class="featured-button">WATCH</button>
-                              </div>
+                                        <img class="featured-title" src="/Images/Money-Heist-Logo-Background.png"
+                                                  alt="">
+                                        <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                  elit. Nam animi laudantium nemo totam illo voluptate odio voluptates,
+                                                  rerum
+                                                  cupiditate temporibus adipisci quibusdam facilis et eligendi
+                                                  accusantiumv itae harum? Dolor, ut?</p>
+                                        <button class="featured-button">WATCH</button>
+                              </div> -->
 
                               <div class="movie-list-container">
                                         <h1 class="movie-list-title">New Releases</h1>
                                         <div class="movie-list-wrapper">
                                                   <div class="movie-list">
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Bad Boys: Ride or Die</span>
-                                                                      <p class="movie-list-item-desc">This Summer, the world's favorite Bad Boys are back with their iconic mix of edge-of-your seat action and outrageous comedy but this time with a twist: Miami's finest are now on the run.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">This Summer, the
+                                                                                world's favorite Bad Boys are back with
+                                                                                their iconic mix of edge-of-your seat
+                                                                                action and outrageous comedy but this
+                                                                                time with a twist: Miami's finest are
+                                                                                now on the run.</p>
+                                                                      <button class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Kingdome of the Planet of the Apes</span>
-                                                                      <p class="movie-list-item-desc">Many years after the reign of Caesar, a young ape goes on a journey that will lead him to question everything he's been taught about the past and make choices that will define a future for a</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">Many years after
+                                                                                the reign of Caesar, a young ape goes on
+                                                                                a journey that will lead him to question
+                                                                                everything he's been taught about the
+                                                                                past and make choices that will define a
+                                                                                future for a</p>
+                                                                      <button class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/My-Spy-The-Eternal-City.jpg" alt="">
-                                                                      <span class="movie-list-item-title">My Spy: The Eternal City</span>
-                                                                      <p class="movie-list-item-desc"> JJ, a veteran CIA agent, reunites with his protégé Sophie, in order to prevent a catastrophic nuclear scheme aimed at the Vatican, which disrupts a high school choir trip to Italy.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">My Spy: The
+                                                                                Eternal City</span>
+                                                                      <p class="movie-list-item-desc"> JJ, a veteran CIA
+                                                                                agent, reunites with his protégé Sophie,
+                                                                                in order to prevent a catastrophic
+                                                                                nuclear scheme aimed at the Vatican,
+                                                                                which disrupts a high school choir trip
+                                                                                to Italy.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/The-Boys.jpg" alt="">
-                                                                      <span class="movie-list-item-title">The Boys</span>
-                                                                      <p class="movie-list-item-desc">A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/The-Boys.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">The
+                                                                                Boys</span>
+                                                                      <p class="movie-list-item-desc">A group of
+                                                                                vigilantes set out to take down corrupt
+                                                                                superheroes who abuse their superpowers.
+                                                                      </p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Vikings-Valhalla.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Vikings Valhalla</span>
-                                                                      <p class="movie-list-item-desc">Follow-up series to 'Vikings' set 100 years later and focusing on the adventures of Leif Erikson, Freydis, Harald Hardrada, and the Norman King William the Conqueror.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Vikings-Valhalla.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Vikings
+                                                                                Valhalla</span>
+                                                                      <p class="movie-list-item-desc">Follow-up series
+                                                                                to 'Vikings' set 100 years later and
+                                                                                focusing on the adventures of Leif
+                                                                                Erikson, Freydis, Harald Hardrada, and
+                                                                                the Norman King William the Conqueror.
+                                                                      </p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/mayor-of-kingstown.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Mayor of Kingstown</span>
-                                                                      <p class="movie-list-item-desc">The McLusky family are power brokers tackling themes of systemic racism, corruption and inequality in Kingstown, Michigan, where the business of incarceration is the only thriving industry.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/mayor-of-kingstown.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Mayor of
+                                                                                Kingstown</span>
+                                                                      <p class="movie-list-item-desc">The McLusky family
+                                                                                are power brokers tackling themes of
+                                                                                systemic racism, corruption and
+                                                                                inequality in Kingstown, Michigan, where
+                                                                                the business of incarceration is the
+                                                                                only thriving industry.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/die-hart-die-harter.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Die Hart: Die Harter</span>
-                                                                      <p class="movie-list-item-desc">Hart plans an innovative action film with unscripted, unexpected scenes to cement his legacy as the greatest. However, a blind spot leads him to fall victim to a vengeful plot from his past.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/die-hart-die-harter.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Die Hart: Die
+                                                                                Harter</span>
+                                                                      <p class="movie-list-item-desc">Hart plans an
+                                                                                innovative action film with unscripted,
+                                                                                unexpected scenes to cement his legacy
+                                                                                as the greatest. However, a blind spot
+                                                                                leads him to fall victim to a vengeful
+                                                                                plot from his past.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter Hogwarts: Tournament of Houses</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry Potter are tested using their knowledge to compete for the coveted House Cup. Including a few special guest appearances.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                Hogwarts: Tournament of Houses</span>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                   </div>
                                                   <i class="fa-solid fa-chevron-right arrow"></i>
                                         </div>
                               </div>
-                              
+
 
 
                               <div class="movie-list-container">
@@ -133,94 +394,182 @@
                                         <div class="movie-list-wrapper">
                                                   <div class="movie-list">
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Lucifer.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Lucifer</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/The-Witcher.jpg" alt="">
-                                                                      <span class="movie-list-item-title">The Witcher</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/The-Witcher.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">The
+                                                                                Witcher</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Tulsa-king.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Tulsa King</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet, necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Tulsa-king.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Tulsa
+                                                                                King</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/how-i-met-your-mother.jpg" alt="">
-                                                                      <span class="movie-list-item-title">How I Met Your Mother</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/how-i-met-your-mother.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">How I Met Your
+                                                                                Mother</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/friends.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/friends.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Friends</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet, necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Daredevil.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Daredevil</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Daredevil.jpg"
+                                                                                alt="">
+                                                                      <span
+                                                                                class="movie-list-item-title">Daredevil</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Loki-S1.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Loki Season-1</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Loki-S1.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Loki
+                                                                                Season-1</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Loki-S2.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Loki Season-2</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Loki-S2.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Loki
+                                                                                Season-2</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Cobra-kai.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Cobra Kai</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Cobra-kai.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Cobra
+                                                                                Kai</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/All-of-us-are-dead.jpg" alt="">
-                                                                      <span class="movie-list-item-title">All of Us are Dead</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/All-of-us-are-dead.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">All of Us are
+                                                                                Dead</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Money-Heist-S1.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Money Heist Season-1</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Money-Heist-S1.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Money Heist
+                                                                                Season-1</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Peaky-Blinders.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Peaky Blinders</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Peaky-Blinders.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Peaky
+                                                                                Blinders</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/the-night-agent.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Stranger Things Season-4</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/the-night-agent.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Stranger
+                                                                                Things Season-4</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/wednesday.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Wednesday</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/wednesday.jpg"
+                                                                                alt="">
+                                                                      <span
+                                                                                class="movie-list-item-title">Wednesday</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/The-Witcher-Blood-Origin.jpg" alt="">
-                                                                      <span class="movie-list-item-title">The Withcer: Blood Origin</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/The-Witcher-Blood-Origin.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">The Withcer:
+                                                                                Blood Origin</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                   </div>
                                                   <i class="fa-solid fa-chevron-right arrow"></i>
@@ -229,87 +578,165 @@
 
 
 
-                              <div class="featured-content" 
+                              <div class="featured-content"
                                         style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Anime/Demon-Slayer.jpg');">
-                                        <img  class="featured-title" src="/Images/demon-slayer-logo-background.png" alt="">
-                                        <p class="featured-desc">It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.</p>
-                                                  <button class="featured-button">WATCH</button>
+                                        <img class="featured-title" src="/Images/demon-slayer-logo-background.png"
+                                                  alt="">
+                                        <p class="featured-desc">It is the Taisho Period in Japan. Tanjiro, a
+                                                  kindhearted boy who sells charcoal for a living, finds his family
+                                                  slaughtered by a demon. To make matters worse, his younger sister
+                                                  Nezuko, the sole survivor, has been transformed into a demon herself.
+                                                  Though devastated by this grim reality, Tanjiro resolves to become a
+                                                  “demon slayer” so that he can turn his sister back into a human, and
+                                                  kill the demon that massacred his family.</p>
+                                        <button class="featured-button">WATCH</button>
                               </div>
                               <div class="movie-list-container">
                                         <h1 class="movie-list-title">Anime</h1>
                                         <div class="movie-list-wrapper">
                                                   <div class="movie-list">
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Solo Leveling</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/solo-leveling.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Solo
+                                                                                Leveling</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/bleach.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/bleach.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Bleach</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/Haikyuu.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Haikyuu!</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet, necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/Haikyuu.jpg"
+                                                                                alt="">
+                                                                      <span
+                                                                                class="movie-list-item-title">Haikyuu!</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/Attack-on-Titan.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Attack on Titan</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/Attack-on-Titan.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Attack on
+                                                                                Titan</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/God-of-high-school.jpg" alt="">
-                                                                      <span class="movie-list-item-title">God of High School</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet, necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/God-of-high-school.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">God of High
+                                                                                School</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/wind-breaker.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Wind Breaker</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/wind-breaker.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Wind
+                                                                                Breaker</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/classroom-of-the-elite.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Classroom of the Elite</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/classroom-of-the-elite.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Classroom of
+                                                                                the Elite</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/Kaiju-No8.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Kaiju No.8</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/Kaiju-No8.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Kaiju
+                                                                                No.8</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/mash-and-muscel.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Mashel and Muscel</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/mash-and-muscel.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Mashel and
+                                                                                Muscel</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/the-wrong-way-to-use-healing-magic.jpg" alt="">
-                                                                      <span class="movie-list-item-title">The Wrong Way to Use Healing Magic</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/the-wrong-way-to-use-healing-magic.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">The Wrong Way
+                                                                                to Use Healing Magic</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/Tsukimichi-the-moonlight-fantasy.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Tsukimichi: the Moonlight Fantasy</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/Tsukimichi-the-moonlight-fantasy.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Tsukimichi:
+                                                                                the Moonlight Fantasy</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Anime/Demon-Slayer.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Demon Slayer</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Anime/Demon-Slayer.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Demon
+                                                                                Slayer</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                   </div>
                                                   <i class="fa-solid fa-chevron-right arrow"></i>
@@ -317,14 +744,21 @@
                               </div>
 
 
-                              
 
 
-                              <div class="featured-content" 
+
+                              <div class="featured-content"
                                         style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Movies/After-We-Fell.jpg');">
-                                        <img  class="featured-title" src="/Images/after-we-fell-removebg-preview.png" alt="">
-                                        <p class="featured-desc">It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.</p>
-                                                  <button class="featured-button">WATCH</button>
+                                        <img class="featured-title" src="/Images/after-we-fell-removebg-preview.png"
+                                                  alt="">
+                                        <p class="featured-desc">It is the Taisho Period in Japan. Tanjiro, a
+                                                  kindhearted boy who sells charcoal for a living, finds his family
+                                                  slaughtered by a demon. To make matters worse, his younger sister
+                                                  Nezuko, the sole survivor, has been transformed into a demon herself.
+                                                  Though devastated by this grim reality, Tanjiro resolves to become a
+                                                  “demon slayer” so that he can turn his sister back into a human, and
+                                                  kill the demon that massacred his family.</p>
+                                        <button class="featured-button">WATCH</button>
                               </div>
 
                               <div class="movie-list-container">
@@ -332,58 +766,112 @@
                                         <div class="movie-list-wrapper">
                                                   <div class="movie-list">
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-1.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Sorcerer's Stone</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-1.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Sorcerer's Stone</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Chamber of Secrets</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-2.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Chamber of Secrets</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-3.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Prisoner of Azkaban</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet, necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-3.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Prisoner of Azkaban</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-4.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Goblet of Fire</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-4.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Goblet of Fire</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-5.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Order of the Phoneix</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet, necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-5.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Order of the Phoneix</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-6.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Half-Blood Prince</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-6.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Half-Blood Prince</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-7.1.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Deathly Hollows: Part-1</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-7.1.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Deathly Hollows: Part-1</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Harry-Potter-7.2.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter and the Deathly Hollows: Part-2</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Harry-Potter-7.2.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                and the Deathly Hollows: Part-2</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Harry Potter Hogwarts: Tournament of Houses</span>
-                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor sit amet consectetur amet , necessitatibus perspiciatis</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                Hogwarts: Tournament of Houses</span>
+                                                                      <p class="movie-list-item-desc">Lorem ipsum, dolor
+                                                                                sit amet consectetur amet ,
+                                                                                necessitatibus perspiciatis</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                   </div>
                                                   <i class="fa-solid fa-chevron-right arrow"></i>
@@ -397,82 +885,188 @@
                                         <div class="movie-list-wrapper">
                                                   <div class="movie-list">
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Venom-2.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Venom-2.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Venom 2</span>
-                                                                      <p class="movie-list-item-desc">This Summer, the world's favorite Bad Boys are back with their iconic mix of edge-of-your seat action and outrageous comedy but this time with a twist: Miami's finest are now on the run.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">This Summer, the
+                                                                                world's favorite Bad Boys are back with
+                                                                                their iconic mix of edge-of-your seat
+                                                                                action and outrageous comedy but this
+                                                                                time with a twist: Miami's finest are
+                                                                                now on the run.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Black-Adam.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Black Adam</span>
-                                                                      <p class="movie-list-item-desc">Many years after the reign of Caesar, a young ape goes on a journey that will lead him to question everything he's been taught about the past and make choices that will define a future for a</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Black-Adam.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Black
+                                                                                Adam</span>
+                                                                      <p class="movie-list-item-desc">Many years after
+                                                                                the reign of Caesar, a young ape goes on
+                                                                                a journey that will lead him to question
+                                                                                everything he's been taught about the
+                                                                                past and make choices that will define a
+                                                                                future for a</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/dune-part1.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Dune Part-1</span>
-                                                                      <p class="movie-list-item-desc"> JJ, a veteran CIA agent, reunites with his protégé Sophie, in order to prevent a catastrophic nuclear scheme aimed at the Vatican, which disrupts a high school choir trip to Italy.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/dune-part1.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Dune
+                                                                                Part-1</span>
+                                                                      <p class="movie-list-item-desc"> JJ, a veteran CIA
+                                                                                agent, reunites with his protégé Sophie,
+                                                                                in order to prevent a catastrophic
+                                                                                nuclear scheme aimed at the Vatican,
+                                                                                which disrupts a high school choir trip
+                                                                                to Italy.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/atlas.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/atlas.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Atlas</span>
-                                                                      <p class="movie-list-item-desc">A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">A group of
+                                                                                vigilantes set out to take down corrupt
+                                                                                superheroes who abuse their superpowers.
+                                                                      </p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/rebel-moon-part1.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Rebel Moon Part-1</span>
-                                                                      <p class="movie-list-item-desc">Follow-up series to 'Vikings' set 100 years later and focusing on the adventures of Leif Erikson, Freydis, Harald Hardrada, and the Norman King William the Conqueror.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/rebel-moon-part1.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Rebel Moon
+                                                                                Part-1</span>
+                                                                      <p class="movie-list-item-desc">Follow-up series
+                                                                                to 'Vikings' set 100 years later and
+                                                                                focusing on the adventures of Leif
+                                                                                Erikson, Freydis, Harald Hardrada, and
+                                                                                the Norman King William the Conqueror.
+                                                                      </p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Thor-Love&Thunder.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Thor: Love and Thunder</span>
-                                                                      <p class="movie-list-item-desc">The McLusky family are power brokers tackling themes of systemic racism, corruption and inequality in Kingstown, Michigan, where the business of incarceration is the only thriving industry.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Thor-Love&Thunder.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Thor: Love and
+                                                                                Thunder</span>
+                                                                      <p class="movie-list-item-desc">The McLusky family
+                                                                                are power brokers tackling themes of
+                                                                                systemic racism, corruption and
+                                                                                inequality in Kingstown, Michigan, where
+                                                                                the business of incarceration is the
+                                                                                only thriving industry.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Teen-Wolf-the-movie.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Teen Wolf: The Movie</span>
-                                                                      <p class="movie-list-item-desc">Hart plans an innovative action film with unscripted, unexpected scenes to cement his legacy as the greatest. However, a blind spot leads him to fall victim to a vengeful plot from his past.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Teen-Wolf-the-movie.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Teen Wolf: The
+                                                                                Movie</span>
+                                                                      <p class="movie-list-item-desc">Hart plans an
+                                                                                innovative action film with unscripted,
+                                                                                unexpected scenes to cement his legacy
+                                                                                as the greatest. However, a blind spot
+                                                                                leads him to fall victim to a vengeful
+                                                                                plot from his past.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Top-Gun.jpg" alt="">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Top-Gun.jpg"
+                                                                                alt="">
                                                                       <span class="movie-list-item-title">Top Gun</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry Potter are tested using their knowledge to compete for the coveted House Cup. Including a few special guest appearances.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Code-8.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Code 8 Part-1</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry Potter are tested using their knowledge to compete for the coveted House Cup. Including a few special guest appearances.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Code-8.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Code 8
+                                                                                Part-1</span>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Eternals.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Eternals</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry Potter are tested using their knowledge to compete for the coveted House Cup. Including a few special guest appearances.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Eternals.jpg"
+                                                                                alt="">
+                                                                      <span
+                                                                                class="movie-list-item-title">Eternals</span>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Uncharted.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Uncharted</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry Potter are tested using their knowledge to compete for the coveted House Cup. Including a few special guest appearances.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Uncharted.jpg"
+                                                                                alt="">
+                                                                      <span
+                                                                                class="movie-list-item-title">Uncharted</span>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/Wakanda-Forever.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Black Panther: Wakanda Forever</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry Potter are tested using their knowledge to compete for the coveted House Cup. Including a few special guest appearances.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Wakanda-Forever.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Black Panther:
+                                                                                Wakanda Forever</span>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                             <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img" src="/content-images/Movies/rebel-moon-part2.jpg" alt="">
-                                                                      <span class="movie-list-item-title">Rebel Moon Part-2</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry Potter are tested using their knowledge to compete for the coveted House Cup. Including a few special guest appearances.</p>
-                                                                                <button class="movie-list-item-button">WATCH</button>
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/rebel-moon-part2.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Rebel Moon
+                                                                                Part-2</span>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                   </div>
                                                   <i class="fa-solid fa-chevron-right arrow"></i>
@@ -481,11 +1075,12 @@
 
 
 
-                              
+
                     </div>
           </div>
 
           <script src="app.js"></script>
 
 </body>
+
 </html>
