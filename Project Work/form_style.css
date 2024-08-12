@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registration-form {
+    background: rgba(12, 12, 12, 0.991);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 80px rgba(248, 3, 3, 0.943);
+    width: 600px;
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(24, 209, 209);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(22, 245, 6);
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gender-group label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.gender-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #4b9dff, #a450ff);
+}
