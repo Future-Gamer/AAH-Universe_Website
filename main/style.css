@@ -89,6 +89,10 @@ body {
           cursor: pointer;
 }
 
+.login-btn.active{
+          font-weight: bold;
+} 
+
 
 .sidbar {
           width: 50px;

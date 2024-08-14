@@ -35,6 +35,11 @@ swiperEl.addEventListener("autoplaytimeleft", (e) => {
           progressContent.textContent = `${Math.ceil(time / 1000)}s`;
 });
 
+// Login Button
+function loginpage() {
+           window.location="/Login_and_Sign-up/registration.html"
+}
+
 
 // read-more and read-less 
 function changeReadMore1() {
