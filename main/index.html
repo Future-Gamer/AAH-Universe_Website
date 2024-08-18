@@ -8,6 +8,8 @@
           <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
                     rel="stylesheet">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+          <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
 
@@ -21,18 +23,47 @@
                                         <img class="navbar-logo" src="/Images/AAH-universe-icon.png" alt="">
                               </div>
                               <div class="logo-container">
-                                        <h1 class="logo">AAH Universe</h1>
+                                        <h1 class="logo" onclick="homepage()">AAH Universe</h1>
                               </div>
                               <div class="menu-container">
                                         <ul class="menu-list">
-                                                  <li class="menu-list-item active">Home</li>
-                                                  <li class="menu-list-item">Movies</li>
-                                                  <li class="menu-list-item">Series</li>
-                                                  <li class="menu-list-item">Anime</li>
+                                                  <li class="menu-list-item active" onclick="homepage()">Home
+                                                            <!-- <a href="/main/index.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="moviepage()">Movies
+                                                            <!-- <a href="/main/index_movie.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="seriespage()">Series
+                                                            <!-- <a href="/main/index_series.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="animepage()">Anime
+                                                            <!-- <a href="/main/index_anime.html"></a> -->
+                                                  </li>
                                                   <li class="menu-list-item">Popular</li>
                                                   <li class="menu-list-item">Trends</li>
 
                                         </ul>
+                              </div>
+                              <div class="search_user">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search..." id="search_input">
+                                        <div class="search">
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+                                                  
+                                        </div>
                               </div>
                               <div class="profile-container">
                                         <img class="profile-picture" alt="" src="/Images/profile-image.png">
@@ -48,7 +79,6 @@
                     </div>
           </div>
           <div class="sidbar">
-                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
                     <i class="left-menu-icon fa-solid fa-house"></i>
                     <i class="left-menu-icon fa-solid fa-users"></i>
                     <i class="left-menu-icon fa-solid fa-bookmark"></i>
@@ -65,57 +95,188 @@
                                         <swiper-slide class="swiper-slide">
                                                   <div class="featured-content"
                                                             style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Money-Heist-S3.jpg');">
-                                                            <span class="featured-title">Money Heist Money Heist Money
-                                                                      Heist Money Heist </span>
-                                                            <div class="mybox">
-                                                                      <div>
-                                                                                <p class="featured-desc">Lorem ipsum
-                                                                                          dolor sit amet consectetur
-                                                                                          adipisicing
-                                                                                          elit. Nam animi laudantium
-                                                                                          nemo totam illo voluptate odio
-                                                                                          voluptates,
-                                                                                          rerum cupiditate temporibus
-                                                                                          adipisci quibusdam facilis et
-                                                                                          eligendi
-                                                                                          illo voluptate odio
-                                                                                          voluptates,<span
-                                                                                                    id="span1">...</span>
-                                                                                          <span class="mybox1"
-                                                                                                    id="mybox1id">
-                                                                                                    reum cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam facilis et
-                                                                                                    eligendi illo
-                                                                                                    voluptate odio
-                                                                                                    voluptates, rerum
-                                                                                                    cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam illo
-                                                                                                    voluptate odio
-                                                                                                    voluptates,
-                                                                                                    reum cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam facilis et
-                                                                                                    eligendi illo
-                                                                                                    voluptate odio
-                                                                                                    voluptates, rerum
-                                                                                                    cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam
-                                                                                          </span>
-                                                                                          <button class="read-more-btn"
-                                                                                                    id="mybuttonid1"
-                                                                                                    onclick="changeReadMore1()">read
-                                                                                                    more</button>
+                                                            <span class="featured-title">Money Heist</span>
+                                                            <p class="featured-desc">An unusual group of robbers attempt
+                                                                      to carry out the most perfect robbery in Spanish
+                                                                      history - stealing 2.4 billion euros from the
+                                                                      Royal Mint of Spain.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>A Netflix Original Series</h6>
+                                                                      <h5 id="gen">Action | Crime | Drama</h5>
+                                                                      <h4>2017 - 2021</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.2
+                                                                                / 10
                                                                                 </p>
-                                                                      </div>
+                                                                      </h3>
                                                             </div>
-                                                            <button class="featured-button">WATCH</button>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
                                                   </div>
                                         </swiper-slide>
 
                                         <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
+                                                            <span class="featured-title">Monarch: Legacy of
+                                                                      Monsters</span>
+
+                                                            <p class="featured-desc">Set after the battle between
+                                                                      Godzilla and the Titans, revealing that monsters
+                                                                      are real, follows one family's journey to uncover
+                                                                      its buried secrets and a legacy linking them to
+                                                                      Monarch.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>Apple-TV Series</h6>
+                                                                      <h5 id="gen">Action | Adventure | Sci-Fi</h5>
+                                                                      <h4>2023</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>7
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/All-of-us-are-dead.jpg');">
+                                                            <span class="featured-title">All Of Us Are Dead</span>
+                                                            <p class="featured-desc">
+                                                                      A high school becomes ground zero for a zombie
+                                                                      virus outbreak. Trapped students must fight their
+                                                                      way out or turn into one of the rabid infected.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>A Netflix Original Series</h6>
+                                                                      <h5 id="gen">Action | Drama | Fantasy</h5>
+                                                                      <h4>2022</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>7.5
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/friends.jpg');">
+                                                            <span class="featured-title">Friends</span>
+                                                            <p class="featured-desc">Follows the personal and
+                                                                      professional lives of six twenty to thirty
+                                                                      year-old friends living in the Manhattan borough
+                                                                      of New York City.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>TV Series</h6>
+                                                                      <h5 id="gen">Comedy | Romance</h5>
+                                                                      <h4>1994 - 2004</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.9
+                                                                                /10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Loki-S2.jpg');">
+                                                            <span class="featured-title">Loki</span>
+                                                            <p class="featured-desc">The mercurial villain Loki resumes
+                                                                      his role as the God of Mischief in a new series
+                                                                      that takes place after the events of “Avengers:
+                                                                      Endgame.”
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>A Disney+ Original Series</h6>
+                                                                      <h5 id="gen">Action | Adventure | Fantasy</h5>
+                                                                      <h4>2021 - 2023</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.2
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/how-i-met-your-mother.jpg');">
+                                                            <span class="featured-title">How I Met Your Mother</span>
+                                                            <p class="featured-desc">A father recounts to his children -
+                                                                      through a series of flashbacks - the journey he
+                                                                      and his four best friends took leading up to him
+                                                                      meeting their mother.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>TV Series</h6>
+                                                                      <h5 id="gen">Comedy | Drama | Romance</h5>
+                                                                      <h4>2005 - 2014</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.3
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Legacies.jpg');">
+                                                            <span class="featured-title">Legacies</span>
+                                                            <p class="featured-desc">Hope Mikaelson, a tribrid daughter
+                                                                      of a Vampire/Werewolf hybrid, makes her way in the
+                                                                      world.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>TV Series</h6>
+                                                                      <h5 id="gen">Adventure | Drama | Fantasy</h5>
+                                                                      <h4>2018 - 2022</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>7.2
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <!-- <swiper-slide>
                                                   <div class="featured-content"
                                                             style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
                                                             <span class="featured-title">Monarch: Legacy of
@@ -166,108 +327,7 @@
                                                             </div>
                                                             <button class="featured-button">WATCH</button>
                                                   </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/All-of-us-are-dead.jpg');">
-                                                            <span class="featured-title">All Of Us Are Dead</span>
-                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
-                                                                      consectetur adipisicing
-                                                                      elit. Nam animi laudantium nemo totam illo
-                                                                      voluptate odio voluptates,
-
-                                                            </p>
-                                                            <button class="featured-button">WATCH</button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/friends.jpg');">
-                                                            <span class="featured-title">Friends</span>
-                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
-                                                                      consectetur adipisicing
-                                                                      elit. Nam animi laudantium nemo totam illo
-                                                                      voluptate odio voluptates,
-                                                                      <span id="span3">...</span>
-                                                                      <span class="mybox1" id="mybox3id">
-                                                                                reum cupiditate
-                                                                                temporibus adipisci
-                                                                                quibusdam facilis et
-                                                                                eligendi illo
-                                                                                voluptate odio
-                                                                                voluptates, rerum
-                                                                                cupiditate
-                                                                                temporibus adipisci
-                                                                                quibusdam illo
-                                                                                voluptate odio
-                                                                                voluptates,
-                                                                                reum cupiditate
-                                                                                temporibus adipisci
-                                                                                quibusdam facilis et
-                                                                                eligendi illo
-                                                                                voluptate odio
-                                                                                voluptates, rerum
-                                                                                cupiditate
-                                                                                temporibus adipisci
-                                                                                quibusdam
-                                                                      </span>
-                                                                      <button class="read-more-btn" id="mybuttonid3"
-                                                                                onclick="changeReadMore3()">read
-                                                                                more</button>
-                                                            </p>
-                                                            <button class="featured-button">WATCH</button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Loki-S2.jpg');">
-                                                            <span class="featured-title">Loki Season-2</span>
-                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
-                                                                      consectetur adipisicing
-                                                                      elit. Nam animi laudantium nemo totam illo
-                                                                      voluptate odio voluptates,
-                                                                      rerum
-                                                                      cupiditate temporibus adipisci quibusdam facilis
-                                                                      et eligendi
-                                                                      accusantiumv itae harum? Dolor, ut?</p>
-                                                            <button class="featured-button">WATCH</button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/how-i-met-your-mother.jpg');">
-                                                            <span class="featured-title">How I Met Your Mother</span>
-                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
-                                                                      consectetur adipisicing
-                                                                      elit. Nam animi laudantium nemo totam illo
-                                                                      voluptate odio voluptates,
-                                                                      rerum
-                                                                      cupiditate temporibus adipisci quibusdam facilis
-                                                                      et eligendi
-                                                                      accusantiumv itae harum? Dolor, ut?</p>
-                                                            <button class="featured-button">WATCH</button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Legacies.jpg');">
-                                                            <span class="featured-title">Legacies</span>
-                                                            <p class="featured-desc">Lorem ipsum dolor sit amet
-                                                                      consectetur adipisicing
-                                                                      elit. Nam animi laudantium nemo totam illo
-                                                                      voluptate odio voluptates,
-                                                                      rerum
-                                                                      cupiditate temporibus adipisci quibusdam facilis
-                                                                      et eligendi
-                                                                      accusantiumv itae harum? Dolor, ut?</p>
-                                                            <button class="featured-button">WATCH</button>
-                                                  </div>
-                                        </swiper-slide>
+                                        </swiper-slide> -->
 
                                         <div class="autoplay-progress" slot="container-end">
                                                   <svg viewBox="0 0 48 48">
@@ -277,9 +337,7 @@
                                         </div>
 
                                         <!-- Swiper JS -->
-                                        <script
-                                                  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
-                                                  </script>
+                                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
                               </swiper-container>
 
@@ -297,7 +355,15 @@
                               </div> -->
 
                               <div class="movie-list-container">
-                                        <h1 class="movie-list-title">New Releases</h1>
+                                        <div class="movie-list-title-container">
+                                                  <div class="movie-list-title">
+                                                            <h1>New Releases</h1> 
+                                                  </div>
+                                                  <div class="movie-list-view_all">
+                                                            <h3>View-All</h3>
+                                                  </div>
+                                        </div>
+                                        
                                         <div class="movie-list-wrapper">
                                                   <div class="movie-list">
                                                             <div class="movie-list-item">

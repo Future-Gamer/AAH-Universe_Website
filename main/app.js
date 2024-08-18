@@ -40,6 +40,23 @@ function loginpage() {
            window.location="/Login_and_Sign-up/registration.html"
 }
 
+// Home-Page Button
+function homepage() {
+          window.location="/main/index.html"
+}
+// Movie-Page Button
+function moviepage() {
+          window.location="/main/index_movie.html"
+}
+// Series-Page Button
+function seriespage() {
+          window.location="/main/index_series.html"
+}
+// Anime-Page Button
+function animepage() {
+          window.location="/main/index_anime.html"
+}
+
 
 // read-more and read-less 
 function changeReadMore1() {

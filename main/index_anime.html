@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="style.css">
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+                    rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+          <title>AAH Universe - Watch Anime</title>
+</head>
+<body>
+          <div class="navbar">
+                    <div class="navbar-container">
+                              <div>
+                                        <img class="navbar-logo" src="/Images/AAH-universe-icon.png" alt="">
+                              </div>
+                              <div class="logo-container">
+                                        <h1 class="logo" onclick="homepage()">AAH Universe</h1>
+                              </div>
+                              <div class="menu-container">
+                                        <ul class="menu-list">
+                                                  <li class="menu-list-item" onclick="homepage()">Home</li>
+                                                  <li class="menu-list-item" onclick="moviepage()">Movies</li>
+                                                  <li class="menu-list-item" onclick="seriespage()">Series</li>
+                                                  <li class="menu-list-item active" onclick="animepage()">Anime</li>
+                                                  <li class="menu-list-item" onclick="">Popular</li>
+                                                  <li class="menu-list-item" onclick="">Trends</li>
+
+                                        </ul>
+                              </div>
+                              <div class="profile-container">
+                                        <img class="profile-picture" alt="" src="/Images/profile-image.png">
+                                        <div class="profile-text-container">
+                                                  <span class="profile-text">Profile</span>
+                                                  <i class="fa-regular fa-circle-down"></i>
+                                        </div>
+                                        <div>
+                                                  <button class="login-btn active" onclick="loginpage()">Login</button>
+                                        </div>
+
+                              </div>
+                    </div>
+          </div>
+          <div class="sidbar">
+                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+                    <i class="left-menu-icon fa-solid fa-house"></i>
+                    <i class="left-menu-icon fa-solid fa-users"></i>
+                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
+                    <i class="left-menu-icon fa-solid fa-tv"></i>
+                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+          </div>
+
+
+
+
+          <script src="app.js"></script>
+</body>
+</html>
