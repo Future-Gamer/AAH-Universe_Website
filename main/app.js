@@ -1,55 +1,55 @@
 // Clicking arrow
-// const arrows = document.querySelectorAll(".arrow");
-// const movieLists = document.querySelectorAll(".movie-list");
-
-// arrows.forEach((arrow, i) => {
-
-//           const itemNumber = movieLists[i].querySelectorAll("img").length;
-//           let clickCounter = 0;
-//           arrow.addEventListener("click", () => {
-//                     const ratio = Math.floor(window.innerWidth / 360)
-//                     clickCounter++;
-//                     if (itemNumber - (3 + clickCounter) + (3 - ratio) >= 0) {
-//                               movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 390}px)`;
-//                     }
-//                     else {
-//                               movieLists[i].style.transform = "translateX(0)"
-//                               clickCounter = 0;
-//                     }
-
-//           })
-
-//           console.log(Math.floor(window.innerWidth / 270))
-// })
-
-
 const arrows = document.querySelectorAll(".arrow");
 const movieLists = document.querySelectorAll(".movie-list");
 
 arrows.forEach((arrow, i) => {
-    const itemNumber = movieLists[i].querySelectorAll("img").length;
-    let clickCounter = 0;
 
-    const handleArrowClick = () => {
-        const ratio = Math.floor(window.innerWidth / 360);
-        clickCounter++;
+          const itemNumber = movieLists[i].querySelectorAll("img").length;
+          let clickCounter = 0;
+          arrow.addEventListener("click", () => {
+                    const ratio = Math.floor(window.innerWidth / 360)
+                    clickCounter++;
+                    if (itemNumber - (3 + clickCounter) + (3 - ratio) >= 0) {
+                              movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 390}px)`;
+                    }
+                    else {
+                              movieLists[i].style.transform = "translateX(0)"
+                              clickCounter = 0;
+                    }
 
-        if (itemNumber - (3 + clickCounter) + (3 - ratio) >= 0) {
-            movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 390}px)`;
-        } else {
-            movieLists[i].style.transform = "translateX(0)";
-            clickCounter = 0;
-        }
-    };
+          })
 
-    arrow.addEventListener("click", handleArrowClick);
-});
+          // console.log(Math.floor(window.innerWidth / 270))
+})
 
-// Initial call to handleArrowClick to set the initial state
-handleArrowClick();
 
-// Listen for window resize events
-window.addEventListener("resize", handleArrowClick);
+// const arrows = document.querySelectorAll(".arrow");
+// const movieLists = document.querySelectorAll(".movie-list");
+
+// arrows.forEach((arrow, i) => {
+//     const itemNumber = movieLists[i].querySelectorAll("img").length;
+//     let clickCounter = 0;
+
+//     const handleArrowClick = () => {
+//         const ratio = Math.floor(window.innerWidth / 360);
+//         clickCounter++;
+
+//         if (itemNumber - (3 + clickCounter) + (3 - ratio) >= 0) {
+//             movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 390}px)`;
+//         } else {
+//             movieLists[i].style.transform = "translateX(0)";
+//             clickCounter = 0;
+//         }
+//     };
+
+//     arrow.addEventListener("click", handleArrowClick);
+// });
+
+// // Initial call to handleArrowClick to set the initial state
+// handleArrowClick();
+
+// // Listen for window resize events
+// window.addEventListener("resize", handleArrowClick);
 
 
 
