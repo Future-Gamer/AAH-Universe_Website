@@ -10,7 +10,7 @@ arrows.forEach((arrow, i) => {
                     const ratio = Math.floor(window.innerWidth / 360)
                     clickCounter++;
                     if (itemNumber - (3 + clickCounter) + (3 - ratio) >= 0) {
-                              movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 400}px)`;
+                              movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 380}px)`;
                     }
                     else {
                               movieLists[i].style.transform = "translateX(0)"

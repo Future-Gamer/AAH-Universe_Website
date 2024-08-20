@@ -324,7 +324,7 @@ body {
 .movie-list {
           display: flex;
           align-items: center;
-          height: 450px;
+          height: 400px;
           transform: translateX(0);
           transition: all 1s ease-in-out;
 
@@ -379,8 +379,8 @@ body {
 
 .movie-list-item-img {
           transition: all 1s ease-in-out;
-          width: 360px;
-          height: 360px;
+          width: 340px;
+          height: 300px;
           object-fit: cover;
           border-radius: 20px;
 }
