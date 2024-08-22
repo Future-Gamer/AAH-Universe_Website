@@ -166,16 +166,23 @@ body {
 }
 
 .mySwiper{
-          height: 80vh;
+          height: 90vh;
 }
 
 
 .featured-content {
-          height: 60vh;
+          height: 450px;
           background-color: aqua;
           padding: 50px;
           position: relative;
+          width: 1200px;
 }
+
+/* .featured-content-img{
+          position: relative;
+          height: 60vh;
+          width: auto;
+} */
 
 
 .featured-title {
@@ -184,6 +191,7 @@ body {
           font-size: 45px;
           padding-left: 10px;
           top: 55%;
+          width: auto;
 }
 
 .featured-desc {
@@ -324,7 +332,7 @@ body {
 .movie-list {
           display: flex;
           align-items: center;
-          height: 400px;
+          height: 560px;
           transform: translateX(0);
           transition: all 1s ease-in-out;
 
@@ -379,9 +387,9 @@ body {
 
 .movie-list-item-img {
           transition: all 1s ease-in-out;
-          width: 340px;
-          height: 300px;
-          object-fit: cover;
+          width: 350px;
+          height: 450px;
+          /* object-fit: cover; */
           border-radius: 20px;
 }
 

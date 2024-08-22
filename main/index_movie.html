@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 
           <title>AAH Universe - Watch Movies</title>
 </head>
+
 <body>
           <div class="navbar">
                     <div class="navbar-container">
@@ -32,8 +34,8 @@
                                                   <li class="menu-list-item" onclick="animepage()">Anime
                                                             <!-- <a href="/main/index_anime.html"></a> -->
                                                   </li>
-                                                  <li class="menu-list-item" onclick="">Popular</li>
-                                                  <li class="menu-list-item" onclick="">Trends</li>
+                                                  <li class="menu-list-item" onclick="popularpage()">Popular</li>
+                                                  <li class="menu-list-item" onclick="trendpage()">Trends</li>
 
                                         </ul>
                               </div>
@@ -60,9 +62,403 @@
                     <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
           </div>
 
+          <div class="container">
+                    <div class="content-container">
+                              <!-- Swiper -->
+                              <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                                        navigation="true" space-between="30" autoplay-delay="2500"
+                                        autoplay-disabled-on-interaction="false">
+                                        <swiper-slide class="swiper-slide">
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Harry_Potter_and_the_Deathly_Hollows_part2.jpg');">
+                                                            <span class="featured-title">Harry Potter and The Deathly
+                                                                      Hollows : Part-2</span>
+                                                            <p class="featured-desc">As Harry, Ron and Hermione race
+                                                                      against time and evil to destroy the Horcruxes,
+                                                                      they uncover the existence of the three most
+                                                                      powerful objects in the wizarding world: the
+                                                                      Deathly Hallows.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h5 id="gen">Adventure | Family | Fantasy</h5>
+                                                                      <h4>2011</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.1
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Bad-Boys-Ride_or_Die.jpg');">
+                                                            <span class="featured-title">Bad Boys: Ride or Die</span>
+
+                                                            <p class="featured-desc">This Summer, the world's favorite
+                                                                      Bad Boys are back with their iconic mix of
+                                                                      edge-of-your seat action and outrageous comedy but
+                                                                      this time with a twist: Miami's finest are now on
+                                                                      the run.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h5 id="gen">Action | Adventure | Comedy</h5>
+                                                                      <h4>2024</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>7
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Venom2.jpg');">
+                                                            <span class="featured-title">Venom: Let there be
+                                                                      Change</span>
+                                                            <p class="featured-desc">Eddie Brock attempts to reignite
+                                                                      his career by interviewing serial killer Cletus
+                                                                      Kasady, who becomes the host of the symbiote
+                                                                      Carnage and escapes prison after a failed
+                                                                      execution.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h5 id="gen">Action | Sci-Fi | Thriller</h5>
+                                                                      <h4>2021</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>5.9
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/friends.jpg');">
+                                                            <span class="featured-title">Friends</span>
+                                                            <p class="featured-desc">Follows the personal and
+                                                                      professional lives of six twenty to thirty
+                                                                      year-old friends living in the Manhattan borough
+                                                                      of New York City.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>TV Series</h6>
+                                                                      <h5 id="gen">Comedy | Romance</h5>
+                                                                      <h4>1994 - 2004</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.9
+                                                                                /10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Loki-S2.jpg');">
+                                                            <span class="featured-title">Loki</span>
+                                                            <p class="featured-desc">The mercurial villain Loki resumes
+                                                                      his role as the God of Mischief in a new series
+                                                                      that takes place after the events of “Avengers:
+                                                                      Endgame.”
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>A Disney+ Original Series</h6>
+                                                                      <h5 id="gen">Action | Adventure | Fantasy</h5>
+                                                                      <h4>2021 - 2023</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.2
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/how-i-met-your-mother.jpg');">
+                                                            <span class="featured-title">How I Met Your Mother</span>
+                                                            <p class="featured-desc">A father recounts to his children -
+                                                                      through a series of flashbacks - the journey he
+                                                                      and his four best friends took leading up to him
+                                                                      meeting their mother.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>TV Series</h6>
+                                                                      <h5 id="gen">Comedy | Drama | Romance</h5>
+                                                                      <h4>2005 - 2014</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.3
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Legacies.jpg');">
+                                                            <span class="featured-title">Legacies</span>
+                                                            <p class="featured-desc">Hope Mikaelson, a tribrid daughter
+                                                                      of a Vampire/Werewolf hybrid, makes her way in the
+                                                                      world.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h6>TV Series</h6>
+                                                                      <h5 id="gen">Adventure | Drama | Fantasy</h5>
+                                                                      <h4>2018 - 2022</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>7.2
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <!-- <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
+                                                            <span class="featured-title">Monarch: Legacy of
+                                                                      Monsters</span>
+                                                            <div class="mybox">
+                                                                      <div>
+                                                                                <p class="featured-desc">Lorem ipsum
+                                                                                          dolor sit amet consectetur
+                                                                                          adipisicing
+                                                                                          elit. Nam animi laudantium
+                                                                                          nemo totam illo voluptate odio
+                                                                                          voluptates,
+                                                                                          rerum cupiditate temporibus
+                                                                                          adipisci quibusdam facilis et
+                                                                                          eligendi
+                                                                                          illo voluptate odio
+                                                                                          voluptates,<span
+                                                                                                    id="span2">...</span>
+                                                                                          <span class="mybox1"
+                                                                                                    id="mybox2id">
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates,
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam
+                                                                                          </span>
+                                                                                          <button class="read-more-btn"
+                                                                                                    id="mybuttonid2"
+                                                                                                    onclick="changeReadMore2()">read
+                                                                                                    more</button>
+                                                                                </p>
+                                                                      </div>
+                                                            </div>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide> -->
+
+                                        <div class="autoplay-progress" slot="container-end">
+                                                  <svg viewBox="0 0 48 48">
+                                                            <circle cx="24" cy="24" r="20"></circle>
+                                                  </svg>
+                                                  <span></span>
+                                        </div>
+
+                                        <!-- Swiper JS -->
+                                        <script
+                                                  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+                              </swiper-container>
+
+                              <div class="movie-list-container">
+                                        <div class="movie-list-title-container">
+                                                  <div class="movie-list-title">
+                                                            <h1>New Releases</h1>
+                                                  </div>
+                                                  <div class="movie-list-view_all">
+                                                            <h3>View-All</h3>
+                                                  </div>
+                                        </div>
+
+                                        <div class="movie-list-wrapper">
+                                                  <div class="movie-list">
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Bad Boys: Ride
+                                                                                or Die</span>
+                                                                      <p class="movie-list-item-desc">This Summer, the
+                                                                                world's favorite Bad Boys are back with
+                                                                                their iconic mix of edge-of-your seat
+                                                                                action and outrageous comedy but this
+                                                                                time with a twist: Miami's finest are
+                                                                                now on the run.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Kingdome of
+                                                                                the Planet of the Apes</span>
+                                                                      <p class="movie-list-item-desc">Many years after
+                                                                                the reign of Caesar, a young ape goes on
+                                                                                a journey that will lead him to question
+                                                                                everything he's been taught about the
+                                                                                past and make choices that will define a
+                                                                                future for a</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">My Spy: The
+                                                                                Eternal City</span>
+                                                                      <p class="movie-list-item-desc"> JJ, a veteran CIA
+                                                                                agent, reunites with his protégé Sophie,
+                                                                                in order to prevent a catastrophic
+                                                                                nuclear scheme aimed at the Vatican,
+                                                                                which disrupts a high school choir trip
+                                                                                to Italy.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/The-Boys.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">The
+                                                                                Boys</span>
+                                                                      <p class="movie-list-item-desc">A group of
+                                                                                vigilantes set out to take down corrupt
+                                                                                superheroes who abuse their superpowers.
+                                                                      </p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Vikings-Valhalla.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Vikings
+                                                                                Valhalla</span>
+                                                                      <p class="movie-list-item-desc">Follow-up series
+                                                                                to 'Vikings' set 100 years later and
+                                                                                focusing on the adventures of Leif
+                                                                                Erikson, Freydis, Harald Hardrada, and
+                                                                                the Norman King William the Conqueror.
+                                                                      </p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/mayor-of-kingstown.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Mayor of
+                                                                                Kingstown</span>
+                                                                      <p class="movie-list-item-desc">The McLusky family
+                                                                                are power brokers tackling themes of
+                                                                                systemic racism, corruption and
+                                                                                inequality in Kingstown, Michigan, where
+                                                                                the business of incarceration is the
+                                                                                only thriving industry.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/die-hart-die-harter.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Die Hart: Die
+                                                                                Harter</span>
+                                                                      <p class="movie-list-item-desc">Hart plans an
+                                                                                innovative action film with unscripted,
+                                                                                unexpected scenes to cement his legacy
+                                                                                as the greatest. However, a blind spot
+                                                                                leads him to fall victim to a vengeful
+                                                                                plot from his past.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg"
+                                                                                alt="">
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                Hogwarts: Tournament of Houses</span>
+                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                                Potter are tested using their knowledge
+                                                                                to compete for the coveted House Cup.
+                                                                                Including a few special guest
+                                                                                appearances.</p>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                  </div>
+                                                  <i class="fa-solid fa-chevron-right arrow"></i>
+                                        </div>
+                              </div>
+
+                    </div>
+          </div>
 
 
-          
+
+
           <script src="app.js"></script>
 </body>
+
 </html>

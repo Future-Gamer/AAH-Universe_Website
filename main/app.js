@@ -19,37 +19,8 @@ arrows.forEach((arrow, i) => {
 
           })
 
-          // console.log(Math.floor(window.innerWidth / 270))
+          console.log(Math.floor(window.innerWidth / 360))
 })
-
-
-// const arrows = document.querySelectorAll(".arrow");
-// const movieLists = document.querySelectorAll(".movie-list");
-
-// arrows.forEach((arrow, i) => {
-//     const itemNumber = movieLists[i].querySelectorAll("img").length;
-//     let clickCounter = 0;
-
-//     const handleArrowClick = () => {
-//         const ratio = Math.floor(window.innerWidth / 360);
-//         clickCounter++;
-
-//         if (itemNumber - (3 + clickCounter) + (3 - ratio) >= 0) {
-//             movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 390}px)`;
-//         } else {
-//             movieLists[i].style.transform = "translateX(0)";
-//             clickCounter = 0;
-//         }
-//     };
-
-//     arrow.addEventListener("click", handleArrowClick);
-// });
-
-// // Initial call to handleArrowClick to set the initial state
-// handleArrowClick();
-
-// // Listen for window resize events
-// window.addEventListener("resize", handleArrowClick);
 
 
 
@@ -67,24 +38,32 @@ swiperEl.addEventListener("autoplaytimeleft", (e) => {
 
 // Login Button
 function loginpage() {
-           window.location="/Login_and_Sign-up/registration.html"
+          window.location = "/Login_and_Sign-up/registration.html"
 }
 
 // Home-Page Button
 function homepage() {
-          window.location="/main/index.html"
+          window.location = "/main/index.html"
 }
 // Movie-Page Button
 function moviepage() {
-          window.location="/main/index_movie.html"
+          window.location = "/main/index_movie.html"
 }
 // Series-Page Button
 function seriespage() {
-          window.location="/main/index_series.html"
+          window.location = "/main/index_series.html"
 }
 // Anime-Page Button
 function animepage() {
-          window.location="/main/index_anime.html"
+          window.location = "/main/index_anime.html"
+}
+// Popular-Page Button
+function popularpage() {
+          window.location = "/main/index_popular.html"
+}
+// Trends-Page Button
+function trendpage() {
+          window.location = "/main/index_trend.html"
 }
 
 
