@@ -11,7 +11,11 @@ body
     align-items: center;
     min-height: 100vh;
     background: #23242a;
+<<<<<<< HEAD
     background-image: url(/Login/batman.jpg);
+=======
+    background-image: url(batman.jpg);
+>>>>>>> c7e012785bb4b99bb35f8a15266bdb15b2cb7513
     background-size: 100%;
     /* background-size: cover; */
     /* width: 100%;
