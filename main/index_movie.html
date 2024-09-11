@@ -7,6 +7,8 @@
           <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
                     rel="stylesheet">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+          <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
           <title>AAH Universe - Watch Movies</title>
 </head>
@@ -15,11 +17,11 @@
           <div class="navbar">
                     <div class="navbar-container">
                               <div>
-                                        <img class="navbar-logo" src="/Images/AAH-universe-icon.png" alt="">
+                                        <img class="navbar-logo" src="/Images/Project_Logo-removebg-preview.png" alt="">
                               </div>
-                              <div class="logo-container">
+                              <!-- <div class="logo-container">
                                         <h1 class="logo" onclick="homepage()">AAH Universe</h1>
-                              </div>
+                              </div> -->
                               <div class="menu-container">
                                         <ul class="menu-list">
                                                   <li class="menu-list-item" onclick="homepage()">Home
@@ -38,6 +40,27 @@
                                                   <li class="menu-list-item" onclick="trendpage()">Trends</li>
 
                                         </ul>
+                              </div>
+                              <div class="search_user">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search..." id="search_input">
+                                        <div class="search">
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+                                                  
+                                        </div>
                               </div>
                               <div class="profile-container">
                                         <img class="profile-picture" alt="" src="/Images/profile-image.png">
@@ -151,20 +174,18 @@
 
                                         <swiper-slide>
                                                   <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/friends.jpg');">
-                                                            <span class="featured-title">Friends</span>
-                                                            <p class="featured-desc">Follows the personal and
-                                                                      professional lives of six twenty to thirty
-                                                                      year-old friends living in the Manhattan borough
-                                                                      of New York City.
-                                                            </p>
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Code-8.jpg');">
+                                                            <span class="featured-title">Code 8</span>
+                                                            <p class="featured-desc">A super-powered construction worker
+                                                                      falls in with a group of criminals in order to
+                                                                      raise the funds to help his ill mother.
                                                             <div class="featured-details">
-                                                                      <h6>TV Series</h6>
-                                                                      <h5 id="gen">Comedy | Romance</h5>
-                                                                      <h4>1994 - 2004</h4>
+                                                                      <!-- <h6>TV Series</h6> -->
+                                                                      <h5 id="gen">Action | Crime | </h5>
+                                                                      <h4>2019</h4>
                                                                       <h3 id="rate">
                                                                                 <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.9
+                                                                                          class="bi bi-star-fill"></i>6.1
                                                                                 /10
                                                                                 </p>
                                                                       </h3>
@@ -177,20 +198,49 @@
 
                                         <swiper-slide>
                                                   <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Loki-S2.jpg');">
-                                                            <span class="featured-title">Loki</span>
-                                                            <p class="featured-desc">The mercurial villain Loki resumes
-                                                                      his role as the God of Mischief in a new series
-                                                                      that takes place after the events of “Avengers:
-                                                                      Endgame.”
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Teen-Wolf-the-movie.jpg');">
+                                                            <span class="featured-title">Teen Wolf: The Movie</span>
+                                                            <p class="featured-desc">A terrifying evil has emerged. The
+                                                                      wolves howl once again, but only a Werewolf like
+                                                                      Scott McCall, can gather both new allies and
+                                                                      reunite trusted friends to fight back against what
+                                                                      could be the most powerful and deadliest enemy.
                                                             </p>
                                                             <div class="featured-details">
-                                                                      <h6>A Disney+ Original Series</h6>
+                                                                      <!-- <h6>A Disney+ Original Series</h6> -->
+                                                                      <h5 id="gen">Action | Drama | Fantasy</h5>
+                                                                      <h4>2023</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>5.5
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Avatar_the_way_of_water.jpg');">
+                                                            <span class="featured-title">Avatar: The Way of Water</span>
+                                                            <p class="featured-desc">Jake Sully lives with his newfound
+                                                                      family formed on the extrasolar moon Pandora. Once
+                                                                      a familiar threat returns to finish what was
+                                                                      previously started, Jake must work with Neytiri
+                                                                      and the army of the Na'vi race to protect their
+                                                                      home.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <!-- <h6>TV Series</h6> -->
                                                                       <h5 id="gen">Action | Adventure | Fantasy</h5>
-                                                                      <h4>2021 - 2023</h4>
+                                                                      <h4>2022</h4>
                                                                       <h3 id="rate">
                                                                                 <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.2
+                                                                                          class="bi bi-star-fill"></i>7.5
                                                                                 / 10
                                                                                 </p>
                                                                       </h3>
@@ -203,20 +253,22 @@
 
                                         <swiper-slide>
                                                   <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/how-i-met-your-mother.jpg');">
-                                                            <span class="featured-title">How I Met Your Mother</span>
-                                                            <p class="featured-desc">A father recounts to his children -
-                                                                      through a series of flashbacks - the journey he
-                                                                      and his four best friends took leading up to him
-                                                                      meeting their mother.
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Pirates_of_the_Caribbean_5.jpg');">
+                                                            <span class="featured-title">Pirates of The Caribbean: Dead
+                                                                      Men Tell No Tales</span>
+                                                            <p class="featured-desc">Captain Jack Sparrow searches for
+                                                                      the Trident of Poseidon to rule the sea while
+                                                                      being pursued by old rival Captain Salazar and a
+                                                                      crew of deadly ghosts who have escaped from the
+                                                                      Devil's Triangle.
                                                             </p>
                                                             <div class="featured-details">
-                                                                      <h6>TV Series</h6>
-                                                                      <h5 id="gen">Comedy | Drama | Romance</h5>
-                                                                      <h4>2005 - 2014</h4>
+                                                                      <!-- <h6>TV Series</h6> -->
+                                                                      <h5 id="gen">Action | Adventure | Fantasy</h5>
+                                                                      <h4>2017</h4>
                                                                       <h3 id="rate">
                                                                                 <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.3
+                                                                                          class="bi bi-star-fill"></i>6.5
                                                                                 / 10
                                                                                 </p>
                                                                       </h3>
@@ -229,25 +281,28 @@
 
                                         <swiper-slide>
                                                   <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/Legacies.jpg');">
-                                                            <span class="featured-title">Legacies</span>
-                                                            <p class="featured-desc">Hope Mikaelson, a tribrid daughter
-                                                                      of a Vampire/Werewolf hybrid, makes her way in the
-                                                                      world.
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Joker.jpg');">
+                                                            <span class="featured-title">Joker</span>
+                                                            <p class="featured-desc">Arthur Fleck, a party clown and a
+                                                                      failed stand-up comedian, leads an impoverished
+                                                                      life with his ailing mother. However, when society
+                                                                      shuns him and brands him as a freak, he decides to
+                                                                      embrace the life of crime and chaos in Gotham
+                                                                      City.
                                                             </p>
                                                             <div class="featured-details">
-                                                                      <h6>TV Series</h6>
-                                                                      <h5 id="gen">Adventure | Drama | Fantasy</h5>
-                                                                      <h4>2018 - 2022</h4>
+                                                                      <!-- <h6>TV Series</h6> -->
+                                                                      <h5 id="gen">Crime | Drama | Thriller</h5>
+                                                                      <h4>2019 </h4>
                                                                       <h3 id="rate">
                                                                                 <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>7.2
+                                                                                          class="bi bi-star-fill"></i>8.4
                                                                                 / 10
                                                                                 </p>
                                                                       </h3>
                                                             </div>
-                                                            <button class="featured-button">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
+                                                            <button class="featured-button">WATCH<i
+                                                                                class="bi bi-play-btn"></i>
                                                             </button>
                                                   </div>
                                         </swiper-slide>
@@ -305,16 +360,15 @@
                                                   </div>
                                         </swiper-slide> -->
 
-                                        <div class="autoplay-progress" slot="container-end">
+                                        <!-- <div class="autoplay-progress" slot="container-end">
                                                   <svg viewBox="0 0 48 48">
                                                             <circle cx="24" cy="24" r="20"></circle>
                                                   </svg>
                                                   <span></span>
-                                        </div>
+                                        </div> -->
 
                                         <!-- Swiper JS -->
-                                        <script
-                                                  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+                                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
                               </swiper-container>
 
@@ -334,14 +388,26 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">Bad Boys: Ride
                                                                                 or Die</span>
-                                                                      <p class="movie-list-item-desc">This Summer, the
-                                                                                world's favorite Bad Boys are back with
-                                                                                their iconic mix of edge-of-your seat
-                                                                                action and outrageous comedy but this
-                                                                                time with a twist: Miami's finest are
-                                                                                now on the run.</p>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama | Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <!-- <p class="movie-list-item-desc"></p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
@@ -349,14 +415,18 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">Kingdome of
                                                                                 the Planet of the Apes</span>
-                                                                      <p class="movie-list-item-desc">Many years after
+                                                                      <!-- <p class="movie-list-item-desc">Many years after
                                                                                 the reign of Caesar, a young ape goes on
                                                                                 a journey that will lead him to question
                                                                                 everything he's been taught about the
                                                                                 past and make choices that will define a
-                                                                                future for a</p>
+                                                                                future for a</p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
@@ -364,14 +434,18 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">My Spy: The
                                                                                 Eternal City</span>
-                                                                      <p class="movie-list-item-desc"> JJ, a veteran CIA
+                                                                      <!-- <p class="movie-list-item-desc"> JJ, a veteran CIA
                                                                                 agent, reunites with his protégé Sophie,
                                                                                 in order to prevent a catastrophic
                                                                                 nuclear scheme aimed at the Vatican,
                                                                                 which disrupts a high school choir trip
-                                                                                to Italy.</p>
+                                                                                to Italy.</p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
@@ -379,12 +453,16 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Web-Series/The-Boys.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">The
                                                                                 Boys</span>
-                                                                      <p class="movie-list-item-desc">A group of
+                                                                      <!-- <p class="movie-list-item-desc">A group of
                                                                                 vigilantes set out to take down corrupt
                                                                                 superheroes who abuse their superpowers.
-                                                                      </p>
+                                                                      </p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
@@ -392,14 +470,18 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Web-Series/Vikings-Valhalla.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">Vikings
                                                                                 Valhalla</span>
-                                                                      <p class="movie-list-item-desc">Follow-up series
+                                                                      <!-- <p class="movie-list-item-desc">Follow-up series
                                                                                 to 'Vikings' set 100 years later and
                                                                                 focusing on the adventures of Leif
                                                                                 Erikson, Freydis, Harald Hardrada, and
                                                                                 the Norman King William the Conqueror.
-                                                                      </p>
+                                                                      </p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
@@ -407,14 +489,18 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Web-Series/mayor-of-kingstown.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">Mayor of
                                                                                 Kingstown</span>
-                                                                      <p class="movie-list-item-desc">The McLusky family
+                                                                      <!-- <p class="movie-list-item-desc">The McLusky family
                                                                                 are power brokers tackling themes of
                                                                                 systemic racism, corruption and
                                                                                 inequality in Kingstown, Michigan, where
                                                                                 the business of incarceration is the
-                                                                                only thriving industry.</p>
+                                                                                only thriving industry.</p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
@@ -422,14 +508,18 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Movies/die-hart-die-harter.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">Die Hart: Die
                                                                                 Harter</span>
-                                                                      <p class="movie-list-item-desc">Hart plans an
+                                                                      <!-- <p class="movie-list-item-desc">Hart plans an
                                                                                 innovative action film with unscripted,
                                                                                 unexpected scenes to cement his legacy
                                                                                 as the greatest. However, a blind spot
                                                                                 leads him to fall victim to a vengeful
-                                                                                plot from his past.</p>
+                                                                                plot from his past.</p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
@@ -437,18 +527,23 @@
                                                                       <img class="movie-list-item-img"
                                                                                 src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg"
                                                                                 alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
                                                                       <span class="movie-list-item-title">Harry Potter
                                                                                 Hogwarts: Tournament of Houses</span>
-                                                                      <p class="movie-list-item-desc">Superfans of Harry
+                                                                      <!-- <p class="movie-list-item-desc">Superfans of Harry
                                                                                 Potter are tested using their knowledge
                                                                                 to compete for the coveted House Cup.
                                                                                 Including a few special guest
-                                                                                appearances.</p>
+                                                                                appearances.</p> -->
                                                                       <button
                                                                                 class="movie-list-item-button">WATCH</button>
                                                             </div>
                                                   </div>
-                                                  <i class="fa-solid fa-chevron-right arrow"></i>
+                                                  <i class="fa-solid fa-chevron-left arrow-left"></i>
+                                                  <i class="fa-solid fa-chevron-right arrow-right"></i>
                                         </div>
                               </div>
 

@@ -1,5 +1,5 @@
 // Clicking arrow
-const arrows = document.querySelectorAll(".arrow");
+const arrows = document.querySelectorAll(".arrow-right");
 const movieLists = document.querySelectorAll(".movie-list");
 
 arrows.forEach((arrow, i) => {
@@ -26,19 +26,19 @@ arrows.forEach((arrow, i) => {
 
 // Initialize Swiper
 
-const progressCircle = document.querySelector(".autoplay-progress svg");
-const progressContent = document.querySelector(".autoplay-progress span");
+// const progressCircle = document.querySelector(".autoplay-progress svg");
+// const progressContent = document.querySelector(".autoplay-progress span");
 
-const swiperEl = document.querySelector("swiper-container");
-swiperEl.addEventListener("autoplaytimeleft", (e) => {
-          const [swiper, time, progress] = e.detail;
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-});
+// const swiperEl = document.querySelector("swiper-container");
+// swiperEl.addEventListener("autoplaytimeleft", (e) => {
+//           const [swiper, time, progress] = e.detail;
+//           progressCircle.style.setProperty("--progress", 1 - progress);
+//           progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+// });
 
 // Login Button
 function loginpage() {
-          window.location = "/Login_and_Sign-up/registration.html"
+          window.location = "/Login/registration.html"
 }
 
 // Home-Page Button
@@ -65,6 +65,48 @@ function popularpage() {
 function trendpage() {
           window.location = "/main/index_trend.html"
 }
+
+
+// Video-Play when hover-in and Video-Pause when hover-out
+// document.addEventListener('DOMContentLoaded', () =>
+// {
+//           const videoContainer = document.querySelector('.movie-list-item');
+//           const video = document.querySelector('.movie-list-item-trailer');
+          
+//           function playVideo() {
+//                     video.play();
+//           }
+
+//           function pauseVideo() {
+//                     video.pause();
+//           }
+
+// videoContainer.addEventListener('mouseenter', playVideo);
+// videoContainer.addEventListener('mouseleave', pauseVideo);
+
+
+
+// })
+
+document.addEventListener('DOMContentLoaded', () => {
+          const videoContainers = document.querySelectorAll('.movie-list-item');
+          const videos = document.querySelectorAll('.movie-list-item-trailer');
+
+          videoContainers.forEach((videoContainer, i) => {
+                    const video = videos[i];
+
+                    function playVideo(){
+                              video.play();
+                    }
+
+                    function pauseVideo(){
+                              video.pause();
+                    }
+
+                    videoContainer.addEventListener('mouseenter', playVideo);
+                    videoContainer.addEventListener('mouseleave', pauseVideo);
+          })
+})
 
 
 // read-more and read-less 
