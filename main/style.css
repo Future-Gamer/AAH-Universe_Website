@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
           margin: 0;
 
@@ -571,7 +570,6 @@ body {
 .toggle-ball.active{
           background-color: white;
           transform: translateX(-20px);
-=======
 * {
           margin: 0;
 
@@ -1143,5 +1141,4 @@ body {
 .toggle-ball.active{
           background-color: white;
           transform: translateX(-20px);
->>>>>>> cb74da5b7e82fc30d36353b935e3d0710525c025
 } */
