@@ -298,3 +298,11 @@ function changeReadMore10() {
 //                     changeReadMore(contentId, buttonId, spanId);
 //           });
 // }
+
+
+// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+// bad boys ride or die Button
+function badboysrideordie() {
+          window.location = "/main/Video_playback/movies/bad_boys_ride_or_die.html"
+}
