@@ -306,3 +306,7 @@ function changeReadMore10() {
 function badboysrideordie() {
           window.location = "/main/Video_playback/movies/bad_boys_ride_or_die.html"
 }
+
+function code8part2() {
+          window.location = "/main/Video_playback/movies/code-8_part-2.html"
+}
