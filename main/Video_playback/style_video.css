@@ -302,10 +302,18 @@ body {
           display: flex;
 }
 
+.castmembers-director span {
+          flex: 3;
+}
+
 .castmembers-writers {
           /* height: 400px; */
           font-family: "Grey Qo", cursive;
           display: flex;
+}
+
+.castmembers-writers span {
+          flex: 3;
 }
 
 .castmembers-cast {
@@ -316,6 +324,7 @@ body {
 
 .castmembers-cast span {
           margin-bottom: 20px;
+          flex: 3;
 }
 
 /* .castmembers {
@@ -356,6 +365,7 @@ body {
           /* margin-top: 10px; */
           margin-left: 50px;
           background-image: url("/Images/bottom_background.jpg");
+          background-blend-mode:darken;
 }
 
 .endbar .endbar-socialmedia-icons {

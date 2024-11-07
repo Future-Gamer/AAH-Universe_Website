@@ -302,7 +302,7 @@ function changeReadMore10() {
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 
-// bad boys ride or die Button
+// Movies Content Button Action
 function badboysrideordie() {
           window.location = "/main/Video_playback/movies/bad_boys_ride_or_die.html"
 }
@@ -310,3 +310,34 @@ function badboysrideordie() {
 function code8part2() {
           window.location = "/main/Video_playback/movies/code-8_part-2.html"
 }
+
+function avatar2() {
+          window.location = "/main/Video_playback/movies/avatar_the_way_of_water.html"
+}
+
+function harrypotter7_2() {
+          window.location = "/main/Video_playback/movies/harrypotter7-2.html"
+}
+
+function joker() {
+          window.location = "/main/Video_playback/movies/joker.html"
+}
+
+function pirates_of_the_carribean_5() {
+          window.location = "/main/Video_playback/movies/pirates_of_the_carribean-5.html"
+}
+
+function teenwolf_themovie() {
+          window.location = "/main/Video_playback/movies/teen_wolf_the_movie.html"
+}
+
+function venom_lettherebechange() {
+          window.location = "/main/Video_playback/movies/venom_let_there_be_change.html"
+}
+
+
+// Web-Series Content Button Action
+
+
+
+// Anime Content Button Action
