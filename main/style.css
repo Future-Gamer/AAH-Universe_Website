@@ -316,17 +316,17 @@ body {
           font-size: 20px;
           font-weight: bold;
           /* margin-top: 20px; */
-          width: 7  0%;
+          width: 70%;
           font-family: "Grey Qo", cursive;
           /* font-family: "Luxurious Roman", serif; */
 }
 
 .movie-list-title-container .movie-list-view_all{
           /* flex: 1; */
-          font-size: 15px;
+          font-size: 13px;
           margin: 15px 10px;
           text-align: center;
-          font-family: "Luxurious Roman", serif;
+          font-family: "Grey Qo", cursive;
           cursor: pointer;
 }
 
@@ -342,10 +342,19 @@ body {
           transition: all 1s ease-in-out;
 }
 
-.movie-list-container .movie-list-slide {
+.movie-list-container .movie-list-slide-1 {
           display: flex;
           margin-left: 32px;
+}
 
+.movie-list-container .movie-list-slide-2 {
+          display: flex;
+          margin-left: 5px;
+}
+
+.movie-list-container .movie-list-slide-3 {
+          display: flex;
+          margin-left: 5px;
 }
 
 .movie-list-item {
@@ -391,8 +400,9 @@ body {
 
 .movie-list-item-trailer{
           width: 250px;
-          height: auto;
+          height: 140px;
           position: absolute;
+          background-color: #000;
           top: 2%;
           left: 10px;
           opacity: 0;
@@ -405,7 +415,7 @@ body {
           color: #000;
           padding: 0 10px;
           font-size: 18px;
-          width: 250px;
+          width: 280px;
           font-weight: bolder;
           position: absolute;
           border-radius: 10px;
@@ -495,33 +505,33 @@ body {
 }
 
 
-.movie-list-wrapper {
+/* .movie-list-wrapper {
           position: relative;
           overflow: hidden;
           padding-left: 35px;
-          /* padding-right: 20px; */
+          padding-right: 20px;
 
-}
+} */
 
-.movie-list {
+/* .movie-list {
           display: flex;
           align-items: center;
           height: 450px;
           transform: translateX(0);
           transition: all 1s ease-in-out;
 
-}
+} */
 
 
-.arrow-left {
+/* .arrow-left {
           font-size: 60px;
           position: absolute;
-          /* top: 160px; */
+          top: 160px;
           top: 42%;
           padding: 0px 3px;
           left: 0;
           color:#0079ff;
-          /* background-color: #000; */
+          background-color: #000;
           opacity: 0.9;
           cursor: pointer;
 }
@@ -529,14 +539,14 @@ body {
 .arrow-left:hover{
           
           opacity: 1;
-}
+} */
 
-.arrow-right {
+/* .arrow-right {
           font-size: 60px;
           position: absolute;
-          /* top: 160px; */
+          top: 160px;
           top: 40%;
-          /* height: 60px; */
+          height: 60px;
           right: 0;
           padding: 10px 3px;
           color:#0079ff;
@@ -548,7 +558,7 @@ body {
 .arrow-right:hover{
           color:#0079ff;
           opacity: 1;
-}
+} */
 
 /* .container.active{
           background-color: white;
