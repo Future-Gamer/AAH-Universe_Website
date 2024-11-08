@@ -298,3 +298,98 @@ function changeReadMore10() {
 //                     changeReadMore(contentId, buttonId, spanId);
 //           });
 // }
+
+
+// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+// Movies Content Button Action
+function badboysrideordie() {
+          window.location = "/main/Video_playback/movies/bad_boys_ride_or_die.html"
+}
+
+function code8part2() {
+          window.location = "/main/Video_playback/movies/code-8_part-2.html"
+}
+
+function avatar2() {
+          window.location = "/main/Video_playback/movies/avatar_the_way_of_water.html"
+}
+
+function harrypotter1() {
+          window.location = "/main/Video_playback/movies/harrypotter1.html"
+}
+
+function harrypotter2() {
+          window.location = "/main/Video_playback/movies/harrypotter2.html"
+}
+
+function harrypotter3() {
+          window.location = "/main/Video_playback/movies/harrypotter3.html"
+}
+
+function harrypotter4() {
+          window.location = "/main/Video_playback/movies/harrypotter4.html"
+}
+
+function harrypotter5() {
+          window.location = "/main/Video_playback/movies/harrypotter5.html"
+}
+
+function harrypotter6() {
+          window.location = "/main/Video_playback/movies/harrypotter6.html"
+}
+
+function harrypotter7_1() {
+          window.location = "/main/Video_playback/movies/harrypotter7-1.html"
+}
+
+function harrypotter7_2() {
+          window.location = "/main/Video_playback/movies/harrypotter7-2.html"
+}
+
+function joker() {
+          window.location = "/main/Video_playback/movies/joker.html"
+}
+
+function pirates_of_the_carribean_5() {
+          window.location = "/main/Video_playback/movies/pirates_of_the_carribean-5.html"
+}
+
+function teenwolf_themovie() {
+          window.location = "/main/Video_playback/movies/teen_wolf_the_movie.html"
+}
+
+function venom_lettherebechange() {
+          window.location = "/main/Video_playback/movies/venom_let_there_be_change.html"
+}
+
+function venom_thelastdance() {
+          window.location = "/main/Video_playback/movies/venom_the_last_dance.html"
+}
+
+function kingdomoftheplanetoftheapes() {
+          window.location = "/main/Video_playback/movies/kingdom_of_the_planet_of_the_apes.html"
+}
+
+function myspy_theeternalcity() {
+   window.location = "/main/Video_playback/movies/my_spy_the_eternal_city.html"       
+}
+
+function dune2() {
+          window.location = "/main/Video_playback/movies/dune2.html"
+}
+
+function rebel_moon_2() {
+          window.location = "/main/Video_playback/movies/rebel_moon-2.html"
+}
+
+function diehart2() {
+   window.location = "/main/Video_playback/movies/die_hart-2.html"
+}
+
+
+// Web-Series Content Button Action
+
+
+
+// Anime Content Button Action

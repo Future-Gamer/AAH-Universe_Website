@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,29 +7,60 @@
           <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
                     rel="stylesheet">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+          <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-          <title>AAH Universe - Watch Anime</title>
+          <title>AAH Universe - Watch Movies</title>
 </head>
+
 <body>
           <div class="navbar">
                     <div class="navbar-container">
                               <div>
-                                        <img class="navbar-logo" src="/Images/AAH-universe-icon.png" alt="">
+                                        <img class="navbar-logo" src="/Images/Project_Logo-removebg-preview.png" alt="">
                               </div>
-                              <div class="logo-container">
+                              <!-- <div class="logo-container">
                                         <h1 class="logo" onclick="homepage()">AAH Universe</h1>
-                              </div>
+                              </div> -->
                               <div class="menu-container">
                                         <ul class="menu-list">
-                                                  <li class="menu-list-item" onclick="homepage()">Home</li>
-                                                  <li class="menu-list-item" onclick="moviepage()">Movies</li>
-                                                  <li class="menu-list-item" onclick="seriespage()">Series</li>
-                                                  <li class="menu-list-item active" onclick="animepage()">Anime</li>
+                                                  <li class="menu-list-item" onclick="homepage()">Home
+                                                            <!-- <a href="/main/index.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="moviepage()">Movies
+                                                            <!-- <a href="/main/index_movie.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="seriespage()">Series
+                                                            <!-- <a href="/main/index_series.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item active" onclick="animepage()">Anime
+                                                            <!-- <a href="/main/index_anime.html"></a> -->
+                                                  </li>
                                                   <li class="menu-list-item" onclick="popularpage()">Popular</li>
                                                   <li class="menu-list-item" onclick="trendpage()">Trends</li>
 
                                         </ul>
+                              </div>
+                              <div class="search_user">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search..." id="search_input">
+                                        <div class="search">
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+
+                                        </div>
                               </div>
                               <div class="profile-container">
                                         <img class="profile-picture" alt="" src="/Images/profile-image.png">
@@ -37,7 +69,7 @@
                                                   <i class="fa-regular fa-circle-down"></i>
                                         </div>
                                         <div>
-                                                  <button class="login-btn active" onclick="loginpage()">Login</button>
+                                                  <button class="login-btn" onclick="loginpage()">Login</button>
                                         </div>
 
                               </div>
@@ -53,9 +85,1005 @@
                     <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
           </div>
 
+          <div class="container">
+                    <div class="content-container">
+                              <!-- Swiper -->
+                              <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                                        navigation="true" space-between="30" autoplay-delay="2500"
+                                        autoplay-disabled-on-interaction="false">
+                                        <swiper-slide class="swiper-slide">
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Harry_Potter_and_the_Deathly_Hollows_part2.jpg');">
+                                                            <span class="featured-title">Harry Potter and The Deathly
+                                                                      Hollows : Part-2</span>
+                                                            <p class="featured-desc">As Harry, Ron and Hermione race
+                                                                      against time and evil to destroy the Horcruxes,
+                                                                      they uncover the existence of the three most
+                                                                      powerful objects in the wizarding world: the
+                                                                      Deathly Hallows.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h5 id="gen">Adventure | Family | Fantasy</h5>
+                                                                      <h4>2011</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.1
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Bad-Boys-Ride_or_Die.jpg');">
+                                                            <span class="featured-title">Bad Boys: Ride or Die</span>
+
+                                                            <p class="featured-desc">This Summer, the world's favorite
+                                                                      Bad Boys are back with their iconic mix of
+                                                                      edge-of-your seat action and outrageous comedy but
+                                                                      this time with a twist: Miami's finest are now on
+                                                                      the run.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h5 id="gen">Action | Adventure | Comedy</h5>
+                                                                      <h4>2024</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>7
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Venom2.jpg');">
+                                                            <span class="featured-title">Venom: Let there be
+                                                                      Change</span>
+                                                            <p class="featured-desc">Eddie Brock attempts to reignite
+                                                                      his career by interviewing serial killer Cletus
+                                                                      Kasady, who becomes the host of the symbiote
+                                                                      Carnage and escapes prison after a failed
+                                                                      execution.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <h5 id="gen">Action | Sci-Fi | Thriller</h5>
+                                                                      <h4>2021</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>5.9
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Code-8.jpg');">
+                                                            <span class="featured-title">Code 8</span>
+                                                            <p class="featured-desc">A super-powered construction worker
+                                                                      falls in with a group of criminals in order to
+                                                                      raise the funds to help his ill mother.
+                                                            <div class="featured-details">
+                                                                      <!-- <h6>TV Series</h6> -->
+                                                                      <h5 id="gen">Action | Crime | </h5>
+                                                                      <h4>2019</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>6.1
+                                                                                /10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Teen-Wolf-the-movie.jpg');">
+                                                            <span class="featured-title">Teen Wolf: The Movie</span>
+                                                            <p class="featured-desc">A terrifying evil has emerged. The
+                                                                      wolves howl once again, but only a Werewolf like
+                                                                      Scott McCall, can gather both new allies and
+                                                                      reunite trusted friends to fight back against what
+                                                                      could be the most powerful and deadliest enemy.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <!-- <h6>A Disney+ Original Series</h6> -->
+                                                                      <h5 id="gen">Action | Drama | Fantasy</h5>
+                                                                      <h4>2023</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>5.5
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Avatar2.jpg');">
+                                                            <span class="featured-title">Avatar: The Way of Water</span>
+                                                            <p class="featured-desc">Jake Sully lives with his newfound
+                                                                      family formed on the extrasolar moon Pandora. Once
+                                                                      a familiar threat returns to finish what was
+                                                                      previously started, Jake must work with Neytiri
+                                                                      and the army of the Na'vi race to protect their
+                                                                      home.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <!-- <h6>TV Series</h6> -->
+                                                                      <h5 id="gen">Action | Adventure | Fantasy</h5>
+                                                                      <h4>2022</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>7.5
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Pirates_of_the_Caribbean_5.jpg');">
+                                                            <span class="featured-title">Pirates of The Caribbean: Dead
+                                                                      Men Tell No Tales</span>
+                                                            <p class="featured-desc">Captain Jack Sparrow searches for
+                                                                      the Trident of Poseidon to rule the sea while
+                                                                      being pursued by old rival Captain Salazar and a
+                                                                      crew of deadly ghosts who have escaped from the
+                                                                      Devil's Triangle.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <!-- <h6>TV Series</h6> -->
+                                                                      <h5 id="gen">Action | Adventure | Fantasy</h5>
+                                                                      <h4>2017</h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>6.5
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH
+                                                                      <i class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/joker.jpg');">
+                                                            <span class="featured-title">Joker</span>
+                                                            <p class="featured-desc">Arthur Fleck, a party clown and a
+                                                                      failed stand-up comedian, leads an impoverished
+                                                                      life with his ailing mother. However, when society
+                                                                      shuns him and brands him as a freak, he decides to
+                                                                      embrace the life of crime and chaos in Gotham
+                                                                      City.
+                                                            </p>
+                                                            <div class="featured-details">
+                                                                      <!-- <h6>TV Series</h6> -->
+                                                                      <h5 id="gen">Crime | Drama | Thriller</h5>
+                                                                      <h4>2019 </h4>
+                                                                      <h3 id="rate">
+                                                                                <span>IMDB</span><i
+                                                                                          class="bi bi-star-fill"></i>8.4
+                                                                                / 10
+                                                                                </p>
+                                                                      </h3>
+                                                            </div>
+                                                            <button class="featured-button">WATCH<i
+                                                                                class="bi bi-play-btn"></i>
+                                                            </button>
+                                                  </div>
+                                        </swiper-slide>
+
+                                        <!-- <swiper-slide>
+                                                  <div class="featured-content"
+                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
+                                                            <span class="featured-title">Monarch: Legacy of
+                                                                      Monsters</span>
+                                                            <div class="mybox">
+                                                                      <div>
+                                                                                <p class="featured-desc">Lorem ipsum
+                                                                                          dolor sit amet consectetur
+                                                                                          adipisicing
+                                                                                          elit. Nam animi laudantium
+                                                                                          nemo totam illo voluptate odio
+                                                                                          voluptates,
+                                                                                          rerum cupiditate temporibus
+                                                                                          adipisci quibusdam facilis et
+                                                                                          eligendi
+                                                                                          illo voluptate odio
+                                                                                          voluptates,<span
+                                                                                                    id="span2">...</span>
+                                                                                          <span class="mybox1"
+                                                                                                    id="mybox2id">
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates,
+                                                                                                    reum cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam facilis et
+                                                                                                    eligendi illo
+                                                                                                    voluptate odio
+                                                                                                    voluptates, rerum
+                                                                                                    cupiditate
+                                                                                                    temporibus adipisci
+                                                                                                    quibusdam
+                                                                                          </span>
+                                                                                          <button class="read-more-btn"
+                                                                                                    id="mybuttonid2"
+                                                                                                    onclick="changeReadMore2()">read
+                                                                                                    more</button>
+                                                                                </p>
+                                                                      </div>
+                                                            </div>
+                                                            <button class="featured-button">WATCH</button>
+                                                  </div>
+                                        </swiper-slide> -->
+
+                                        <!-- <div class="autoplay-progress" slot="container-end">
+                                                  <svg viewBox="0 0 48 48">
+                                                            <circle cx="24" cy="24" r="20"></circle>
+                                                  </svg>
+                                                  <span></span>
+                                        </div> -->
+
+                                        <!-- Swiper JS -->
+                                        <script
+                                                  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+                              </swiper-container>
+
+                              <div class="movie-list-container">
+                                        <div class="movie-list-title-container">
+                                                  <div class="movie-list-title">
+                                                            <h1>New Releases</h1>
+                                                  </div>
+                                                  <div class="movie-list-view_all">
+                                                            <h3>View-All</h3>
+                                                  </div>
+                                        </div>
+
+                                        <div class="movie-list-wrapper">
+                                                  <div class="movie-list">
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Trailer/bad_boys_ride_or_die.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Bad Boys: Ride
+                                                                                or Die </span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <!-- <p class="movie-list-item-desc"></p> -->
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video02.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Kingdome of
+                                                                                the Planet of the Apes</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video03.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">My Spy: The
+                                                                                Eternal City</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/The-Boys.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video04.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">The
+                                                                                Boys</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Vikings-Valhalla.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video05.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Vikings
+                                                                                Valhalla</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/mayor-of-kingstown.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video06.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Mayor of
+                                                                                Kingstown</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/die-hart-die-harter.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video07.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Die Hart: Die
+                                                                                Harter</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video08.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                Hogwarts: Tournament of Houses</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                  </div>
+                                                  <i class="fa-solid fa-chevron-left arrow-left"></i>
+                                                  <i class="fa-solid fa-chevron-right arrow-right"></i>
+                                        </div>
+                              </div>
+
+                              <div class="movie-list-container">
+                                        <div class="movie-list-title-container">
+                                                  <div class="movie-list-title">
+                                                            <h1></h1>
+                                                  </div>
+                                                  <div class="movie-list-view_all">
+                                                            <h3>View-All</h3>
+                                                  </div>
+                                        </div>
+
+                                        <div class="movie-list-wrapper">
+                                                  <div class="movie-list">
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Bad Boys: Ride
+                                                                                or Die </span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <!-- <p class="movie-list-item-desc"></p> -->
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video02.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Kingdome of
+                                                                                the Planet of the Apes</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video03.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">My Spy: The
+                                                                                Eternal City</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/The-Boys.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video04.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">The
+                                                                                Boys</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Vikings-Valhalla.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video05.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Vikings
+                                                                                Valhalla</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/mayor-of-kingstown.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video06.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Mayor of
+                                                                                Kingstown</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/die-hart-die-harter.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video07.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Die Hart: Die
+                                                                                Harter</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video08.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                Hogwarts: Tournament of Houses</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                  </div>
+                                                  <i class="fa-solid fa-chevron-left arrow-left"></i>
+                                                  <i class="fa-solid fa-chevron-right arrow-right"></i>
+                                        </div>
+                              </div>
+                              <div class="movie-list-container">
+                                        <div class="movie-list-title-container">
+                                                  <div class="movie-list-title">
+                                                            <h1>New Releases</h1>
+                                                  </div>
+                                                  <div class="movie-list-view_all">
+                                                            <h3>View-All</h3>
+                                                  </div>
+                                        </div>
+
+                                        <div class="movie-list-wrapper">
+                                                  <div class="movie-list">
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video01.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Bad Boys: Ride
+                                                                                or Die </span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <!-- <p class="movie-list-item-desc"></p> -->
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video02.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Kingdome of
+                                                                                the Planet of the Apes</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video03.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">My Spy: The
+                                                                                Eternal City</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/The-Boys.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video04.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">The
+                                                                                Boys</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Vikings-Valhalla.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video05.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Vikings
+                                                                                Valhalla</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/mayor-of-kingstown.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video06.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Mayor of
+                                                                                Kingstown</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Movies/die-hart-die-harter.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video07.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Die Hart: Die
+                                                                                Harter</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                            <div class="movie-list-item">
+                                                                      <img class="movie-list-item-img"
+                                                                                src="/content-images/Web-Series/Harry-potter-Hogwarts-tournament-of-houses.jpg"
+                                                                                alt="">
+                                                                      <video class="movie-list-item-trailer" controls>
+                                                                                <source
+                                                                                          src="/Background_videos/video08.mp4">
+                                                                      </video>
+                                                                      <span class="movie-list-item-title">Harry Potter
+                                                                                Hogwarts: Tournament of Houses</span>
+                                                                      <div class="movie-list-item-details">
+                                                                                <h5 id="movie-gen">Crime | Drama |
+                                                                                          Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                      </div>
+                                                                      <div class="movie-list-item-rating">
+                                                                                <h3 class="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button
+                                                                                class="movie-list-item-button">WATCH</button>
+                                                            </div>
+                                                  </div>
+                                                  <i class="fa-solid fa-chevron-left arrow-left"></i>
+                                                  <i class="fa-solid fa-chevron-right arrow-right"></i>
+                                        </div>
+                              </div>
+
+                    </div>
+          </div>
+
 
 
 
           <script src="app.js"></script>
 </body>
+
 </html>

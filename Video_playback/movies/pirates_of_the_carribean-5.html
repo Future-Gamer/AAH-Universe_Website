@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="/main/Video_playback/style_video.css">
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+                    rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+          <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+          <title>AAH Universe - Watch Movies</title>
+</head>
+
+<body>
+          <div class="navbar">
+                    <div class="navbar-container">
+                              <div>
+                                        <img class="navbar-logo" src="/Images/Project_Logo-removebg-preview.png" alt="">
+                              </div>
+                              <!-- <div class="logo-container">
+                                        <h1 class="logo" onclick="homepage()">AAH Universe</h1>
+                              </div> -->
+                              <div class="menu-container">
+                                        <ul class="menu-list">
+                                                  <li class="menu-list-item" onclick="homepage()">Home
+                                                            <!-- <a href="/main/index.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item active" onclick="moviepage()">Movies
+                                                            <!-- <a href="/main/index_movie.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="seriespage()">Series
+                                                            <!-- <a href="/main/index_series.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="animepage()">Anime
+                                                            <!-- <a href="/main/index_anime.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="popularpage()">Popular</li>
+                                                  <li class="menu-list-item" onclick="trendpage()">Trends</li>
+
+                                        </ul>
+                              </div>
+                              <div class="search_user">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search..." id="search_input">
+                                        <div class="search">
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+
+                                        </div>
+                              </div>
+                              <div class="profile-container">
+                                        <img class="profile-picture" alt="" src="/Images/profile-image.png">
+                                        <div class="profile-text-container">
+                                                  <span class="profile-text">Profile</span>
+                                                  <i class="fa-regular fa-circle-down"></i>
+                                        </div>
+                                        <div>
+                                                  <button class="login-btn" onclick="loginpage()">Login</button>
+                                        </div>
+
+                              </div>
+                    </div>
+          </div>
+          <div class="sidbar">
+                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+                    <i class="left-menu-icon fa-solid fa-house"></i>
+                    <i class="left-menu-icon fa-solid fa-users"></i>
+                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
+                    <i class="left-menu-icon fa-solid fa-tv"></i>
+                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+          </div>
+
+          <div class="videoplayback-container">
+                    <div class="videoplayback-heading">
+                              <h5>AAH Universe | Movie | Pirates Of The Caribbean: Dead Men Tell No Tales</h5>
+                    </div>
+
+                    <div class="video-container">
+                              <!-- <div class="video-episode-container">
+
+                              </div> -->
+
+                              <video class="video-file" id="myVideo" controls>
+                                        <!-- <source src="/main/Video_playback/bad_boys_ride_or_die.mkv" type="video/mp4"> -->
+                                        <source src="/Trailer/bad_boys_ride_or_die.mp4" type="video/mp4">
+                              </video>
+                    </div>
+
+                    <div class="video-content-details">
+                              <img class="content-image" src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg"
+                                        alt="">
+
+                              <div class="content-details">
+                                        <h2>Pirates Of The Caribbean: Dead Men Tell No Tales</h2>
+                                        <h5>2017 | Movie | 2h 9m</h5>
+                                        <div class="content-desc">
+                                                  Captain Jack Sparrow searches for
+                                                  the Trident of Poseidon to rule the sea while
+                                                  being pursued by old rival Captain Salazar and a
+                                                  crew of deadly ghosts who have escaped from the
+                                                  Devil's Triangle.
+                                        </div>
+                                        <div class="movie-details">
+                                                  <h5 id="gen">Action | Adventure | Fantasy</h5>
+                                                  <h3 id="rate">
+                                                            <span>IMDB</span><i class="bi bi-star-fill"></i>6.5
+                                                            / 10
+                                                            </p>
+                                                  </h3>
+                                        </div>
+                              </div>
+                    </div>
+
+                    <div class="content-castmembers">
+                              Director
+                    </div>
+                    <div class="castmembers-director">
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Joachim Ronning</h4>
+                                                            <h2>Director | Writer | Producer</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+                              
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Espen Sandberg</h4>
+                                                            <h2>Director | Producer | Executive</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+                    </div>
+
+                    <div class="content-castmembers">
+                              Writer
+                    </div>
+                    <div class="castmembers-writers">
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Jeff Nathanson</h4>
+                                                            <h2>Writer | Producer | Script & Community Dept.</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Terry Rossio</h4>
+                                                            <h2>Writer | Producer | Director</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Ted Elliott</h4>
+                                                            <h2>Writer | Producer | Additional Crew</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+                    </div>
+
+
+
+                    <div class="content-castmembers">
+                              Cast
+                    </div>
+                    <div class="castmembers-cast">
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Johnny Deep</h4>
+                                                            <h2>As Captain Jack Sparrow</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Geoffrey Rush</h4>
+                                                            <h2>As Hector Barbossa</h2>
+                                                  </span>
+                                        </div>
+
+                              </span>
+
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Javier Bardem</h4>
+                                                            <h2>As Captain Salazar</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Bernton Thwaites</h4>
+                                                            <h2>As Henry Turner</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Kaya Scodelario</h4>
+                                                            <h2>As Carina Smyth</h2>
+                                                  </span>
+                                        </div>
+                                        
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Movies/Pirates_of_the_Caribbean_5.jpg" alt="">
+                                                  <span>
+                                                            <h4>Kevin McNally</h4>
+                                                            <h2>As Gibbs</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+                    </div>
+
+          </div>
+
+          <div class="endbar">
+                    <div class="endbar-socialmedia-icons">
+                              <img src="/Images/Project_Logo-removebg-preview.png" alt="">
+                              <abbr title="Discord">
+                                        <i class="fa-brands fa-discord border "></i>
+                              </abbr>
+                              <abbr title="IMDB">
+                                        <i class="fa-brands fa-imdb"></i>
+                              </abbr>
+                              <abbr title="Telegram">
+                                        <i class="fa-brands fa-telegram"></i></i>
+                              </abbr>
+                              <abbr title="Instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                              </abbr>
+                              <abbr title="Facebook">
+                                        <i class="fa-brands fa-facebook"></i>
+                              </abbr>
+                    </div>
+                    <div class="endbar-copyright">
+                              <i class="fa-regular fa-copyright"></i>aahuniverse.com
+                    </div>
+          </div>
+
+
+          <!-- <script src="app.js"></script> -->
+          <script src="/main/Video_playback/app_video.js" defer></script>
+</body>
+
+</html>
