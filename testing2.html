@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Episode List with Dropdown</title>
+          <link rel="stylesheet" href="/testing.css">
+</head>
+
+<body>
+          <div class="container">
+                    <select id="season-dropdown" class="dropdown">
+                              <option value="season1">Season 1</option>
+                              <option value="season2">Season 2</option>
+                              <option value="season3">Season 3</option>
+                              <!-- Add more seasons as needed -->
+                    </select>
+                    <div id="episode-container" class="episode-container">
+                              <ul id="season1" class="episode-list">
+                                        <li>Episode 1: Pilot</li>
+                                        <li>Episode 2: The Beginning</li>
+                                        <li>Episode 3: The Adventure Continues</li>
+                                        <!-- Add more episodes as needed -->
+                              </ul>
+                              <ul id="season2" class="episode-list" style="display: none;">
+                                        <li>Episode 1: A New Start</li>
+                                        <li>Episode 2: Challenges Arise</li>
+                                        <li>Episode 3: Overcoming Obstacles</li>
+                                        <!-- Add more episodes as needed -->
+                              </ul>
+                              <ul id="season3" class="episode-list" style="display: none;">
+                                        <li>Episode 1: New Beginnings</li>
+                                        <li>Episode 2: The Journey Forward</li>
+                                        <li>Episode 3: The Final Act</li>
+                                        <!-- Add more episodes as needed -->
+                              </ul>
+                              <!-- Add more seasons as needed -->
+                    </div>
+          </div>
+
+          <script src="/testing.js"></script>
+</body>
+
+</html>

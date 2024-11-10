@@ -172,7 +172,8 @@ body {
 
 .video-container {
           /* background-color:#; */
-          height: 550px;
+          height: 500px;
+          margin-bottom: 10px;
           margin-left: 60px;
           margin-right: 10px;
           display: flex;
@@ -180,18 +181,19 @@ body {
 
 .video-container video {
           height: 500px;
-          width: auto;
+          /* width: auto; */
           /* background-color: #fff; */
           /* margin-left: 350px; */
-          flex: 6;
+          flex: 8;
           /* right: 0; */
 }
 
 .video-episode-container {
           background-color: #3f3f3f;
           width: 350px;
-          height: 550px;
+          height: 500px;
           flex: 2;
+          border-radius: 15px;
 }
 
 /* 
@@ -230,7 +232,7 @@ body {
           margin-top: 25px;
 }
 
-.content-details h5{
+.content-details h5 {
           font-family: "Grey Qo", cursive;
           font-weight: bold;
           margin-top: 5px;
@@ -252,35 +254,37 @@ body {
           width: 600px;
 }
 
-.movie-details{
+.movie-details {
           align-items: center;
           margin-top: 10px;
           /* margin-bottom: 5px; */
           /* padding-left: 10px; */
 }
 
-.movie-details h5{
+.movie-details h5 {
           color: rgb(149, 242, 50);
           font-size: 13px;
           font-weight: bold;
           margin-right: 10px;
 }
 
-.movie-details h3{
+.movie-details h3 {
           margin-top: 5px;
           color: #fff;
           display: flex;
           align-items: center;
           font-size: 12px;
 }
-.movie-details h3 span{
+
+.movie-details h3 span {
           background: yellow;
           color: #000;
           padding: 0px 3px;
           /* margin: 0px 5px 0px 5px; */
           font-weight: bolder;
 }
-.movie-details h3 i{
+
+.movie-details h3 i {
           margin-right: 5px;
           margin-left: 5px;
 }
@@ -365,7 +369,7 @@ body {
           /* margin-top: 10px; */
           margin-left: 50px;
           background-image: url("/Images/bottom_background.jpg");
-          background-blend-mode:darken;
+          background-blend-mode: darken;
 }
 
 .endbar .endbar-socialmedia-icons {
@@ -384,7 +388,7 @@ body {
 }
 
 .endbar .endbar-socialmedia-icons .border {
-          color:#f3d7a2;
+          color: #f3d7a2;
           margin-left: 10px;
           margin-top: 30px;
           margin-bottom: 15px;
@@ -412,10 +416,83 @@ body {
 .endbar-copyright {
           color: #f3d7a2;
 }
+
 .endbar-copyright i {
           font-size: 15px;
           color: #f3d7a2;
           margin-top: 130px;
           margin-left: 20px;
           margin-right: 5px;
+}
+
+.dropdown {
+          font-family: "Grey Qo", cursive;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #bdb6b6;
+          border-radius: 15px;
+          width: 100%;
+          height: 50px;
+          padding: 8px;
+          margin-bottom: 0px;
+          cursor: pointer;
+}
+
+.episode-container {
+          height: 440px;
+          overflow-y: auto;
+          background-color: #3f3f3f;
+          /* background-color: #ffa600; */
+          border-radius: 15px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 5px;
+          font-family: "Grey Qo", cursive;
+}
+
+.episode-list {
+          list-style-type: none;
+          /* height: 20px; */
+          padding: 0;
+          margin: 0;
+          overflow-x: hidden;
+          font-size: 13px;
+}
+
+.episode-list li {
+          padding: 5px 0;
+          border-bottom: 1px solid #ccc;
+          overflow-x: hidden;
+          cursor: pointer;
+}
+
+.episode-list li:hover {
+          color: #0079ff;
+}
+
+.episode-list li:last-child {
+          border-bottom: none;
+}
+
+.episode-container .episode-list li span {
+          /* background-color: #000000; */
+          color: #ffa600;
+          font-weight: bold;
+          border-radius: 3px;
+          /* padding: 3px 10px; */
+}
+
+.active_episode {
+          font-weight: bold;
+          color: #007bff;
+          /* Change color to your preference */
+}
+
+.output {
+          font-size: 18px;
+          font-family: "Grey Qo", cursive;
+          align-items: center;
+          width: 150px;
+          background-color: #0079ff;
+          margin-left: 315px;
 }

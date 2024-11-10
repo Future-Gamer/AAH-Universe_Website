@@ -410,7 +410,9 @@ function diehart2() {
 
 
 // Web-Series Content Button Action
-
+function vampire_diaries() {
+   window.location = "/main/Video_playback/web-series/Vampire-Diaries/vampire_diaries-S1.html"
+}
 
 
 // Anime Content Button Action
