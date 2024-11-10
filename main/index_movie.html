@@ -14,880 +14,1006 @@
 </head>
 
 <body>
-          <div class="navbar">
-                    <div class="navbar-container">
-                              <div>
-                                        <img class="navbar-logo" src="/Images/Project_Logo-removebg-preview.png" alt="">
-                              </div>
-                              <!-- <div class="logo-container">
-                                        <h1 class="logo" onclick="homepage()">AAH Universe</h1>
-                              </div> -->
-                              <div class="menu-container">
-                                        <ul class="menu-list">
-                                                  <li class="menu-list-item" onclick="homepage()">Home
-                                                            <!-- <a href="/main/index.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item active" onclick="moviepage()">Movies
-                                                            <!-- <a href="/main/index_movie.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="seriespage()">Series
-                                                            <!-- <a href="/main/index_series.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="animepage()">Anime
-                                                            <!-- <a href="/main/index_anime.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="popularpage()">Popular</li>
-                                                  <li class="menu-list-item" onclick="trendpage()">Trends</li>
+          <div id="video-container">
+                    <video id="intro-video" autoplay muted>
+                              <source src="/main/intro-video.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                    </video>
+          </div>
 
-                                        </ul>
-                              </div>
-                              <div class="search_user">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <input type="text" placeholder="Search..." id="search_input">
-                                        <div class="search">
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
-
-                                        </div>
-                              </div>
-                              <div class="profile-container">
-                                        <img class="profile-picture" alt="" src="/Images/profile-image.png">
-                                        <div class="profile-text-container">
-                                                  <span class="profile-text">Profile</span>
-                                                  <i class="fa-regular fa-circle-down"></i>
-                                        </div>
+          <div id="main-content">
+                    <div class="navbar">
+                              <div class="navbar-container">
                                         <div>
-                                                  <button class="login-btn" onclick="loginpage()">Login</button>
+                                                  <img class="navbar-logo"
+                                                            src="/Images/Project_Logo-removebg-preview.png" alt="">
                                         </div>
+                                        <!-- <div class="logo-container">
+                                                  <h1 class="logo" onclick="homepage()">AAH Universe</h1>
+                                        </div> -->
+                                        <div class="menu-container">
+                                                  <ul class="menu-list">
+                                                            <li class="menu-list-item" onclick="homepage()">Home
+                                                                      <!-- <a href="/main/index.html"></a> -->
+                                                            </li>
+                                                            <li class="menu-list-item active" onclick="moviepage()">
+                                                                      Movies
+                                                                      <!-- <a href="/main/index_movie.html"></a> -->
+                                                            </li>
+                                                            <li class="menu-list-item" onclick="seriespage()">Series
+                                                                      <!-- <a href="/main/index_series.html"></a> -->
+                                                            </li>
+                                                            <li class="menu-list-item" onclick="animepage()">Anime
+                                                                      <!-- <a href="/main/index_anime.html"></a> -->
+                                                            </li>
+                                                            <li class="menu-list-item" onclick="popularpage()">Popular
+                                                            </li>
+                                                            <li class="menu-list-item" onclick="trendpage()">Trends</li>
 
+                                                  </ul>
+                                        </div>
+                                        <div class="search_user">
+                                                  <i class="fa-solid fa-magnifying-glass"></i>
+                                                  <input type="text" placeholder="Search..." id="search_input">
+                                                  <div class="search">
+                                                            <!-- <a href="" class="card">
+                                                                      <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                                      <div class="cont">
+                                                                                <h3>The Boys</h3>
+                                                                                <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                                      </div>
+                                                            </a> -->
+                                                            <!-- <a href="" class="card">
+                                                                      <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                                      <div class="cont">
+                                                                                <h3>The Boys</h3>
+                                                                                <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                                      </div>
+                                                            </a> -->
+
+                                                  </div>
+                                        </div>
+                                        <div class="profile-container">
+                                                  <img class="profile-picture" alt="" src="/Images/profile-image.png">
+                                                  <div class="profile-text-container">
+                                                            <span class="profile-text">Profile</span>
+                                                            <i class="fa-regular fa-circle-down"></i>
+                                                  </div>
+                                                  <div>
+                                                            <button class="login-btn"
+                                                                      onclick="loginpage()">Login</button>
+                                                  </div>
+
+                                        </div>
                               </div>
                     </div>
-          </div>
-          <div class="sidbar">
-                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
-                    <i class="left-menu-icon fa-solid fa-house"></i>
-                    <i class="left-menu-icon fa-solid fa-users"></i>
-                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
-                    <i class="left-menu-icon fa-solid fa-tv"></i>
-                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
-                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
-          </div>
+                    <div class="sidbar">
+                              <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+                              <i class="left-menu-icon fa-solid fa-house"></i>
+                              <i class="left-menu-icon fa-solid fa-users"></i>
+                              <i class="left-menu-icon fa-solid fa-bookmark"></i>
+                              <i class="left-menu-icon fa-solid fa-tv"></i>
+                              <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+                              <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+                    </div>
 
-          <div class="container">
-                    <div class="content-container">
-                              <!-- Swiper -->
-                              <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
-                                        navigation="true" space-between="30" autoplay-delay="2500"
-                                        autoplay-disabled-on-interaction="false">
-                                        <swiper-slide class="swiper-slide">
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Harry_Potter_and_the_Deathly_Hollows_part2.jpg');">
-                                                            <span class="featured-title">Harry Potter and The Deathly
-                                                                      Hallows : Part-2</span>
-                                                            <p class="featured-desc">As Harry, Ron and Hermione race
-                                                                      against time and evil to destroy the Horcruxes,
-                                                                      they uncover the existence of the three most
-                                                                      powerful objects in the wizarding world: the
-                                                                      Deathly Hallows.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <h5 id="gen">Adventure | Family | Fantasy</h5>
-                                                                      <h4>2011</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.1
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button"
-                                                                      onclick="harrypotter7_2()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Bad-Boys-Ride_or_Die.jpg');">
-                                                            <span class="featured-title">Bad Boys: Ride or Die</span>
-
-                                                            <p class="featured-desc">This Summer, the world's favorite
-                                                                      Bad Boys are back with their iconic mix of
-                                                                      edge-of-your seat action and outrageous comedy but
-                                                                      this time with a twist: Miami's finest are now on
-                                                                      the run.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <h5 id="gen">Action | Adventure | Comedy</h5>
-                                                                      <h4>2024</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>7
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button"
-                                                                      onclick="badboysrideordie()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Venom2.jpg');">
-                                                            <span class="featured-title">Venom: Let There Be
-                                                                      Carnage</span>
-                                                            <p class="featured-desc">Eddie Brock attempts to reignite
-                                                                      his career by interviewing serial killer Cletus
-                                                                      Kasady, who becomes the host of the symbiote
-                                                                      Carnage and escapes prison after a failed
-                                                                      execution.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <h5 id="gen">Action | Sci-Fi | Thriller</h5>
-                                                                      <h4>2021</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>5.9
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button"
-                                                                      onclick="venom_lettherebechange()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Code-8_part-2.jpg');">
-                                                            <span class="featured-title">Code 8: Part II</span>
-                                                            <p class="featured-desc">Follows a girl fighting to get
-                                                                      justice for her brother who was slain by corrupt
-                                                                      police officers. She enlists the help of an ex-con
-                                                                      and his former partner to face off against a
-                                                                      highly regarded and well-protected police
-                                                                      sergeant.
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Action | Crime | Sci-Fi</h5>
-                                                                      <h4>2019</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>5.7
-                                                                                /10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button" onclick="code8part2()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Teen-Wolf-the-movie.jpg');">
-                                                            <span class="featured-title">Teen Wolf: The Movie</span>
-                                                            <p class="featured-desc">A terrifying evil has emerged. The
-                                                                      wolves howl once again, but only a Werewolf like
-                                                                      Scott McCall, can gather both new allies and
-                                                                      reunite trusted friends to fight back against what
-                                                                      could be the most powerful and deadliest enemy.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>A Disney+ Original Series</h6> -->
-                                                                      <h5 id="gen">Action | Drama | Fantasy</h5>
-                                                                      <h4>2023</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>5.5
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button"
-                                                                      onclick="teenwolf_themovie()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Avatar2.jpg');">
-                                                            <span class="featured-title">Avatar: The Way of Water</span>
-                                                            <p class="featured-desc">Jake Sully lives with his newfound
-                                                                      family formed on the extrasolar moon Pandora. Once
-                                                                      a familiar threat returns to finish what was
-                                                                      previously started, Jake must work with Neytiri
-                                                                      and the army of the Na'vi race to protect their
-                                                                      home.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Action | Adventure | Sci-Fi</h5>
-                                                                      <h4>2022</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>7.5
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button" onclick="avatar2()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Pirates_of_the_Caribbean_5.jpg');">
-                                                            <span class="featured-title">Pirates of The Caribbean: Dead
-                                                                      Men Tell No Tales</span>
-                                                            <p class="featured-desc">Captain Jack Sparrow searches for
-                                                                      the Trident of Poseidon to rule the sea while
-                                                                      being pursued by old rival Captain Salazar and a
-                                                                      crew of deadly ghosts who have escaped from the
-                                                                      Devil's Triangle.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Action | Adventure | Fantasy</h5>
-                                                                      <h4>2017</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>6.5
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button"
-                                                                      onclick="pirates_of_the_carribean_5()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/joker.jpg');">
-                                                            <span class="featured-title">Joker</span>
-                                                            <p class="featured-desc">Arthur Fleck, a party clown and a
-                                                                      failed stand-up comedian, leads an impoverished
-                                                                      life with his ailing mother. However, when society
-                                                                      shuns him and brands him as a freak, he decides to
-                                                                      embrace the life of crime and chaos in Gotham
-                                                                      City.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Crime | Drama | Thriller</h5>
-                                                                      <h4>2019 </h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.4
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button" onclick="joker()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <!-- <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
-                                                            <span class="featured-title">Monarch: Legacy of
-                                                                      Monsters</span>
-                                                            <div class="mybox">
-                                                                      <div>
-                                                                                <p class="featured-desc">Lorem ipsum
-                                                                                          dolor sit amet consectetur
-                                                                                          adipisicing
-                                                                                          elit. Nam animi laudantium
-                                                                                          nemo totam illo voluptate odio
-                                                                                          voluptates,
-                                                                                          rerum cupiditate temporibus
-                                                                                          adipisci quibusdam facilis et
-                                                                                          eligendi
-                                                                                          illo voluptate odio
-                                                                                          voluptates,<span
-                                                                                                    id="span2">...</span>
-                                                                                          <span class="mybox1"
-                                                                                                    id="mybox2id">
-                                                                                                    reum cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam facilis et
-                                                                                                    eligendi illo
-                                                                                                    voluptate odio
-                                                                                                    voluptates, rerum
-                                                                                                    cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam illo
-                                                                                                    voluptate odio
-                                                                                                    voluptates,
-                                                                                                    reum cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam facilis et
-                                                                                                    eligendi illo
-                                                                                                    voluptate odio
-                                                                                                    voluptates, rerum
-                                                                                                    cupiditate
-                                                                                                    temporibus adipisci
-                                                                                                    quibusdam
-                                                                                          </span>
-                                                                                          <button class="read-more-btn"
-                                                                                                    id="mybuttonid2"
-                                                                                                    onclick="changeReadMore2()">read
-                                                                                                    more</button>
-                                                                                </p>
-                                                                      </div>
-                                                            </div>
-                                                            <button class="featured-button">WATCH</button>
-                                                  </div>
-                                        </swiper-slide> -->
-
-                                        <!-- <div class="autoplay-progress" slot="container-end">
-                                                  <svg viewBox="0 0 48 48">
-                                                            <circle cx="24" cy="24" r="20"></circle>
-                                                  </svg>
-                                                  <span></span>
-                                        </div> -->
-
-                                        <!-- Swiper JS -->
-                                        <script
-                                                  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-                              </swiper-container>
-
-                              <div class="movie-list-container">
-                                        <div class="movie-list-title-container">
-                                                  <div class="movie-list-title">
-                                                            <h1>New Releases</h1>
-                                                  </div>
-                                                  <div class="movie-list-view_all">
-                                                            <h3>View-All</h3>
-                                                  </div>
-                                        </div>
-
-                                        <swiper-container class="movie-list-swiper" pagination="true"
-                                                  pagination-clickable="true" navigation="true">
-                                                  <swiper-slide class="movie-list-slide-1">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Venom-3.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/venom-3.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Venom: The
-                                                                                Last Dance</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Sci-Fi
-                                                                                </h5>
-                                                                                <h4>2024 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>6.2
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button" onclick="venom_thelastdance()">WATCH</button>
-                                                            </div>
-
-
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/kingdom_of_the_planet_of_the_apes.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Kingdom of
-                                                                                the Planet of the Apes</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Sci-Fi
-                                                                                </h5>
-                                                                                <h4>2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>6.9
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button" onclick="kingdomoftheplanetoftheapes()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/my_spy_the_eternal_city.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">My Spy: The
-                                                                                Eternal City</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Spy | Comedy
-                                                                                </h5>
-                                                                                <h4>2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>5.6
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button" onclick="myspy_theeternalcity()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/bad_boys_ride_or_die.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Bad Boys: Ride
-                                                                                or Die </span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Crime | Drama |
-                                                                                          Thriller
-                                                                                </h5>
-                                                                                <h4>2019 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.4
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                  </swiper-slide>
-
-                                                  <swiper-slide class="movie-list-slide-2">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/dune-part2.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/dune2.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Dune: Part-2</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Sci-Fi
-                                                                                </h5>
-                                                                                <h4>2024 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.5 
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button
-                                                                                class="movie-list-item-button" onclick="dune2()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/rebel-moon-part2.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/rebel_moon-2.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Rebel Moon - Part Two: The Scargiver</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Fantasy
-                                                                                </h5>
-                                                                                <h4>2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>5.3
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button" onclick="rebel_moon_2() ">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/die-hart-die-harter.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/die_hart2.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Die Hart 2: Die Harter</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Comedy
-                                                                                </h5>
-                                                                                <h4>2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>4.3
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button" onclick="diehart2()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/furiosa_mad_max_saga.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/furiosa_mad_max_saga.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Furiosa: A Mad Max Saga</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Sci-Fi
-                                                                                </h5>
-                                                                                <h4>2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.5
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-                                                  </swiper-slide>
-                                        </swiper-container>
-                              </div>
-
-                              <div class="movie-list-container">
-                                        <div class="movie-list-title-container">
-                                                  <div class="movie-list-title">
-                                                            <h1>Harry Potter Series</h1>
-                                                  </div>
-                                                  <div class="movie-list-view_all">
-                                                            <h3>View-All</h3>
-                                                  </div>
-                                        </div>
-
-                                        <swiper-container class="movie-list-swiper" pagination="true"
-                                                  pagination-clickable="true" navigation="true">
-                                                  <swiper-slide class="movie-list-slide-1">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-1.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-1.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Sorcerer's Stone</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2001 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.6
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter1()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-2.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Chamber of Secrets</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2002 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.4
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter2()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-3.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-3.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Prisoner of Azkaban</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2004 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.9
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter3()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-4.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-4.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Goblet of Fire</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2005 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.7
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter4()">WATCH</button>
-                                                            </div>
-                                                  </swiper-slide>
-
-                                                  <swiper-slide class="movie-list-slide-2">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-5.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-5.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Order of the Phoenix</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2007 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.5
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter5()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-6.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-6.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Half-Blood Prince</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2009 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.6
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter6()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-7.1.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-7.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Deathly Hallows: Part 1</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2010 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.7
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter7_1()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Movies/Harry-Potter-7.2.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/HarryPotter-8.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Harry Potter
-                                                                                and The Deathly Hallows: Part 2</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2011 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
+                    <div class="container">
+                              <div class="content-container">
+                                        <!-- Swiper -->
+                                        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                                                  navigation="true" space-between="30" autoplay-delay="2500"
+                                                  autoplay-disabled-on-interaction="false">
+                                                  <swiper-slide class="swiper-slide">
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Harry_Potter_and_the_Deathly_Hollows_part2.jpg');">
+                                                                      <span class="featured-title">Harry Potter and The
+                                                                                Deathly
+                                                                                Hallows : Part-2</span>
+                                                                      <p class="featured-desc">As Harry, Ron and
+                                                                                Hermione race
+                                                                                against time and evil to destroy the
+                                                                                Horcruxes,
+                                                                                they uncover the existence of the three
+                                                                                most
+                                                                                powerful objects in the wizarding world:
+                                                                                the
+                                                                                Deathly Hallows.
+                                                                      </p>
+                                                                      <div class="featured-details">
+                                                                                <h5 id="gen">Adventure | Family |
+                                                                                          Fantasy</h5>
+                                                                                <h4>2011</h4>
+                                                                                <h3 id="rate">
                                                                                           <span>IMDB</span><i
                                                                                                     class="bi bi-star-fill"></i>8.1
                                                                                           / 10
                                                                                           </p>
                                                                                 </h3>
                                                                       </div>
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter7_2()">WATCH</button>
+                                                                      <button class="featured-button"
+                                                                                onclick="harrypotter7_2()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
                                                             </div>
                                                   </swiper-slide>
-                                        </swiper-container>
-                              </div>
 
-                              <div class="endbar">
-                                        <div class="endbar-socialmedia-icons">
-                                                  <img src="/Images/Project_Logo-removebg-preview.png" alt="">
-                                                  <abbr title="Discord">
-                                                            <i class="fa-brands fa-discord border "></i>
-                                                  </abbr>
-                                                  <abbr title="IMDB">
-                                                            <i class="fa-brands fa-imdb"></i>
-                                                  </abbr>
-                                                  <abbr title="Telegram">
-                                                            <i class="fa-brands fa-telegram"></i></i>
-                                                  </abbr>
-                                                  <abbr title="Instagram">
-                                                            <i class="fa-brands fa-instagram"></i>
-                                                  </abbr>
-                                                  <abbr title="Facebook">
-                                                            <i class="fa-brands fa-facebook"></i>
-                                                  </abbr>
+                                                  <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Bad-Boys-Ride_or_Die.jpg');">
+                                                                      <span class="featured-title">Bad Boys: Ride or
+                                                                                Die</span>
+
+                                                                      <p class="featured-desc">This Summer, the world's
+                                                                                favorite
+                                                                                Bad Boys are back with their iconic mix
+                                                                                of
+                                                                                edge-of-your seat action and outrageous
+                                                                                comedy but
+                                                                                this time with a twist: Miami's finest
+                                                                                are now on
+                                                                                the run.
+                                                                      </p>
+                                                                      <div class="featured-details">
+                                                                                <h5 id="gen">Action | Adventure | Comedy
+                                                                                </h5>
+                                                                                <h4>2024</h4>
+                                                                                <h3 id="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>7
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button class="featured-button"
+                                                                                onclick="badboysrideordie()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
+                                                            </div>
+                                                  </swiper-slide>
+
+                                                  <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Venom2.jpg');">
+                                                                      <span class="featured-title">Venom: Let There Be
+                                                                                Carnage</span>
+                                                                      <p class="featured-desc">Eddie Brock attempts to
+                                                                                reignite
+                                                                                his career by interviewing serial killer
+                                                                                Cletus
+                                                                                Kasady, who becomes the host of the
+                                                                                symbiote
+                                                                                Carnage and escapes prison after a
+                                                                                failed
+                                                                                execution.
+                                                                      </p>
+                                                                      <div class="featured-details">
+                                                                                <h5 id="gen">Action | Sci-Fi | Thriller
+                                                                                </h5>
+                                                                                <h4>2021</h4>
+                                                                                <h3 id="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>5.9
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button class="featured-button"
+                                                                                onclick="venom_lettherebechange()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
+                                                            </div>
+                                                  </swiper-slide>
+
+                                                  <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Code-8_part-2.jpg');">
+                                                                      <span class="featured-title">Code 8: Part
+                                                                                II</span>
+                                                                      <p class="featured-desc">Follows a girl fighting
+                                                                                to get
+                                                                                justice for her brother who was slain by
+                                                                                corrupt
+                                                                                police officers. She enlists the help of
+                                                                                an ex-con
+                                                                                and his former partner to face off
+                                                                                against a
+                                                                                highly regarded and well-protected
+                                                                                police
+                                                                                sergeant.
+                                                                      <div class="featured-details">
+                                                                                <!-- <h6>TV Series</h6> -->
+                                                                                <h5 id="gen">Action | Crime | Sci-Fi
+                                                                                </h5>
+                                                                                <h4>2019</h4>
+                                                                                <h3 id="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>5.7
+                                                                                          /10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button class="featured-button"
+                                                                                onclick="code8part2()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
+                                                            </div>
+                                                  </swiper-slide>
+
+                                                  <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Teen-Wolf-the-movie.jpg');">
+                                                                      <span class="featured-title">Teen Wolf: The
+                                                                                Movie</span>
+                                                                      <p class="featured-desc">A terrifying evil has
+                                                                                emerged. The
+                                                                                wolves howl once again, but only a
+                                                                                Werewolf like
+                                                                                Scott McCall, can gather both new allies
+                                                                                and
+                                                                                reunite trusted friends to fight back
+                                                                                against what
+                                                                                could be the most powerful and deadliest
+                                                                                enemy.
+                                                                      </p>
+                                                                      <div class="featured-details">
+                                                                                <!-- <h6>A Disney+ Original Series</h6> -->
+                                                                                <h5 id="gen">Action | Drama | Fantasy
+                                                                                </h5>
+                                                                                <h4>2023</h4>
+                                                                                <h3 id="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>5.5
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button class="featured-button"
+                                                                                onclick="teenwolf_themovie()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
+                                                            </div>
+                                                  </swiper-slide>
+
+                                                  <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Avatar2.jpg');">
+                                                                      <span class="featured-title">Avatar: The Way of
+                                                                                Water</span>
+                                                                      <p class="featured-desc">Jake Sully lives with his
+                                                                                newfound
+                                                                                family formed on the extrasolar moon
+                                                                                Pandora. Once
+                                                                                a familiar threat returns to finish what
+                                                                                was
+                                                                                previously started, Jake must work with
+                                                                                Neytiri
+                                                                                and the army of the Na'vi race to
+                                                                                protect their
+                                                                                home.
+                                                                      </p>
+                                                                      <div class="featured-details">
+                                                                                <!-- <h6>TV Series</h6> -->
+                                                                                <h5 id="gen">Action | Adventure | Sci-Fi
+                                                                                </h5>
+                                                                                <h4>2022</h4>
+                                                                                <h3 id="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>7.5
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button class="featured-button"
+                                                                                onclick="avatar2()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
+                                                            </div>
+                                                  </swiper-slide>
+
+                                                  <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Pirates_of_the_Caribbean_5.jpg');">
+                                                                      <span class="featured-title">Pirates of The
+                                                                                Caribbean: Dead
+                                                                                Men Tell No Tales</span>
+                                                                      <p class="featured-desc">Captain Jack Sparrow
+                                                                                searches for
+                                                                                the Trident of Poseidon to rule the sea
+                                                                                while
+                                                                                being pursued by old rival Captain
+                                                                                Salazar and a
+                                                                                crew of deadly ghosts who have escaped
+                                                                                from the
+                                                                                Devil's Triangle.
+                                                                      </p>
+                                                                      <div class="featured-details">
+                                                                                <!-- <h6>TV Series</h6> -->
+                                                                                <h5 id="gen">Action | Adventure |
+                                                                                          Fantasy</h5>
+                                                                                <h4>2017</h4>
+                                                                                <h3 id="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>6.5
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button class="featured-button"
+                                                                                onclick="pirates_of_the_carribean_5()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
+                                                            </div>
+                                                  </swiper-slide>
+
+                                                  <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/joker.jpg');">
+                                                                      <span class="featured-title">Joker</span>
+                                                                      <p class="featured-desc">Arthur Fleck, a party
+                                                                                clown and a
+                                                                                failed stand-up comedian, leads an
+                                                                                impoverished
+                                                                                life with his ailing mother. However,
+                                                                                when society
+                                                                                shuns him and brands him as a freak, he
+                                                                                decides to
+                                                                                embrace the life of crime and chaos in
+                                                                                Gotham
+                                                                                City.
+                                                                      </p>
+                                                                      <div class="featured-details">
+                                                                                <!-- <h6>TV Series</h6> -->
+                                                                                <h5 id="gen">Crime | Drama | Thriller
+                                                                                </h5>
+                                                                                <h4>2019 </h4>
+                                                                                <h3 id="rate">
+                                                                                          <span>IMDB</span><i
+                                                                                                    class="bi bi-star-fill"></i>8.4
+                                                                                          / 10
+                                                                                          </p>
+                                                                                </h3>
+                                                                      </div>
+                                                                      <button class="featured-button"
+                                                                                onclick="joker()">WATCH
+                                                                                <i class="bi bi-play-btn"></i>
+                                                                      </button>
+                                                            </div>
+                                                  </swiper-slide>
+
+                                                  <!-- <swiper-slide>
+                                                            <div class="featured-content"
+                                                                      style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
+                                                                      <span class="featured-title">Monarch: Legacy of
+                                                                                Monsters</span>
+                                                                      <div class="mybox">
+                                                                                <div>
+                                                                                          <p class="featured-desc">Lorem ipsum
+                                                                                                    dolor sit amet consectetur
+                                                                                                    adipisicing
+                                                                                                    elit. Nam animi laudantium
+                                                                                                    nemo totam illo voluptate odio
+                                                                                                    voluptates,
+                                                                                                    rerum cupiditate temporibus
+                                                                                                    adipisci quibusdam facilis et
+                                                                                                    eligendi
+                                                                                                    illo voluptate odio
+                                                                                                    voluptates,<span
+                                                                                                              id="span2">...</span>
+                                                                                                    <span class="mybox1"
+                                                                                                              id="mybox2id">
+                                                                                                              reum cupiditate
+                                                                                                              temporibus adipisci
+                                                                                                              quibusdam facilis et
+                                                                                                              eligendi illo
+                                                                                                              voluptate odio
+                                                                                                              voluptates, rerum
+                                                                                                              cupiditate
+                                                                                                              temporibus adipisci
+                                                                                                              quibusdam illo
+                                                                                                              voluptate odio
+                                                                                                              voluptates,
+                                                                                                              reum cupiditate
+                                                                                                              temporibus adipisci
+                                                                                                              quibusdam facilis et
+                                                                                                              eligendi illo
+                                                                                                              voluptate odio
+                                                                                                              voluptates, rerum
+                                                                                                              cupiditate
+                                                                                                              temporibus adipisci
+                                                                                                              quibusdam
+                                                                                                    </span>
+                                                                                                    <button class="read-more-btn"
+                                                                                                              id="mybuttonid2"
+                                                                                                              onclick="changeReadMore2()">read
+                                                                                                              more</button>
+                                                                                          </p>
+                                                                                </div>
+                                                                      </div>
+                                                                      <button class="featured-button">WATCH</button>
+                                                            </div>
+                                                  </swiper-slide> -->
+
+                                                  <!-- <div class="autoplay-progress" slot="container-end">
+                                                            <svg viewBox="0 0 48 48">
+                                                                      <circle cx="24" cy="24" r="20"></circle>
+                                                            </svg>
+                                                            <span></span>
+                                                  </div> -->
+
+                                                  <!-- Swiper JS -->
+                                                  <script
+                                                            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+                                        </swiper-container>
+
+                                        <div class="movie-list-container">
+                                                  <div class="movie-list-title-container">
+                                                            <div class="movie-list-title">
+                                                                      <h1>New Releases</h1>
+                                                            </div>
+                                                            <div class="movie-list-view_all">
+                                                                      <h3>View-All</h3>
+                                                            </div>
+                                                  </div>
+
+                                                  <swiper-container class="movie-list-swiper" pagination="true"
+                                                            pagination-clickable="true" navigation="true">
+                                                            <swiper-slide class="movie-list-slide-1">
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Venom-3.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/venom-3.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Venom:
+                                                                                          The
+                                                                                          Last Dance</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Action |
+                                                                                                    Adventure |
+                                                                                                    Sci-Fi
+                                                                                          </h5>
+                                                                                          <h4>2024 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>6.2
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="venom_thelastdance()">WATCH</button>
+                                                                      </div>
+
+
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Kingdome-of-the-Planet-of-the-Apes.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/kingdom_of_the_planet_of_the_apes.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Kingdom
+                                                                                          of
+                                                                                          the Planet of the Apes</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Action |
+                                                                                                    Adventure |
+                                                                                                    Sci-Fi
+                                                                                          </h5>
+                                                                                          <h4>2024</h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>6.9
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="kingdomoftheplanetoftheapes()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/My-Spy-The-Eternal-City.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/my_spy_the_eternal_city.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">My
+                                                                                          Spy: The
+                                                                                          Eternal City</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Action |
+                                                                                                    Spy | Comedy
+                                                                                          </h5>
+                                                                                          <h4>2024</h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>5.6
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="myspy_theeternalcity()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Bad-Boys-Ride_or_Die.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/bad_boys_ride_or_die.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Bad
+                                                                                          Boys: Ride
+                                                                                          or Die </span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Crime |
+                                                                                                    Drama |
+                                                                                                    Thriller
+                                                                                          </h5>
+                                                                                          <h4>2019 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>8.4
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <!-- <p class="movie-list-item-desc"></p> -->
+                                                                                <button
+                                                                                          class="movie-list-item-button">WATCH</button>
+                                                                      </div>
+
+                                                            </swiper-slide>
+
+                                                            <swiper-slide class="movie-list-slide-2">
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/dune-part2.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/dune2.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Dune:
+                                                                                          Part-2</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Action |
+                                                                                                    Adventure |
+                                                                                                    Sci-Fi
+                                                                                          </h5>
+                                                                                          <h4>2024 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>8.5
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <!-- <p class="movie-list-item-desc"></p> -->
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="dune2()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/rebel-moon-part2.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/rebel_moon-2.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Rebel
+                                                                                          Moon -
+                                                                                          Part Two: The Scargiver</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Action |
+                                                                                                    Adventure |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2024</h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>5.3
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="rebel_moon_2() ">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/die-hart-die-harter.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/die_hart2.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Die
+                                                                                          Hart 2:
+                                                                                          Die Harter</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Action |
+                                                                                                    Comedy
+                                                                                          </h5>
+                                                                                          <h4>2024</h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>4.3
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="diehart2()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/furiosa_mad_max_saga.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/furiosa_mad_max_saga.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Furiosa:
+                                                                                          A Mad
+                                                                                          Max Saga</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Action |
+                                                                                                    Adventure |
+                                                                                                    Sci-Fi
+                                                                                          </h5>
+                                                                                          <h4>2024</h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.5
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button
+                                                                                          class="movie-list-item-button">WATCH</button>
+                                                                      </div>
+                                                            </swiper-slide>
+                                                  </swiper-container>
                                         </div>
-                                        <div class="endbar-copyright">
-                                                  <i class="fa-regular fa-copyright"></i>aahuniverse.com
+
+                                        <div class="movie-list-container">
+                                                  <div class="movie-list-title-container">
+                                                            <div class="movie-list-title">
+                                                                      <h1>Harry Potter Series</h1>
+                                                            </div>
+                                                            <div class="movie-list-view_all">
+                                                                      <h3>View-All</h3>
+                                                            </div>
+                                                  </div>
+
+                                                  <swiper-container class="movie-list-swiper" pagination="true"
+                                                            pagination-clickable="true" navigation="true">
+                                                            <swiper-slide class="movie-list-slide-1">
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-1.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-1.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Sorcerer's
+                                                                                          Stone</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2001 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.6
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <!-- <p class="movie-list-item-desc"></p> -->
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter1()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-2.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-2.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Chamber of
+                                                                                          Secrets</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2002 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.4
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter2()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-3.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-3.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Prisoner of
+                                                                                          Azkaban</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2004 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.9
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter3()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-4.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-4.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Goblet of Fire</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2005 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.7
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter4()">WATCH</button>
+                                                                      </div>
+                                                            </swiper-slide>
+
+                                                            <swiper-slide class="movie-list-slide-2">
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-5.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-5.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Order of the
+                                                                                          Phoenix</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2007 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.5
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <!-- <p class="movie-list-item-desc"></p> -->
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter5()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-6.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-6.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Half-Blood
+                                                                                          Prince</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2009 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.6
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter6()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-7.1.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-7.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Deathly Hallows: Part
+                                                                                          1</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2010 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>7.7
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter7_1()">WATCH</button>
+                                                                      </div>
+
+                                                                      <div class="movie-list-item">
+                                                                                <img class="movie-list-item-img"
+                                                                                          src="/content-images/Movies/Harry-Potter-7.2.jpg"
+                                                                                          alt="">
+                                                                                <video class="movie-list-item-trailer"
+                                                                                          controls>
+                                                                                          <source
+                                                                                                    src="/Trailer/HarryPotter-8.mp4">
+                                                                                </video>
+                                                                                <span class="movie-list-item-title">Harry
+                                                                                          Potter
+                                                                                          and The Deathly Hallows: Part
+                                                                                          2</span>
+                                                                                <div class="movie-list-item-details">
+                                                                                          <h5 id="movie-gen">Adventure |
+                                                                                                    Family |
+                                                                                                    Fantasy
+                                                                                          </h5>
+                                                                                          <h4>2011 </h4>
+                                                                                </div>
+                                                                                <div class="movie-list-item-rating">
+                                                                                          <h3 class="rate">
+                                                                                                    <span>IMDB</span><i
+                                                                                                              class="bi bi-star-fill"></i>8.1
+                                                                                                    / 10
+                                                                                                    </p>
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <button class="movie-list-item-button"
+                                                                                          onclick="harrypotter7_2()">WATCH</button>
+                                                                      </div>
+                                                            </swiper-slide>
+                                                  </swiper-container>
+                                        </div>
+
+                                        <div class="endbar">
+                                                  <div class="endbar-socialmedia-icons">
+                                                            <img src="/Images/Project_Logo-removebg-preview.png" alt="">
+                                                            <abbr title="Discord">
+                                                                      <i class="fa-brands fa-discord border "></i>
+                                                            </abbr>
+                                                            <abbr title="IMDB">
+                                                                      <i class="fa-brands fa-imdb"></i>
+                                                            </abbr>
+                                                            <abbr title="Telegram">
+                                                                      <i class="fa-brands fa-telegram"></i></i>
+                                                            </abbr>
+                                                            <abbr title="Instagram">
+                                                                      <i class="fa-brands fa-instagram"></i>
+                                                            </abbr>
+                                                            <abbr title="Facebook">
+                                                                      <i class="fa-brands fa-facebook"></i>
+                                                            </abbr>
+                                                  </div>
+                                                  <div class="endbar-copyright">
+                                                            <i class="fa-regular fa-copyright"></i>aahuniverse.com
+                                                  </div>
                                         </div>
                               </div>
                     </div>
-
-
-
 
                     <script src="app.js" defer></script>
 </body>
