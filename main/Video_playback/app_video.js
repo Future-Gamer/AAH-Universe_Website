@@ -19,14 +19,6 @@ function seriespage() {
 function animepage() {
           window.location = "/main/index_anime.html"
 }
-// Popular-Page Button
-function popularpage() {
-          window.location = "/main/index_popular.html"
-}
-// Trends-Page Button
-function trendpage() {
-          window.location = "/main/index_trend.html"
-}
 
 // -----------------------------------------------------------------------------------------------------------
 
