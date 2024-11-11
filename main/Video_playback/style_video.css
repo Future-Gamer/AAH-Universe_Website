@@ -368,7 +368,7 @@ body {
           height: 250px;
           /* margin-top: 10px; */
           margin-left: 50px;
-          background-image: url("/Images/bottom_background.jpg");
+          background-image: url("/main/Images/bottom_background.jpg");
           background-blend-mode: darken;
 }
 
@@ -493,6 +493,10 @@ body {
           font-family: "Grey Qo", cursive;
           align-items: center;
           width: 150px;
-          background-color: #0079ff;
+          /* background-color: #0079ff; */
           margin-left: 315px;
 }
+
+/* .video-text {
+          color: #ffa600;
+} */
