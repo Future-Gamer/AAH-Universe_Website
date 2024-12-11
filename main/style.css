@@ -71,20 +71,30 @@ body {
           color: #0079ff;
 }
 
+
 .search_user {
           flex: 2;
           position: relative;
-          display: flex;
+          /* display: flex; */
+          margin-bottom: 10px;
+          /* padding: 5px; */
           /* align-items: center; */
           justify-content: right;
           /* background-color: #0079ff; */
-          height: 60%;
+          height: 50%;
+          z-index: 10;
+          left: 100px;
+}
+
+.search {
+          margin-top: 15px;
 }
 
 .search_user i {
           padding-top: 7px;
           padding-left: 10px;
           padding-right: 10px;
+          margin-top: 5px;
           color: #ffa600;
           /* color: white; */
           font-size: 22.5px;
@@ -95,11 +105,16 @@ body {
           padding: 3px 10px;
           font-size: 15px;
           border-radius: 5px;
+          font-family: "Grey Qo", cursive;
           border: none;
           outline: none;
           background: rgba(255, 255, 255, 0.859);
           color: #000000;
-          /* margin-right: 10px;           */
+          /* margin-right: 10px;*/
+}
+
+.search_user input:hover .card {
+          opacity: 1;
 }
 
 .profile-container {
@@ -178,6 +193,8 @@ body {
 .mySwiper {
           height: 90vh;
 }
+
+
 
 
 .featured-content {
@@ -657,3 +674,119 @@ body {
           background-color: white;
           transform: translateX(-20px);
 } */
+
+/* .card {
+          position: relative;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px;
+          padding: 3px 0px;
+          text-decoration: none;
+}
+
+.search_user .search .card::before {
+          background: rgb(255, 255, 255, .1);
+          backdrop-filter: blur(5px);
+          border-radius: 5px;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+}
+
+.card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px 8px 0 0;
+}
+
+.card .cont {
+          padding: 10px;
+}
+
+.card h3 {
+          margin: 10px 0;
+          font-size: 1.2em;
+}
+
+.card p {
+          margin: 5px 0;
+          font-size: 0.9em;
+          color: #555;
+}
+
+.card p span {
+          font-weight: bold;
+}
+
+.card p i {
+          color: gold;
+          margin-left: 5px */
+
+.card {
+          display: block;
+          width: 220px;
+          height: 35px;
+          margin-bottom:10px ;
+          padding: 10px;
+          left: 45px;
+          text-decoration: none;
+          color: #000;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s, box-shadow 0.2s;
+          position: relative;
+          /* Ensure card is positioned correctly */
+          z-index: 5;
+          /* Ensure card stays in front of other content */
+          display: flex;
+          background-color: #8a8a8a;
+          opacity: 0;
+}
+
+.card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+          width: auto;
+          height: 40px;
+          border-radius: 5px 0 5px 0;
+}
+
+.card .cont {
+          padding: 5px;
+}
+
+.card h3 {
+          /* margin: px 0; */
+          font-size: 16px;
+}
+
+.card p {
+          /* margin: 5px 0; */
+          font-size: 13px;
+          color: #000;
+}
+
+.card p span {
+          font-weight: bold;
+          font-size: 12px;
+}
+
+.card p i {
+          color: gold;
+          margin-left: 5px;
+          font-size: 12px;
+}
+
