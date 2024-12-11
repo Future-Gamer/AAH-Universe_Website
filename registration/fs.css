@@ -10,8 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #3b82f6, #9333ea), #23242a;
-    background-image: url(/Images/4839516.jpg);
+    background: url(/main/Images/10_years_ago__2009_by_thekingblader995_ddnbut6-pre.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -57,7 +56,6 @@ body {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
@@ -113,8 +111,8 @@ h2 {
     transition: 0.5s;
 }
 
-.inputBox input:valid~span,
-.inputBox input:focus~span {
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
     color: #45f3ff;
     transform: translateX(-10px) translateY(-30px);
     font-size: 0.75em;
@@ -133,8 +131,8 @@ h2 {
     z-index: 9;
 }
 
-.inputBox input:valid~i,
-.inputBox input:focus~i {
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
     height: 44px;
 }
 
@@ -174,23 +172,25 @@ input[type="submit"]:active {
     opacity: .8;
 }
 
-#myVideo {
+#myVideo 
+{
     width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
 }
-
-.content {
+  
+  .content 
+  {
     position: fixed;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-}
+  }
