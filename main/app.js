@@ -57,15 +57,6 @@ function seriespage() {
 function animepage() {
           window.location = "/main/index_anime.html"
 }
-// Popular-Page Button
-function popularpage() {
-          window.location = "/main/index_popular.html"
-}
-// Trends-Page Button
-function trendpage() {
-          window.location = "/main/index_trend.html"
-}
-
 
 // Video-Play when hover-in and Video-Pause when hover-out
 // document.addEventListener('DOMContentLoaded', () =>
@@ -107,197 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     videoContainer.addEventListener('mouseleave', pauseVideo);
           })
 })
-
-
-// read-more and read-less 
-function changeReadMore1() {
-          const mycontent = document.getElementById('mybox1id');
-          const mybutton = document.getElementById('mybuttonid1');
-          const span1 = document.getElementById("span1")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore2() {
-          const mycontent = document.getElementById('mybox2id');
-          const mybutton = document.getElementById('mybuttonid2');
-          const span1 = document.getElementById("span2")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore3() {
-          const mycontent = document.getElementById('mybox3id');
-          const mybutton = document.getElementById('mybuttonid3');
-          const span1 = document.getElementById("span3")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore4() {
-          const mycontent = document.getElementById('mybox4id');
-          const mybutton = document.getElementById('mybuttonid4');
-          const span1 = document.getElementById("span4")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore5() {
-          const mycontent = document.getElementById('mybox5id');
-          const mybutton = document.getElementById('mybuttonid5');
-          const span1 = document.getElementById("span5")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore6() {
-          const mycontent = document.getElementById('mybox6id');
-          const mybutton = document.getElementById('mybuttonid6');
-          const span1 = document.getElementById("span6")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore7() {
-          const mycontent = document.getElementById('mybox7id');
-          const mybutton = document.getElementById('mybuttonid7');
-          const span1 = document.getElementById("span7")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore8() {
-          const mycontent = document.getElementById('mybox8id');
-          const mybutton = document.getElementById('mybuttonid8');
-          const span1 = document.getElementById("span8")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore9() {
-          const mycontent = document.getElementById('mybox9id');
-          const mybutton = document.getElementById('mybuttonid9');
-          const span1 = document.getElementById("span9")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-function changeReadMore10() {
-          const mycontent = document.getElementById('mybox10id');
-          const mybutton = document.getElementById('mybuttonid10');
-          const span1 = document.getElementById("span10")
-
-          if (mycontent.style.display === 'none'
-                    || mycontent.style.display === '') {
-                    mycontent.style.display = 'inline';
-                    span1.style.display = "none";
-                    mybutton.textContent = 'read less';
-          } else {
-                    mycontent.style.display = 'none';
-                    mybutton.textContent = 'read more';
-                    span1.style.display = "inline";
-          }
-}
-
-
-// function changeReadMore(contentId, buttonId, spanId) {
-//           const mycontent = document.getElementById(contentId);
-//           const mybutton = document.getElementById(buttonId);
-//           const span1 = document.getElementById(spanId);
-
-//           if (mycontent.style.display === 'none' || mycontent.style.display === '') {
-//                     mycontent.style.display = 'inline';
-//                     span1.style.display = "none";
-//                     mybutton.textContent = 'read less';
-//           } else {
-//                     mycontent.style.display = 'none';
-//                     mybutton.textContent = 'read more';
-//                     span1.style.display = "inline";
-//           }
-// }
-
-// const readmorebtn = document.querySelectorAll('.read-more-btn');
-// for (let i = 0; i < readmorebtn.length; i++) {
-//           readmorebtn[i].addEventListener('click', () => {
-//                     const contentId = readmorebtn[i].getAttribute('mybox1id');
-//                     const buttonId = readmorebtn[i].getAttribute('mybuttonid');
-//                     const spanId = readmorebtn[i].getAttribute('span1');
-//                     readmorebtn[i].parentNode.classList.toggle('active');
-//                     changeReadMore(contentId, buttonId, spanId);
-//           });
-// }
 
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
@@ -389,7 +189,38 @@ function diehart2() {
 
 
 // Web-Series Content Button Action
+function vampire_diaries() {
+   window.location = "/main/Video_playback/web-series/vampire_diaries.html"
+}
 
+function lucifer() {
+   window.location = "/main/Video_playback/web-series/lucifer.html"
+}
+
+function shogun() {
+   window.location = "main/Video_playback/web-series/shogun.html"
+}
 
 
 // Anime Content Button Action
+
+function solo_leveling() {
+   window.location = "/main/Video_playback/anime/solo-leveling.html"
+}
+
+
+
+// search bar
+document.getElementById('search_input').addEventListener('focus', function() {
+   document.querySelectorAll('.card').forEach(function(card) {
+      card.style.opacity = '1';
+      card.style.display = '';
+   });
+});
+
+document.getElementById('search_input').addEventListener('blur', function() {
+   document.querySelectorAll('.card').forEach(function(card) {
+      card.style.opacity = '0';
+      card.style.display = 'none';
+   });
+});

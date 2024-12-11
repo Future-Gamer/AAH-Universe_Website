@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="/main/Video_playback/style_video.css">
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+                    rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+          <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+          <title>AAH Universe - Watch Movies</title>
+</head>
+
+<body>
+          <div class="navbar">
+                    <div class="navbar-container">
+                              <div>
+                                        <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png"
+                                                  alt="">
+                              </div>
+                              <!-- <div class="logo-container">
+                                        <h1 class="logo" onclick="homepage()">AAH Universe</h1>
+                              </div> -->
+                              <div class="menu-container">
+                                        <ul class="menu-list">
+                                                  <li class="menu-list-item" onclick="homepage()">Home
+                                                            <!-- <a href="/main/index.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="moviepage()">Movies
+                                                            <!-- <a href="/main/index_movie.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item active" onclick="seriespage()">Series
+                                                            <!-- <a href="/main/index_series.html"></a> -->
+                                                  </li>
+                                                  <li class="menu-list-item" onclick="animepage()">Anime
+                                                            <!-- <a href="/main/index_anime.html"></a> -->
+                                                  </li>
+
+
+                                        </ul>
+                              </div>
+                              <div class="search_user">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search..." id="search_input">
+                                        <div class="search">
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+                                                  <!-- <a href="" class="card">
+                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                                                            <div class="cont">
+                                                                      <h3>The Boys</h3>
+                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                                                            </div>
+                                                  </a> -->
+
+                                        </div>
+                              </div>
+                              <div class="profile-container">
+                                        <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
+                                        <div class="profile-text-container">
+                                                  <span class="profile-text">Profile</span>
+                                                  <i class="fa-regular fa-circle-down"></i>
+                                        </div>
+                                        <div>
+                                                  <button class="login-btn" onclick="loginpage()">Login</button>
+                                        </div>
+
+                              </div>
+                    </div>
+          </div>
+          <div class="sidbar">
+                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+                    <i class="left-menu-icon fa-solid fa-house"></i>
+                    <i class="left-menu-icon fa-solid fa-users"></i>
+                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
+                    <i class="left-menu-icon fa-solid fa-tv"></i>
+                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+          </div>
+
+          <div class="videoplayback-container">
+                    <div class="videoplayback-heading">
+                              <h5>AAH Universe | Series | Lucifer</h5>
+                    </div>
+
+                    <div class="video-container">
+                              <div class="video-episode-container">
+                                        <select id="season-dropdown" class="dropdown">
+                                                  <option value="season1">Season 1</option>
+                                                  <option value="season2">Season 2</option>
+                                                  <option value="season3">Season 3</option>
+                                                  <option value="season4">Season 4</option>
+                                                  <option value="season5">Season 5</option>
+                                                  <option value="season6">Season 6</option>
+                                                  <!-- Add more seasons as needed -->
+                                        </select>
+                                        <div id="episode-container" class="episode-container">
+                                                  <ul id="season1" class="episode-list">
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer/season1/Lucifer_S1-E1.mp4')">
+                                                                      <span class="video-text">Episode-1:</span> Pilot
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer/season1/Lucifer_S1-E2.mp4')">
+                                                                      <span class="video-text">Episode-2:</span>
+                                                                      Lucifer, Stay. Good Devil
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span class="video-text">Episode-3:</span> The
+                                                                      Would-Be Prince of Darkness
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span class="video-text">Episode-4:</span> Manly
+                                                                      Whatnots
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span class="video-text">Episode-5:</span> Sweet
+                                                                      Kicks
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-6:</span> Favorite Son
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-7:</span> Wingman
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-8:</span> Et tu, Doctor?
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-9:</span> A Priest Walks Into a Bar
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-10:</span> Pops
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-11:</span> St. Lucifer
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-12:</span> #TeamLucifer
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-13:</span> Take Me Back to Hell
+                                                            </li>
+                                                            <!-- Add more episodes as needed -->
+                                                  </ul>
+
+                                                  <ul id="season2" class="episode-list" style="display: none;">
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-1:</span> Everything's Coming Up
+                                                                      Lucifer
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-2:</span> Liar, Liar, Slutty Dress
+                                                                      on Fire
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-3:</span> Sin-Eater
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-4:</span> Lady Parts
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-5:</span> Weaponizer
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-6:</span> Monster
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-7:</span> My Little Monkey
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-8:</span> Trip to Stabby Town
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-9:</span> Homewrecker
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-10:</span> Quid Pro Ho
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-11:</span> Stewardess Interruptus
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-12:</span> Love Handles
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-13:</span> A Good Day to Die
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-14:</span> Candy Morningstar
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-15:</span> Deceptive Little Parasite
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-16:</span> God Johnson
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-17:</span> Sympathy for the Goddess
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-18:</span> The Good, The Bad and The
+                                                                      Crispy
+                                                            </li>
+                                                            <!-- Add more episodes as needed -->
+                                                  </ul>
+
+                                                  <ul id="season3" class="episode-list" style="display: none;">
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-1:</span> They're Back, Aren't They?
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-2:</span> The One with the Baby
+                                                                      Carrot
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-3:</span> Mr. and Mrs. Mazikeen
+                                                                      Smith
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-4:</span> What Should Lucifer Do?
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-5:</span> Welcome Back, Charlotte
+                                                                      Richards
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-6:</span> Vegas With Some Radish
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-7:</span> Off the Record
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-8:</span> Chloe Does Lucifer
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-9:</span> The Sinnerman
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-10:</span> The Sin Bin
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-11:</span> City of Angels?
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-12:</span> All About Her
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-13:</span> Til Death Do Us Part
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-14:</span> My Brother's Keeper
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-15:</span> High School Poppycock
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-16:</span> Infernal Guinea Pig
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-17:</span> Let Pinhead Sing!
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-18:</span> The Last Heartbreak
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-19:</span> Orange Is the New Maze
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-20:</span> The Angel of San
+                                                                      Bernardino
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-21:</span> Anything Pierce Can Do I
+                                                                      Can Do Better
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-22:</span> All Hands on Decker
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-23:</span> Quintessential Deckerstar
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-24:</span> A Devil of My Word
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-25:</span> Boo Normal
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-26:</span> Once Upon a Time
+                                                            </li>
+
+                                                            <!-- Add more episodes as needed -->
+                                                  </ul>
+                                                  <ul id="season4" class="episode-list" style="display: none;">
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-1:</span> Everything's Okay
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-2:</span> Somebody's Been Reading
+                                                                      Dante's Inferno
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-3:</span> O, Ye of Little Faith,
+                                                                      Father
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-4:</span> All About Eve
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-5:</span> Expire Erect
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-6:</span> Orgy Pants to Work
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-7:</span> Devil Is as Devil Does
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-8:</span> Super Bad Boyfriend
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-9:</span> Save Lucifer
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-10:</span> Who's da New King of
+                                                                      Hell?
+                                                            </li>
+                                                            <!-- Add more episodes as needed -->
+                                                  </ul>
+
+                                                  <ul id="season5" class="episode-list" style="display: none;">
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-1:</span> Really Sad Devil Guy
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-2:</span> Lucifer! Lucifer! Lucifer!
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-3:</span> ¡Diablo!
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-4:</span> It Never Ends Well for the
+                                                                      Chicken
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-5:</span> Detective Amenadiel
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-6:</span> BlueBallz
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-7:</span> Our Mojo
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-8:</span> Spoiler Alert
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-9:</span> Family Dinner
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-10:</span> Bloody Celestial Karaoke
+                                                                      Jam
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-11:</span> Resting Devil Face
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-12:</span> Daniel Espinoza: Naked
+                                                                      and Afraid
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-13:</span> A Little Harmless
+                                                                      Stalking
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-14:</span> Nothing Lasts Forever
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-15:</span> Is This Really How It's
+                                                                      Going To End?!
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-16:</span> A Chance at a Happy
+                                                                      Ending
+                                                            </li>
+                                                            <!-- Add more episodes as needed -->
+                                                  </ul>
+
+                                                  <ul id="season6" class="episode-list" style="display: none;">
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-1:</span> Nothing Ever Changes
+                                                                      Around Here
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-2:</span> Buckets of Baggage
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-3:</span> Yabba Dabba Do Me
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-4:</span> Pin the Tail on the Daddy
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-5:</span> The Murder of Lucifer
+                                                                      Morningstar
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-6:</span> A Lot Dirtier Than That
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-7:</span> My Best Fiend's Wedding
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-8:</span> Save the Devil, Save the
+                                                                      World
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-9:</span> Goodbye, Lucifer
+                                                            </li>
+
+                                                            <li class="clickable video-text"
+                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                                                                      <span>Episode-10:</span> Partners 'Til the End
+                                                            </li>
+                                                            <!-- Add more episodes as needed -->
+                                                  </ul>
+                                        </div>
+                              </div>
+
+                              <video class="video-file" id="video-player" height="550" controls>
+                                        <!-- <source src="/main/Video_playback/bad_boys_ride_or_die.mkv" type="video/mp4"> -->
+                                        <source id="video-source" src="/content-videos/web-series/Lucifer/season1/Lucifer_S1-E1.mp4" type="video/mp4">
+                              </video>
+                    </div>
+
+                    <div>
+                              <span class="output" id="displayArea">Currentyly Playing</span>
+                    </div>
+
+
+                    <div class="video-content-details">
+                              <img class="content-image" src="/content-images/Web-Series/Lucifer.jpg" alt="">
+
+                              <div class="content-details">
+                                        <h2>Lucifer</h2>
+                                        <h5>2016 - 2021 | TV Series | 45m</h5>
+                                        <div class="content-desc">
+                                                  Lucifer Morningstar has decided he's had enough of being the dutiful
+                                                  servant in Hell and decides to spend some time on Earth to better
+                                                  understand humanity. He settles in Los Angeles - the City of Angels.
+                                        </div>
+                                        <div class="movie-details">
+                                                  <h5 id="gen">Crime | Fantasy |Drama </h5>
+                                                  <h3 id="rate">
+                                                            <span>IMDB</span><i class="bi bi-star-fill"></i>8.0
+                                                            / 10
+                                                            </p>
+                                                  </h3>
+                                        </div>
+                              </div>
+                    </div>
+
+                    <div class="content-castmembers">
+                              Creators
+                    </div>
+                    <div class="castmembers-director">
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Tom Kapinos</h4>
+                                                            <h2>Writer | Producer</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+                    </div>
+
+
+                    <div class="content-castmembers">
+                              Stars
+                    </div>
+                    <div class="castmembers-cast">
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Tom Ellis</h4>
+                                                            <h2>As Lucifer Morningstar</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Lauren German</h4>
+                                                            <h2>As Chloe Decker</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Kevin Alejandro</h4>
+                                                            <h2>As Dan Espinoza</h2>
+                                                  </span>
+                                        </div>
+
+                              </span>
+
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>D.B. Woodside</h4>
+                                                            <h2>As Amenadiel</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Lesley-Ann Brandt</h4>
+                                                            <h2>As Mazikeen</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Rachael Harris</h4>
+                                                            <h2>As Linda Martin</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+
+                              <span>
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Aimee Garcia</h4>
+                                                            <h2>As Ella Lopez</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Scarlett Estevez</h4>
+                                                            <h2>As Trixie Espinoza</h2>
+                                                  </span>
+                                        </div>
+
+                                        <div class="castmembers-details">
+                                                  <img src="/content-images/Web-Series/Lucifer.jpg" alt="">
+                                                  <span>
+                                                            <h4>Tricia Helfer</h4>
+                                                            <h2>As Charlotte</h2>
+                                                  </span>
+                                        </div>
+                              </span>
+                    </div>
+
+          </div>
+
+
+          <div class="endbar">
+                    <div class="endbar-socialmedia-icons">
+                              <img src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+                              <abbr title="Discord">
+                                        <i class="fa-brands fa-discord border "></i>
+                              </abbr>
+                              <abbr title="IMDB">
+                                        <i class="fa-brands fa-imdb"></i>
+                              </abbr>
+                              <abbr title="Telegram">
+                                        <i class="fa-brands fa-telegram"></i></i>
+                              </abbr>
+                              <abbr title="Instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                              </abbr>
+                              <abbr title="Facebook">
+                                        <i class="fa-brands fa-facebook"></i>
+                              </abbr>
+                    </div>
+                    <div class="endbar-copyright">
+                              <i class="fa-regular fa-copyright"></i>aahuniverse.com
+                    </div>
+
+          </div>
+
+
+
+          <!-- <script src="app.js"></script> -->
+          <script src="/main/Video_playback/app_video.js"></script>
+</body>
+
+</html>

@@ -10,8 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #3b82f6, #9333ea), #23242a;
-    background-image: url(/Images/4839516.jpg);
+    background: url(/main/Images/10_years_ago__2009_by_thekingblader995_ddnbut6-pre.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

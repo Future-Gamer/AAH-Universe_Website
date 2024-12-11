@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="fs.css">
+    <script src="validation.js" defer></script>
 </head>
 <body>
-    <!-- <video autoplay muted loop id="myVideo">
-        <source src="/registration/background_video.mp4" type="video/mp4">
-    </video> -->
-    
     <div class="box">
-        <form>
+        <form action="connect.php" method="post">
             <h2>Registration</h2>
             <div class="inputBox">
                 <input type="text" id="fullname" name="fullname" required>
@@ -37,11 +34,6 @@
             <div class="inputBox">
                 <input type="password" id="password" name="password" required>
                 <span>Password</span>
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <span>Confirm Password</span>
                 <i></i>
             </div>
             <div class="gender-group">
