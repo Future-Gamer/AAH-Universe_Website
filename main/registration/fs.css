@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/main/Images/10_years_ago__2009_by_thekingblader995_ddnbut6-pre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    position: relative;
+    width: 550px;
+    height: 950px;
+    background: #1c1c1c;
+    border-radius: 50px 5px;
+    overflow: hidden;
+    opacity: .8;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 850px;
+    background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    opacity: .7;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 850px;
+    background: linear-gradient(60deg, transparent, #d9138a, #d913d9);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    opacity: .7;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 50px 5px;
+    background: rgba(40, 41, 45, 0.9);
+    z-index: 10;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+}
+
+h2 {
+    color: #45f3ff;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 25px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 25px 10px 10px;
+    font-size: 1.2em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-30px);
+    font-size: 0.75em;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+    height: 44px;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    color: #8f8f8f;
+}
+
+.gender-group label {
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 1em;
+    color: #45f3ff;
+}
+
+.gender-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 90px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background: linear-gradient(90deg, #45f3ff, #d9138a);
+    opacity: .8;
+}
+
+#myVideo 
+{
+    width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+  
+  .content 
+  {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
