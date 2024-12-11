@@ -285,11 +285,14 @@ body {
           cursor: pointer;
 }
 
+<<<<<<< HEAD
 .movie-details h3 span a {
           text-decoration: none;
           color: black;
 }
 
+=======
+>>>>>>> 0d473b4d6e6342a6ce45138181a0554836fb5edf
 .movie-details h3 i {
           margin-right: 5px;
           margin-left: 5px;
