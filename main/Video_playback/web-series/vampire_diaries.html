@@ -2,532 +2,535 @@
 <html lang="en">
 
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="/main/Video_playback/style_video.css">
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
-                    rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-          <link rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main/Video_playback/style_video.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-          <title>AAH Universe - Watch Movies</title>
+    <title>AAH Universe - Watch Movies</title>
 </head>
 
 <body>
-          <div class="navbar">
-                    <div class="navbar-container">
-                              <div>
-                                        <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png"
-                                                  alt="">
-                              </div>
-                              <!-- <div class="logo-container">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div>
+                <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+            </div>
+            <!-- <div class="logo-container">
                                         <h1 class="logo" onclick="homepage()">AAH Universe</h1>
                               </div> -->
-                              <div class="menu-container">
-                                        <ul class="menu-list">
-                                                  <li class="menu-list-item" onclick="homepage()">Home
-                                                            <!-- <a href="/main/index.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="moviepage()">Movies
-                                                            <!-- <a href="/main/index_movie.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item active" onclick="seriespage()">Series
-                                                            <!-- <a href="/main/index_series.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="animepage()">Anime
-                                                            <!-- <a href="/main/index_anime.html"></a> -->
-                                                  </li>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item" onclick="homepage()">Home
+                        <!-- <a href="/main/index.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="moviepage()">Movies
+                        <!-- <a href="/main/index_movie.html"></a> -->
+                    </li>
+                    <li class="menu-list-item active" onclick="seriespage()">Series
+                        <!-- <a href="/main/index_series.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="animepage()">Anime
+                        <!-- <a href="/main/index_anime.html"></a> -->
+                    </li>
 
 
-                                        </ul>
-                              </div>
-                              <div class="search_user">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <input type="text" placeholder="Search..." id="search_input">
-                                        <div class="search">
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
+                </ul>
+            </div>
+            <div class="search_user">
+                <span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search..." id="search_input">
+                </span>
 
-                                        </div>
-                              </div>
-                              <div class="profile-container">
-                                        <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
-                                        <div class="profile-text-container">
-                                                  <span class="profile-text">Profile</span>
-                                                  <i class="fa-regular fa-circle-down"></i>
-                                        </div>
-                                        <div>
-                                                  <button class="login-btn" onclick="loginpage()">Login</button>
-                                        </div>
+                <div class="search">
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
 
-                              </div>
-                    </div>
-          </div>
-          <div class="sidbar">
-                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
-                    <i class="left-menu-icon fa-solid fa-house"></i>
-                    <i class="left-menu-icon fa-solid fa-users"></i>
-                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
-                    <i class="left-menu-icon fa-solid fa-tv"></i>
-                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
-                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
-          </div>
+                </div>
+            </div>
 
-          <div class="videoplayback-container">
-                    <div class="videoplayback-heading">
-                              <h5>AAH Universe | Series | The Vampire Diaries</h5>
-                    </div>
+            <div class="profile-container">
+                <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-regular fa-circle-down"></i>
+                </div>
+                <div>
+                    <button class="login-btn" onclick="loginpage()">Login</button>
+                </div>
 
-                    <div class="video-container">
-                              <div class="video-episode-container">
-                                        <select id="season-dropdown" class="dropdown">
-                                                  <option value="season1">Season 1</option>
-                                                  <option value="season2">Season 2</option>
-                                                  <option value="season3">Season 3</option>
-                                                  <option value="season4">Season 4</option>
-                                                  <option value="season5">Season 5</option>
-                                                  <option value="season6">Season 6</option>
-                                                  <option value="season7">Season 7</option>
-                                                  <option value="season8">Season 8</option>
-                                                  <!-- Add more seasons as needed -->
-                                        </select>
-                                        <div id="episode-container" class="episode-container">
-                                                  <ul id="season1" class="episode-list">
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/Trailer/bad_boys_ride_or_die.mp4')">
-                                                                      <span class="video-text">Episode-1:</span> Pilot
-                                                            </li>
-                                                            <li class="clickable video-text" onclick="changeVideoOnClick(event, 'Trailer/HarryPotter-5.mp4')">
-                                                                      <span class="video-text">Episode-2:</span> The
-                                                                      Night of the Comet
-                                                            </li>
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/Trailer/furiosa_mad_max_saga.mp4')">
-                                                                      <span class="video-text">Episode-3:</span> Friday
-                                                                      Night Bites
-                                                            </li>
-                                                            <li class="clickable video-text" onclick="changeVideoOnClick(event, 'Trailer/die_hart2.mp4')">
-                                                                      <span class="video-text">Episode-4:</span> Family
-                                                                      Ties
-                                                            </li>
-                                                            <li class="clickable video-text" onclick="changeVideoOnClick(event, 'Trailer/HarryPotter-5.mp4')">
-                                                                      <span class="video-text">Episode-5:</span> You're
-                                                                      Undead to Me
-                                                            </li>
-                                                            <li class="clickable"><span>Episode-6:</span> Lost Girls </li>
-                                                            <li class="clickable"><span>Episode-7:</span> Haunted </li>
-                                                            <li class="clickable"><span>Episode-8:</span> 162 Candles</li>
-                                                            <li class="clickable"><span>Episode-9:</span> History Repeating</li>
-                                                            <li class="clickable"><span>Episode-10:</span> The Turning Point</li>
-                                                            <li class="clickable"><span>Episode-11:</span> Bloodlines</li>
-                                                            <li class="clickable"><span>Episode-12:</span> Unpleasentville</li>
-                                                            <li><span>Episode-13:</span> Children of the Damned</li>
-                                                            <li><span>Episode-14:</span> Fool Me Once</li>
-                                                            <li><span>Episode-15:</span> A Few Good Men</li>
-                                                            <li><span>Episode-16:</span> There Goes the Neighborhood
-                                                            </li>
-                                                            <li><span>Episode-17:</span> Let the Right One In</li>
-                                                            <li><span>Episode-18:</span> Under Control</li>
-                                                            <li><span>Episode-19:</span> Miss Mystic Falls</li>
-                                                            <li><span>Episode-20:</span> Blood Brothers</li>
-                                                            <li><span>Episode-21:</span> Isobel</li>
-                                                            <li><span>Episode-22:</span> Founder's Day</li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
-                                                  <ul id="season2" class="episode-list" style="display: none;">
-                                                            <li><span>Episode-1:</span> The Return</li>
-                                                            <li><span>Episode-2:</span> Brave New World</li>
-                                                            <li><span>Episode-3:</span> Bad Moon Rising</li>
-                                                            <li><span>Episode-4:</span> Memory Lane</li>
-                                                            <li><span>Episode-5:</span> Kill or Be Killed</li>
-                                                            <li><span>Episode-6:</span> Plan B</li>
-                                                            <li><span>Episode-7:</span> Masquerade</li>
-                                                            <li><span>Episode-8:</span> Rose</li>
-                                                            <li><span>Episode-9:</span> Katerina</li>
-                                                            <li><span>Episode-10:</span> The Sacrifice</li>
-                                                            <li><span>Episode-11:</span> By the Light of the Moon</li>
-                                                            <li><span>Episode-12:</span> The Descent</li>
-                                                            <li><span>Episode-13:</span> Daddy Issues</li>
-                                                            <li><span>Episode-14:</span> Crying Wolf</li>
-                                                            <li><span>Episode-15:</span> The Dinner Party</li>
-                                                            <li><span>Episode-16:</span> The House Guest</li>
-                                                            <li><span>Episode-17:</span> Know the Enemy</li>
-                                                            <li><span>Episode-18:</span> The Last Dance</li>
-                                                            <li><span>Episode-19:</span> Klaus</li>
-                                                            <li><span>Episode-20:</span> The Last Day</li>
-                                                            <li><span>Episode-21:</span> The Sun Also Rises</li>
-                                                            <li><span>Episode-22:</span> As I Lay Dying</li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
-                                                  <ul id="season3" class="episode-list" style="display: none;">
-                                                            <li><span>Episode-1:</span> The Birthday</li>
-                                                            <li><span>Episode-2:</span> The Hybrid</li>
-                                                            <li><span>Episode-3:</span> The End of the Affair</li>
-                                                            <li><span>Episode-4:</span> Disturbing</li>
-                                                            <li><span>Episode-5:</span> The Reckoning</li>
-                                                            <li><span>Episode-6:</span> Smells Like Teen Spirit</li>
-                                                            <li><span>Episode-7:</span> Ghost World</li>
-                                                            <li><span>Episode-8:</span> Ordinary People</li>
-                                                            <li><span>Episode-9:</span> Homecoming</li>
-                                                            <li><span>Episode-10:</span> The New Deal</li>
-                                                            <li><span>Episode-11:</span> Our Town</li>
-                                                            <li><span>Episode-12:</span> The Ties That Bind</li>
-                                                            <li><span>Episode-13:</span> Bringing Out the Dead</li>
-                                                            <li><span>Episode-14:</span> Dangerous Liasons</li>
-                                                            <li><span>Episode-15:</span> All My Children</li>
-                                                            <li><span>Episode-16:</span> 1912</li>
-                                                            <li><span>Episode-17:</span> Break on Through</li>
-                                                            <li><span>Episode-18:</span> The Murder of One</li>
-                                                            <li><span>Episode-19:</span> Heart of Darkness</li>
-                                                            <li><span>Episode-20:</span> Do Not Go Gentle</li>
-                                                            <li><span>Episode-21:</span> Before Sunset</li>
-                                                            <li><span>Episode-22:</span> The Departed</li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
-                                                  <ul id="season4" class="episode-list" style="display: none;">
-                                                            <li><span>Episode-1:</span> Growing Pains</li>
-                                                            <li><span>Episode-2:</span> Memorial</li>
-                                                            <li><span>Episode-3:</span> The Ranger</li>
-                                                            <li><span>Episode-4:</span> The Five</li>
-                                                            <li><span>Episode-5:</span> The Killer</li>
-                                                            <li><span>Episode-6:</span> We All Go a Little Mad Sometimes
-                                                            </li>
-                                                            <li><span>Episode-7:</span> My Brother's Keeper</li>
-                                                            <li><span>Episode-8:</span> We'll Always Have Bourbon Street
-                                                            </li>
-                                                            <li><span>Episode-9:</span> O Come, All Ye Faithful</li>
-                                                            <li><span>Episode-10:</span> After School Special</li>
-                                                            <li><span>Episode-11:</span> Catch Me If You Can</li>
-                                                            <li><span>Episode-12:</span> A View to Kill</li>
-                                                            <li><span>Episode-13:</span> Into the Wild</li>
-                                                            <li><span>Episode-14:</span> Down the Rabbit Hole</li>
-                                                            <li><span>Episode-15:</span> Stand By Me</li>
-                                                            <li><span>Episode-16:</span> Bring It On</li>
-                                                            <li><span>Episode-17:</span> Because the Night</li>
-                                                            <li><span>Episode-18:</span> American Gothic</li>
-                                                            <li><span>Episode-19:</span> Pictures of You</li>
-                                                            <li><span>Episode-20:</span> The Originals</li>
-                                                            <li><span>Episode-21:</span> She's Come Undone</li>
-                                                            <li><span>Episode-22:</span> The Walking Dead</li>
-                                                            <li><span>Episode-23:</span> Graduation</li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
-                                                  <ul id="season5" class="episode-list" style="display: none;">
-                                                            <li><span>Episode-1:</span> I Know What You Did Last Summer
-                                                            </li>
-                                                            <li><span>Episode-2:</span> True Lies</li>
-                                                            <li><span>Episode-3:</span> Original Sins</li>
-                                                            <li><span>Episode-4:</span> For Whom the Bell Tolls</li>
-                                                            <li><span>Episode-5:</span> Monster's Ball</li>
-                                                            <li><span>Episode-6:</span> Handle with Care</li>
-                                                            <li><span>Episode-7:</span> Death and the Maiden</li>
-                                                            <li><span>Episode-8:</span> Dead Man on Campus</li>
-                                                            <li><span>Episode-9:</span> The Cell</li>
-                                                            <li><span>Episode-10:</span> Fifty Shades of Grayson</li>
-                                                            <li><span>Episode-11:</span> 500 Years of Solitude</li>
-                                                            <li><span>Episode-12:</span> The Devil Inside</li>
-                                                            <li><span>Episode-13:</span> Total Eclipse of the Heart</li>
-                                                            <li><span>Episode-14:</span> No Exit</li>
-                                                            <li><span>Episode-15:</span> Gone Girl</li>
-                                                            <li><span>Episode-16:</span> While You Were Sleeping</li>
-                                                            <li><span>Episode-17:</span> Rescue Me</li>
-                                                            <li><span>Episode-18:</span> Resident Evil</li>
-                                                            <li><span>Episode-19:</span> Man on Fire</li>
-                                                            <li><span>Episode-20:</span> What Lies Beneath</li>
-                                                            <li><span>Episode-21:</span> Promised Land</li>
-                                                            <li><span>Episode-22:</span> Home</li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
-                                                  <ul id="season6" class="episode-list" style="display: none;">
-                                                            <li><span>Episode-1:</span> I'll Remember</li>
-                                                            <li><span>Episode-2:</span> Yellow Ledbetter</li>
-                                                            <li><span>Episode-3:</span> Welcome to Paradise</li>
-                                                            <li><span>Episode-4:</span> Black Hole Sun</li>
-                                                            <li><span>Episode-5:</span> The World Has Turned and Left Me
-                                                                      Here</li>
-                                                            <li><span>Episode-6:</span> The More You Ignore Me, Closer I
-                                                                      Get</li>
-                                                            <li><span>Episode-7:</span> Do you Remember the First Time?
-                                                            </li>
-                                                            <li><span>Episode-8:</span> Fade Into You</li>
-                                                            <li><span>Episode-9:</span> I Alone</li>
-                                                            <li><span>Episode-10:</span> Christmas Through Your Eyes
-                                                            </li>
-                                                            <li><span>Episode-11:</span> Woke Up With A Monster</li>
-                                                            <li><span>Episode-12:</span> Prayer for the Dying</li>
-                                                            <li><span>Episode-13:</span> The Day I Tried to Live</li>
-                                                            <li><span>Episode-14:</span> Stay</li>
-                                                            <li><span>Episode-15:</span> Let Her Go</li>
-                                                            <li><span>Episode-16:</span> The Downward Spiral</li>
-                                                            <li><span>Episode-17:</span> A Bird in a Glided Cage</li>
-                                                            <li><span>Episode-18:</span> I Never Could Love Like That
-                                                            </li>
-                                                            <li><span>Episode-19:</span> Because</li>
-                                                            <li><span>Episode-20:</span> I'd Leave My Happy Home for You
-                                                            </li>
-                                                            <li><span>Episode-21:</span> I'll Wed You in the Golden
-                                                                      Summertime</li>
-                                                            <li><span>Episode-22:</span> I'm Thinking of You All the
-                                                                      While</li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
-                                                  <ul id="season7" class="episode-list" style="display: none;">
-                                                            <li><span>Episode-1:</span> Day One of Twenty-Two Thousand,
-                                                                      Give or Take</li>
-                                                            <li><span>Episode-2:</span> Never Let Me Go</li>
-                                                            <li><span>Episode-3:</span> Age of Innocence</li>
-                                                            <li><span>Episode-4:</span> I Carry Your Heart with Me</li>
-                                                            <li><span>Episode-5:</span> Live Through This</li>
-                                                            <li><span>Episode-6:</span> Best Served Cold</li>
-                                                            <li><span>Episode-7:</span> Mommie Dearest</li>
-                                                            <li><span>Episode-8:</span> Hold Me, Thrill Me, Kiss Me,
-                                                                      Kill Me</li>
-                                                            <li><span>Episode-9:</span> Cold as Ice</li>
-                                                            <li><span>Episode-10:</span> Hell Is Other People</li>
-                                                            <li><span>Episode-11:</span> Things We Lost in the Fire</li>
-                                                            <li><span>Episode-12:</span> Postcards from the Edge</li>
-                                                            <li><span>Episode-13:</span> This Woman's Work</li>
-                                                            <li><span>Episode-14:</span> Moonlight on the Bayou</li>
-                                                            <li><span>Episode-15:</span> I Would for You</li>
-                                                            <li><span>Episode-16:</span> Days of Future Past</li>
-                                                            <li><span>Episode-17:</span> I Went to the Woods</li>
-                                                            <li><span>Episode-18:</span> One Way or Another</li>
-                                                            <li><span>Episode-19:</span> Somebody That I Used to Know
-                                                            </li>
-                                                            <li><span>Episode-20:</span> Kill 'Em All</li>
-                                                            <li><span>Episode-21:</span> Requiem for a Dream</li>
-                                                            <li><span>Episode-22:</span> Gods and Monsters</li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
-                                                  <ul id="season8" class="episode-list" style="display: none;">
-                                                            <li><span>Episode-1:</span> Hello, Brother</li>
-                                                            <li><span>Episode-2:</span> Today Will Be Different</li>
-                                                            <li><span>Episode-3:</span> Today Will Be Different</li>
-                                                            <li><span>Episode-4:</span> An Eternity of Misery</li>
-                                                            <li><span>Episode-5:</span> Coming Home Was a Mistake</li>
-                                                            <li><span>Episode-6:</span> Detoured on Some Random
-                                                                      Backwoods Path to Hell</li>
-                                                            <li><span>Episode-7:</span> The Next Time I Hurt Somebody,
-                                                                      It Could Be You</li>
-                                                            <li><span>Episode-8:</span> We Have History Together</li>
-                                                            <li><span>Episode-9:</span> The Simple Intimacy of the Near
-                                                                      Touch</li>
-                                                            <li><span>Episode-10:</span> Nostalgia's a Bitch</li>
-                                                            <li><span>Episode-11:</span> You Made a Choice to Be Good
-                                                            </li>
-                                                            <li><span>Episode-12:</span> What Are You?</li>
-                                                            <li><span>Episode-13:</span> The Lies Will Catch Up to You
-                                                            </li>
-                                                            <li><span>Episode-14:</span> It's Been a Hell of a Ride</li>
-                                                            <li><span>Episode-15:</span> We're Planning a June Wedding
-                                                            </li>
-                                                            <li><span>Episode-16:</span> I Was Feeling Epic</li>
-                                                            <li><span>Episode-17:</span> The Vampire Diaries: Forever
-                                                                      Yours</li>
-                                                  </ul>
-                                                  <!-- Add more seasons as needed -->
-                                        </div>
-                              </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidbar">
+        <i class="left-menu-icon fa-solid fa-house" onclick="homepage()"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
 
-                              <video class="video-file" id="video-player" height="550" controls>
-                                        <!-- <source src="/main/Video_playback/bad_boys_ride_or_die.mkv" type="video/mp4"> -->
-                                        <source id="video-source" src="/Trailer/bad_boys_ride_or_die.mp4"
-                                                  type="video/mp4">
-                              </video>
-                    </div>
+    <div class="videoplayback-container">
+        <div class="videoplayback-heading">
+            <h5>AAH Universe | Series | The Vampire Diaries</h5>
+        </div>
 
-                    <div>
-                              <span class="output" id="displayArea">Currentyly Playing</span>
-                    </div>
+        <div class="video-container">
+            <div class="video-episode-container">
+                <select id="season-dropdown" class="dropdown">
+                    <option value="season1">Season 1</option>
+                    <option value="season2">Season 2</option>
+                    <option value="season3">Season 3</option>
+                    <option value="season4">Season 4</option>
+                    <option value="season5">Season 5</option>
+                    <option value="season6">Season 6</option>
+                    <option value="season7">Season 7</option>
+                    <option value="season8">Season 8</option>
+                    <!-- Add more seasons as needed -->
+                </select>
+                <div id="episode-container" class="episode-container">
+                    <ul id="season1" class="episode-list">
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/Trailer/bad_boys_ride_or_die.mp4')">
+                            <span class="video-text">Episode-1:</span> Pilot
+                        </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, 'Trailer/HarryPotter-5.mp4')">
+                            <span class="video-text">Episode-2:</span> The
+                            Night of the Comet
+                        </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/Trailer/furiosa_mad_max_saga.mp4')">
+                            <span class="video-text">Episode-3:</span> Friday
+                            Night Bites
+                        </li>
+                        <li class="clickable video-text" onclick="changeVideoOnClick(event, 'Trailer/die_hart2.mp4')">
+                            <span class="video-text">Episode-4:</span> Family
+                            Ties
+                        </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, 'Trailer/HarryPotter-5.mp4')">
+                            <span class="video-text">Episode-5:</span> You're
+                            Undead to Me
+                        </li>
+                        <li class="clickable"><span>Episode-6:</span> Lost Girls </li>
+                        <li class="clickable"><span>Episode-7:</span> Haunted </li>
+                        <li class="clickable"><span>Episode-8:</span> 162 Candles</li>
+                        <li class="clickable"><span>Episode-9:</span> History Repeating</li>
+                        <li class="clickable"><span>Episode-10:</span> The Turning Point</li>
+                        <li class="clickable"><span>Episode-11:</span> Bloodlines</li>
+                        <li class="clickable"><span>Episode-12:</span> Unpleasentville</li>
+                        <li><span>Episode-13:</span> Children of the Damned</li>
+                        <li><span>Episode-14:</span> Fool Me Once</li>
+                        <li><span>Episode-15:</span> A Few Good Men</li>
+                        <li><span>Episode-16:</span> There Goes the Neighborhood
+                        </li>
+                        <li><span>Episode-17:</span> Let the Right One In</li>
+                        <li><span>Episode-18:</span> Under Control</li>
+                        <li><span>Episode-19:</span> Miss Mystic Falls</li>
+                        <li><span>Episode-20:</span> Blood Brothers</li>
+                        <li><span>Episode-21:</span> Isobel</li>
+                        <li><span>Episode-22:</span> Founder's Day</li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
+                    <ul id="season2" class="episode-list" style="display: none;">
+                        <li><span>Episode-1:</span> The Return</li>
+                        <li><span>Episode-2:</span> Brave New World</li>
+                        <li><span>Episode-3:</span> Bad Moon Rising</li>
+                        <li><span>Episode-4:</span> Memory Lane</li>
+                        <li><span>Episode-5:</span> Kill or Be Killed</li>
+                        <li><span>Episode-6:</span> Plan B</li>
+                        <li><span>Episode-7:</span> Masquerade</li>
+                        <li><span>Episode-8:</span> Rose</li>
+                        <li><span>Episode-9:</span> Katerina</li>
+                        <li><span>Episode-10:</span> The Sacrifice</li>
+                        <li><span>Episode-11:</span> By the Light of the Moon</li>
+                        <li><span>Episode-12:</span> The Descent</li>
+                        <li><span>Episode-13:</span> Daddy Issues</li>
+                        <li><span>Episode-14:</span> Crying Wolf</li>
+                        <li><span>Episode-15:</span> The Dinner Party</li>
+                        <li><span>Episode-16:</span> The House Guest</li>
+                        <li><span>Episode-17:</span> Know the Enemy</li>
+                        <li><span>Episode-18:</span> The Last Dance</li>
+                        <li><span>Episode-19:</span> Klaus</li>
+                        <li><span>Episode-20:</span> The Last Day</li>
+                        <li><span>Episode-21:</span> The Sun Also Rises</li>
+                        <li><span>Episode-22:</span> As I Lay Dying</li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
+                    <ul id="season3" class="episode-list" style="display: none;">
+                        <li><span>Episode-1:</span> The Birthday</li>
+                        <li><span>Episode-2:</span> The Hybrid</li>
+                        <li><span>Episode-3:</span> The End of the Affair</li>
+                        <li><span>Episode-4:</span> Disturbing</li>
+                        <li><span>Episode-5:</span> The Reckoning</li>
+                        <li><span>Episode-6:</span> Smells Like Teen Spirit</li>
+                        <li><span>Episode-7:</span> Ghost World</li>
+                        <li><span>Episode-8:</span> Ordinary People</li>
+                        <li><span>Episode-9:</span> Homecoming</li>
+                        <li><span>Episode-10:</span> The New Deal</li>
+                        <li><span>Episode-11:</span> Our Town</li>
+                        <li><span>Episode-12:</span> The Ties That Bind</li>
+                        <li><span>Episode-13:</span> Bringing Out the Dead</li>
+                        <li><span>Episode-14:</span> Dangerous Liasons</li>
+                        <li><span>Episode-15:</span> All My Children</li>
+                        <li><span>Episode-16:</span> 1912</li>
+                        <li><span>Episode-17:</span> Break on Through</li>
+                        <li><span>Episode-18:</span> The Murder of One</li>
+                        <li><span>Episode-19:</span> Heart of Darkness</li>
+                        <li><span>Episode-20:</span> Do Not Go Gentle</li>
+                        <li><span>Episode-21:</span> Before Sunset</li>
+                        <li><span>Episode-22:</span> The Departed</li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
+                    <ul id="season4" class="episode-list" style="display: none;">
+                        <li><span>Episode-1:</span> Growing Pains</li>
+                        <li><span>Episode-2:</span> Memorial</li>
+                        <li><span>Episode-3:</span> The Ranger</li>
+                        <li><span>Episode-4:</span> The Five</li>
+                        <li><span>Episode-5:</span> The Killer</li>
+                        <li><span>Episode-6:</span> We All Go a Little Mad Sometimes
+                        </li>
+                        <li><span>Episode-7:</span> My Brother's Keeper</li>
+                        <li><span>Episode-8:</span> We'll Always Have Bourbon Street
+                        </li>
+                        <li><span>Episode-9:</span> O Come, All Ye Faithful</li>
+                        <li><span>Episode-10:</span> After School Special</li>
+                        <li><span>Episode-11:</span> Catch Me If You Can</li>
+                        <li><span>Episode-12:</span> A View to Kill</li>
+                        <li><span>Episode-13:</span> Into the Wild</li>
+                        <li><span>Episode-14:</span> Down the Rabbit Hole</li>
+                        <li><span>Episode-15:</span> Stand By Me</li>
+                        <li><span>Episode-16:</span> Bring It On</li>
+                        <li><span>Episode-17:</span> Because the Night</li>
+                        <li><span>Episode-18:</span> American Gothic</li>
+                        <li><span>Episode-19:</span> Pictures of You</li>
+                        <li><span>Episode-20:</span> The Originals</li>
+                        <li><span>Episode-21:</span> She's Come Undone</li>
+                        <li><span>Episode-22:</span> The Walking Dead</li>
+                        <li><span>Episode-23:</span> Graduation</li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
+                    <ul id="season5" class="episode-list" style="display: none;">
+                        <li><span>Episode-1:</span> I Know What You Did Last Summer
+                        </li>
+                        <li><span>Episode-2:</span> True Lies</li>
+                        <li><span>Episode-3:</span> Original Sins</li>
+                        <li><span>Episode-4:</span> For Whom the Bell Tolls</li>
+                        <li><span>Episode-5:</span> Monster's Ball</li>
+                        <li><span>Episode-6:</span> Handle with Care</li>
+                        <li><span>Episode-7:</span> Death and the Maiden</li>
+                        <li><span>Episode-8:</span> Dead Man on Campus</li>
+                        <li><span>Episode-9:</span> The Cell</li>
+                        <li><span>Episode-10:</span> Fifty Shades of Grayson</li>
+                        <li><span>Episode-11:</span> 500 Years of Solitude</li>
+                        <li><span>Episode-12:</span> The Devil Inside</li>
+                        <li><span>Episode-13:</span> Total Eclipse of the Heart</li>
+                        <li><span>Episode-14:</span> No Exit</li>
+                        <li><span>Episode-15:</span> Gone Girl</li>
+                        <li><span>Episode-16:</span> While You Were Sleeping</li>
+                        <li><span>Episode-17:</span> Rescue Me</li>
+                        <li><span>Episode-18:</span> Resident Evil</li>
+                        <li><span>Episode-19:</span> Man on Fire</li>
+                        <li><span>Episode-20:</span> What Lies Beneath</li>
+                        <li><span>Episode-21:</span> Promised Land</li>
+                        <li><span>Episode-22:</span> Home</li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
+                    <ul id="season6" class="episode-list" style="display: none;">
+                        <li><span>Episode-1:</span> I'll Remember</li>
+                        <li><span>Episode-2:</span> Yellow Ledbetter</li>
+                        <li><span>Episode-3:</span> Welcome to Paradise</li>
+                        <li><span>Episode-4:</span> Black Hole Sun</li>
+                        <li><span>Episode-5:</span> The World Has Turned and Left Me
+                            Here</li>
+                        <li><span>Episode-6:</span> The More You Ignore Me, Closer I
+                            Get</li>
+                        <li><span>Episode-7:</span> Do you Remember the First Time?
+                        </li>
+                        <li><span>Episode-8:</span> Fade Into You</li>
+                        <li><span>Episode-9:</span> I Alone</li>
+                        <li><span>Episode-10:</span> Christmas Through Your Eyes
+                        </li>
+                        <li><span>Episode-11:</span> Woke Up With A Monster</li>
+                        <li><span>Episode-12:</span> Prayer for the Dying</li>
+                        <li><span>Episode-13:</span> The Day I Tried to Live</li>
+                        <li><span>Episode-14:</span> Stay</li>
+                        <li><span>Episode-15:</span> Let Her Go</li>
+                        <li><span>Episode-16:</span> The Downward Spiral</li>
+                        <li><span>Episode-17:</span> A Bird in a Glided Cage</li>
+                        <li><span>Episode-18:</span> I Never Could Love Like That
+                        </li>
+                        <li><span>Episode-19:</span> Because</li>
+                        <li><span>Episode-20:</span> I'd Leave My Happy Home for You
+                        </li>
+                        <li><span>Episode-21:</span> I'll Wed You in the Golden
+                            Summertime</li>
+                        <li><span>Episode-22:</span> I'm Thinking of You All the
+                            While</li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
+                    <ul id="season7" class="episode-list" style="display: none;">
+                        <li><span>Episode-1:</span> Day One of Twenty-Two Thousand,
+                            Give or Take</li>
+                        <li><span>Episode-2:</span> Never Let Me Go</li>
+                        <li><span>Episode-3:</span> Age of Innocence</li>
+                        <li><span>Episode-4:</span> I Carry Your Heart with Me</li>
+                        <li><span>Episode-5:</span> Live Through This</li>
+                        <li><span>Episode-6:</span> Best Served Cold</li>
+                        <li><span>Episode-7:</span> Mommie Dearest</li>
+                        <li><span>Episode-8:</span> Hold Me, Thrill Me, Kiss Me,
+                            Kill Me</li>
+                        <li><span>Episode-9:</span> Cold as Ice</li>
+                        <li><span>Episode-10:</span> Hell Is Other People</li>
+                        <li><span>Episode-11:</span> Things We Lost in the Fire</li>
+                        <li><span>Episode-12:</span> Postcards from the Edge</li>
+                        <li><span>Episode-13:</span> This Woman's Work</li>
+                        <li><span>Episode-14:</span> Moonlight on the Bayou</li>
+                        <li><span>Episode-15:</span> I Would for You</li>
+                        <li><span>Episode-16:</span> Days of Future Past</li>
+                        <li><span>Episode-17:</span> I Went to the Woods</li>
+                        <li><span>Episode-18:</span> One Way or Another</li>
+                        <li><span>Episode-19:</span> Somebody That I Used to Know
+                        </li>
+                        <li><span>Episode-20:</span> Kill 'Em All</li>
+                        <li><span>Episode-21:</span> Requiem for a Dream</li>
+                        <li><span>Episode-22:</span> Gods and Monsters</li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
+                    <ul id="season8" class="episode-list" style="display: none;">
+                        <li><span>Episode-1:</span> Hello, Brother</li>
+                        <li><span>Episode-2:</span> Today Will Be Different</li>
+                        <li><span>Episode-3:</span> Today Will Be Different</li>
+                        <li><span>Episode-4:</span> An Eternity of Misery</li>
+                        <li><span>Episode-5:</span> Coming Home Was a Mistake</li>
+                        <li><span>Episode-6:</span> Detoured on Some Random
+                            Backwoods Path to Hell</li>
+                        <li><span>Episode-7:</span> The Next Time I Hurt Somebody,
+                            It Could Be You</li>
+                        <li><span>Episode-8:</span> We Have History Together</li>
+                        <li><span>Episode-9:</span> The Simple Intimacy of the Near
+                            Touch</li>
+                        <li><span>Episode-10:</span> Nostalgia's a Bitch</li>
+                        <li><span>Episode-11:</span> You Made a Choice to Be Good
+                        </li>
+                        <li><span>Episode-12:</span> What Are You?</li>
+                        <li><span>Episode-13:</span> The Lies Will Catch Up to You
+                        </li>
+                        <li><span>Episode-14:</span> It's Been a Hell of a Ride</li>
+                        <li><span>Episode-15:</span> We're Planning a June Wedding
+                        </li>
+                        <li><span>Episode-16:</span> I Was Feeling Epic</li>
+                        <li><span>Episode-17:</span> The Vampire Diaries: Forever
+                            Yours</li>
+                    </ul>
+                    <!-- Add more seasons as needed -->
+                </div>
+            </div>
+
+            <video class="video-file" id="video-player" height="550" controls>
+                <!-- <source src="/main/Video_playback/bad_boys_ride_or_die.mkv" type="video/mp4"> -->
+                <source id="video-source" src="/Trailer/bad_boys_ride_or_die.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div>
+            <span class="output" id="displayArea">Currentyly Playing</span>
+        </div>
 
 
-                    <div class="video-content-details">
-                              <img class="content-image" src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+        <div class="video-content-details">
+            <img class="content-image" src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
 
-                              <div class="content-details">
-                                        <h2>The Vampire Diaries</h2>
-                                        <h5>2009 - 2017 | TV Series | 43m</h5>
-                                        <div class="content-desc">
-                                                  The lives, loves, dangers and disasters in the town, Mystic Falls,
-                                                  Virginia. Creatures of unspeakable horror lurk beneath this town as a
-                                                  teenage girl is suddenly torn between two vampire brothers.
-                                        </div>
-                                        <div class="movie-details">
-                                                  <h5 id="gen">Drama | Fantasy | Mystery</h5>
-                                                  <h3 id="rate">
-                                                            <span>IMDB</span><i class="bi bi-star-fill"></i>7.7
-                                                            / 10
-                                                            </p>
-                                                  </h3>
-                                        </div>
-                              </div>
-                    </div>
+            <div class="content-details">
+                <h2>The Vampire Diaries</h2>
+                <h5>2009 - 2017 | TV Series | 43m</h5>
+                <div class="content-desc">
+                    The lives, loves, dangers and disasters in the town, Mystic Falls,
+                    Virginia. Creatures of unspeakable horror lurk beneath this town as a
+                    teenage girl is suddenly torn between two vampire brothers.
+                </div>
+                <div class="movie-details">
+                    <h5 id="gen">Drama | Fantasy | Mystery</h5>
+                    <h3 id="rate">
+                        <span>IMDB</span><i class="bi bi-star-fill"></i>7.7
+                        / 10
+                        </p>
+                    </h3>
+                </div>
+            </div>
+        </div>
 
-                    <div class="content-castmembers">
-                              Creators
-                    </div>
-                    <div class="castmembers-director">
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Julie Plec</h4>
-                                                            <h2>Director | Writer | Producer</h2>
-                                                  </span>
-                                        </div>
-                              </span>
+        <div class="content-castmembers">
+            Creators
+        </div>
+        <div class="castmembers-director">
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Julie Plec</h4>
+                        <h2>Director | Writer | Producer</h2>
+                    </span>
+                </div>
+            </span>
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Kevin Williamson</h4>
-                                                            <h2>Director | Writer | Producer</h2>
-                                                  </span>
-                                        </div>
-                              </span>
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Kevin Williamson</h4>
+                        <h2>Director | Writer | Producer</h2>
+                    </span>
+                </div>
+            </span>
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <!-- <img src="/content-images/Movies/Harry-Potter-7.2.jpg" alt="">
+            <span>
+                <div class="castmembers-details">
+                    <!-- <img src="/content-images/Movies/Harry-Potter-7.2.jpg" alt="">
                                                   <span>
                                                             <h4>Kevin Williamson</h4>
                                                             <h2>Director | Writer | Producer</h2>
                                                   </span> -->
-                                        </div>
-                              </span>
-                    </div>
+                </div>
+            </span>
+        </div>
 
 
-                    <div class="content-castmembers">
-                              Stars
-                    </div>
-                    <div class="castmembers-cast">
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Nina Dobrev</h4>
-                                                            <h2>As Elena Gilbert</h2>
-                                                  </span>
-                                        </div>
+        <div class="content-castmembers">
+            Stars
+        </div>
+        <div class="castmembers-cast">
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Nina Dobrev</h4>
+                        <h2>As Elena Gilbert</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Paul Wesley</h4>
-                                                            <h2>As Stefan Salvatore</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Paul Wesley</h4>
+                        <h2>As Stefan Salvatore</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Ian Somerhalder</h4>
-                                                            <h2>As Damon Salvatore</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Ian Somerhalder</h4>
+                        <h2>As Damon Salvatore</h2>
+                    </span>
+                </div>
 
-                              </span>
+            </span>
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Kat Graham</h4>
-                                                            <h2>As Bonnie Bennett</h2>
-                                                  </span>
-                                        </div>
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Kat Graham</h4>
+                        <h2>As Bonnie Bennett</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Candice King</h4>
-                                                            <h2>As Caroline Forbes</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Candice King</h4>
+                        <h2>As Caroline Forbes</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Zach Roerig</h4>
-                                                            <h2>As Matt Donovan</h2>
-                                                  </span>
-                                        </div>
-                              </span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Zach Roerig</h4>
+                        <h2>As Matt Donovan</h2>
+                    </span>
+                </div>
+            </span>
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Michael Trevino</h4>
-                                                            <h2>As Tyler Lockwood</h2>
-                                                  </span>
-                                        </div>
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Michael Trevino</h4>
+                        <h2>As Tyler Lockwood</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Steven R. McQueen</h4>
-                                                            <h2>As Jeremy Gilbert</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Steven R. McQueen</h4>
+                        <h2>As Jeremy Gilbert</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
-                                                  <span>
-                                                            <h4>Matthew Davis</h4>
-                                                            <h2>As Alaric Saltzman</h2>
-                                                  </span>
-                                        </div>
-                              </span>
-                    </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Web-Series/vampire-diaries.jpg" alt="">
+                    <span>
+                        <h4>Matthew Davis</h4>
+                        <h2>As Alaric Saltzman</h2>
+                    </span>
+                </div>
+            </span>
+        </div>
 
-          </div>
-
-
-          <div class="endbar">
-                    <div class="endbar-socialmedia-icons">
-                              <img src="/main/Images/Project_Logo-removebg-preview.png" alt="">
-                              <abbr title="Discord">
-                                        <i class="fa-brands fa-discord border "></i>
-                              </abbr>
-                              <abbr title="IMDB">
-                                        <i class="fa-brands fa-imdb"></i>
-                              </abbr>
-                              <abbr title="Telegram">
-                                        <i class="fa-brands fa-telegram"></i></i>
-                              </abbr>
-                              <abbr title="Instagram">
-                                        <i class="fa-brands fa-instagram"></i>
-                              </abbr>
-                              <abbr title="Facebook">
-                                        <i class="fa-brands fa-facebook"></i>
-                              </abbr>
-                    </div>
-                    <div class="endbar-copyright">
-                              <i class="fa-regular fa-copyright"></i>aahuniverse.com
-                    </div>
-
-          </div>
+    </div>
 
 
+    <div class="endbar">
+        <div class="endbar-socialmedia-icons">
+            <img src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+            <abbr title="Discord">
+                <i class="fa-brands fa-discord border "></i>
+            </abbr>
+            <abbr title="IMDB">
+                <i class="fa-brands fa-imdb"></i>
+            </abbr>
+            <abbr title="Telegram">
+                <i class="fa-brands fa-telegram"></i></i>
+            </abbr>
+            <abbr title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </abbr>
+            <abbr title="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </abbr>
+        </div>
+        <div class="endbar-copyright">
+            <i class="fa-regular fa-copyright"></i>aahuniverse.com
+        </div>
 
-          <!-- <script src="app.js"></script> -->
-          <script src="/main/Video_playback/app_video.js"></script>
+    </div>
+
+
+
+    <!-- <script src="app.js"></script> -->
+    <script src="/main/Video_playback/app_video.js"></script>
 </body>
 
 </html>

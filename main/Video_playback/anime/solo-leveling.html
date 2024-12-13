@@ -2,343 +2,345 @@
 <html lang="en">
 
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="/main/Video_playback/style_video.css">
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
-                    rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-          <link rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main/Video_playback/style_video.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-          <title>AAH Universe - Watch Movies</title>
+    <title>AAH Universe - Watch Movies</title>
 </head>
 
 <body>
-          <div class="navbar">
-                    <div class="navbar-container">
-                              <div>
-                                        <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png"
-                                                  alt="">
-                              </div>
-                              <!-- <div class="logo-container">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div>
+                <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+            </div>
+            <!-- <div class="logo-container">
                                         <h1 class="logo" onclick="homepage()">AAH Universe</h1>
                               </div> -->
-                              <div class="menu-container">
-                                        <ul class="menu-list">
-                                                  <li class="menu-list-item" onclick="homepage()">Home
-                                                            <!-- <a href="/main/index.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="moviepage()">Movies
-                                                            <!-- <a href="/main/index_movie.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item active" onclick="seriespage()">Series
-                                                            <!-- <a href="/main/index_series.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="animepage()">Anime
-                                                            <!-- <a href="/main/index_anime.html"></a> -->
-                                                  </li>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item" onclick="homepage()">Home
+                        <!-- <a href="/main/index.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="moviepage()">Movies
+                        <!-- <a href="/main/index_movie.html"></a> -->
+                    </li>
+                    <li class="menu-list-item active" onclick="seriespage()">Series
+                        <!-- <a href="/main/index_series.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="animepage()">Anime
+                        <!-- <a href="/main/index_anime.html"></a> -->
+                    </li>
 
 
-                                        </ul>
-                              </div>
-                              <div class="search_user">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <input type="text" placeholder="Search..." id="search_input">
-                                        <div class="search">
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
+                </ul>
+            </div>
+            <div class="search_user">
+                <span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search..." id="search_input">
+                </span>
 
-                                        </div>
-                              </div>
-                              <div class="profile-container">
-                                        <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
-                                        <div class="profile-text-container">
-                                                  <span class="profile-text">Profile</span>
-                                                  <i class="fa-regular fa-circle-down"></i>
-                                        </div>
-                                        <div>
-                                                  <button class="login-btn" onclick="loginpage()">Login</button>
-                                        </div>
+                <div class="search">
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
 
-                              </div>
-                    </div>
-          </div>
-          <div class="sidbar">
-                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
-                    <i class="left-menu-icon fa-solid fa-house"></i>
-                    <i class="left-menu-icon fa-solid fa-users"></i>
-                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
-                    <i class="left-menu-icon fa-solid fa-tv"></i>
-                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
-                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
-          </div>
+                </div>
+            </div>
 
-          <div class="videoplayback-container">
-                    <div class="videoplayback-heading">
-                              <h5>AAH Universe | Series | Lucifer</h5>
-                    </div>
+            <div class="profile-container">
+                <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-regular fa-circle-down"></i>
+                </div>
+                <div>
+                    <button class="login-btn" onclick="loginpage()">Login</button>
+                </div>
 
-                    <div class="video-container">
-                              <div class="video-episode-container">
-                                        <select id="season-dropdown" class="dropdown">
-                                                  <option value="season1">Season 1</option>
-                                        </select>
+            </div>
+        </div>
+    </div>
+    <div class="sidbar">
+        <i class="left-menu-icon fa-solid fa-house" onclick="homepage()"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
 
-                                        <div id="episode-container" class="episode-container">
-                                                  <ul id="season1" class="episode-list">
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span class="video-text">Episode-1:</span> Pilot
-                                                            </li>
+    <div class="videoplayback-container">
+        <div class="videoplayback-heading">
+            <h5>AAH Universe | Series | Lucifer</h5>
+        </div>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span class="video-text">Episode-2:</span>
-                                                                      Lucifer, Stay. Good Devil
-                                                            </li>
+        <div class="video-container">
+            <div class="video-episode-container">
+                <select id="season-dropdown" class="dropdown">
+                    <option value="season1">Season 1</option>
+                </select>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span class="video-text">Episode-3:</span> The
-                                                                      Would-Be Prince of Darkness
-                                                            </li>
+                <div id="episode-container" class="episode-container">
+                    <ul id="season1" class="episode-list">
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span class="video-text">Episode-1:</span> Pilot
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span class="video-text">Episode-4:</span> Manly
-                                                                      Whatnots
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span class="video-text">Episode-2:</span>
+                            Lucifer, Stay. Good Devil
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span class="video-text">Episode-5:</span> Sweet
-                                                                      Kicks
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span class="video-text">Episode-3:</span> The
+                            Would-Be Prince of Darkness
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-6:</span> Favorite Son
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span class="video-text">Episode-4:</span> Manly
+                            Whatnots
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-7:</span> Wingman
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span class="video-text">Episode-5:</span> Sweet
+                            Kicks
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-8:</span> Et tu, Doctor?
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-6:</span> Favorite Son
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-9:</span> A Priest Walks Into a Bar
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-7:</span> Wingman
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-10:</span> Pops
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-8:</span> Et tu, Doctor?
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-11:</span> St. Lucifer
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-9:</span> A Priest Walks Into a Bar
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-12:</span> #TeamLucifer
-                                                            </li>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-10:</span> Pops
+                        </li>
 
-                                                            <li class="clickable video-text"
-                                                                      onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
-                                                                      <span>Episode-13:</span> Take Me Back to Hell
-                                                            </li>
-                                                            <!-- Add more episodes as needed -->
-                                                  </ul>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-11:</span> St. Lucifer
+                        </li>
 
-                                        </div>
-                              </div>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-12:</span> #TeamLucifer
+                        </li>
 
-                              <video class="video-file" id="video-player" height="550" controls>
-                                        <!-- <source src="/main/Video_playback/bad_boys_ride_or_die.mkv" type="video/mp4"> -->
-                                        <source id="video-source" src="/lucifer_S1-E1.mkv" type="video/mp4">
-                              </video>
-                    </div>
+                        <li class="clickable video-text"
+                            onclick="changeVideoOnClick(event, '/content-videos/web-series/Lucifer')">
+                            <span>Episode-13:</span> Take Me Back to Hell
+                        </li>
+                        <!-- Add more episodes as needed -->
+                    </ul>
 
-                    <div>
-                              <span class="output" id="displayArea">Currentyly Playing</span>
-                    </div>
+                </div>
+            </div>
 
+            <video class="video-file" id="video-player" height="550" controls>
+                <!-- <source src="/main/Video_playback/bad_boys_ride_or_die.mkv" type="video/mp4"> -->
+                <source id="video-source" src="/lucifer_S1-E1.mkv" type="video/mp4">
+            </video>
+        </div>
 
-                    <div class="video-content-details">
-                              <img class="content-image" src="/content-images/Anime/solo-leveling.jpg" alt="">
-
-                              <div class="content-details">
-                                        <h2>Solo Leveling</h2>
-                                        <h5>2024 - present | Anime | 23m</h5>
-                                        <div class="content-desc">
-                                                  Follows the adventures Sung Jinwoo in a world that is constantly
-                                                  threatened by monsters and the evil forces. In his battles Sung
-                                                  transforms himself from weakest hunter of all mankind to one of the
-                                                  strongest hunters in existence.
-                                        </div>
-                                        <div class="movie-details">
-                                                  <h5 id="gen">Anime | Action | Fantasy </h5>
-                                                  <h3 id="rate">
-                                                            <span>IMDB</span><i class="bi bi-star-fill"></i>8.3
-                                                            / 10
-                                                            </p>
-                                                  </h3>
-                                        </div>
-                              </div>
-                    </div>
-
-                    <div class="content-castmembers">
-                              Creators
-                    </div>
-                    <div class="castmembers-director">
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Tom Kapinos</h4>
-                                                            <h2>Writer | Producer</h2>
-                                                  </span>
-                                        </div>
-                              </span>
-                    </div>
+        <div>
+            <span class="output" id="displayArea">Currentyly Playing</span>
+        </div>
 
 
-                    <div class="content-castmembers">
-                              Stars
-                    </div>
-                    <div class="castmembers-cast">
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Tom Ellis</h4>
-                                                            <h2>As Lucifer Morningstar</h2>
-                                                  </span>
-                                        </div>
+        <div class="video-content-details">
+            <img class="content-image" src="/content-images/Anime/solo-leveling.jpg" alt="">
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Lauren German</h4>
-                                                            <h2>As Chloe Decker</h2>
-                                                  </span>
-                                        </div>
+            <div class="content-details">
+                <h2>Solo Leveling</h2>
+                <h5>2024 - present | Anime | 23m</h5>
+                <div class="content-desc">
+                    Follows the adventures Sung Jinwoo in a world that is constantly
+                    threatened by monsters and the evil forces. In his battles Sung
+                    transforms himself from weakest hunter of all mankind to one of the
+                    strongest hunters in existence.
+                </div>
+                <div class="movie-details">
+                    <h5 id="gen">Anime | Action | Fantasy </h5>
+                    <h3 id="rate">
+                        <span>IMDB</span><i class="bi bi-star-fill"></i>8.3
+                        / 10
+                        </p>
+                    </h3>
+                </div>
+            </div>
+        </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Kevin Alejandro</h4>
-                                                            <h2>As Dan Espinoza</h2>
-                                                  </span>
-                                        </div>
-
-                              </span>
-
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>D.B. Woodside</h4>
-                                                            <h2>As Amenadiel</h2>
-                                                  </span>
-                                        </div>
-
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Lesley-Ann Brandt</h4>
-                                                            <h2>As Mazikeen</h2>
-                                                  </span>
-                                        </div>
-
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Rachael Harris</h4>
-                                                            <h2>As Linda Martin</h2>
-                                                  </span>
-                                        </div>
-                              </span>
-
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Aimee Garcia</h4>
-                                                            <h2>As Ella Lopez</h2>
-                                                  </span>
-                                        </div>
-
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Scarlett Estevez</h4>
-                                                            <h2>As Trixie Espinoza</h2>
-                                                  </span>
-                                        </div>
-
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Anime/solo-leveling.jpg" alt="">
-                                                  <span>
-                                                            <h4>Tricia Helfer</h4>
-                                                            <h2>As Charlotte</h2>
-                                                  </span>
-                                        </div>
-                              </span>
-                    </div>
-
-          </div>
+        <div class="content-castmembers">
+            Creators
+        </div>
+        <div class="castmembers-director">
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Tom Kapinos</h4>
+                        <h2>Writer | Producer</h2>
+                    </span>
+                </div>
+            </span>
+        </div>
 
 
-          <div class="endbar">
-                    <div class="endbar-socialmedia-icons">
-                              <img src="/main/Images/Project_Logo-removebg-preview.png" alt="">
-                              <abbr title="Discord">
-                                        <i class="fa-brands fa-discord border "></i>
-                              </abbr>
-                              <abbr title="IMDB">
-                                        <i class="fa-brands fa-imdb"></i>
-                              </abbr>
-                              <abbr title="Telegram">
-                                        <i class="fa-brands fa-telegram"></i></i>
-                              </abbr>
-                              <abbr title="Instagram">
-                                        <i class="fa-brands fa-instagram"></i>
-                              </abbr>
-                              <abbr title="Facebook">
-                                        <i class="fa-brands fa-facebook"></i>
-                              </abbr>
-                    </div>
-                    <div class="endbar-copyright">
-                              <i class="fa-regular fa-copyright"></i>aahuniverse.com
-                    </div>
+        <div class="content-castmembers">
+            Stars
+        </div>
+        <div class="castmembers-cast">
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Tom Ellis</h4>
+                        <h2>As Lucifer Morningstar</h2>
+                    </span>
+                </div>
 
-          </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Lauren German</h4>
+                        <h2>As Chloe Decker</h2>
+                    </span>
+                </div>
+
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Kevin Alejandro</h4>
+                        <h2>As Dan Espinoza</h2>
+                    </span>
+                </div>
+
+            </span>
+
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>D.B. Woodside</h4>
+                        <h2>As Amenadiel</h2>
+                    </span>
+                </div>
+
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Lesley-Ann Brandt</h4>
+                        <h2>As Mazikeen</h2>
+                    </span>
+                </div>
+
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Rachael Harris</h4>
+                        <h2>As Linda Martin</h2>
+                    </span>
+                </div>
+            </span>
+
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Aimee Garcia</h4>
+                        <h2>As Ella Lopez</h2>
+                    </span>
+                </div>
+
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Scarlett Estevez</h4>
+                        <h2>As Trixie Espinoza</h2>
+                    </span>
+                </div>
+
+                <div class="castmembers-details">
+                    <img src="/content-images/Anime/solo-leveling.jpg" alt="">
+                    <span>
+                        <h4>Tricia Helfer</h4>
+                        <h2>As Charlotte</h2>
+                    </span>
+                </div>
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="endbar">
+        <div class="endbar-socialmedia-icons">
+            <img src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+            <abbr title="Discord">
+                <i class="fa-brands fa-discord border "></i>
+            </abbr>
+            <abbr title="IMDB">
+                <i class="fa-brands fa-imdb"></i>
+            </abbr>
+            <abbr title="Telegram">
+                <i class="fa-brands fa-telegram"></i></i>
+            </abbr>
+            <abbr title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </abbr>
+            <abbr title="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </abbr>
+        </div>
+        <div class="endbar-copyright">
+            <i class="fa-regular fa-copyright"></i>aahuniverse.com
+        </div>
+
+    </div>
 
 
 
-          <!-- <script src="app.js"></script> -->
-          <script src="/main/Video_playback/app_video.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="/main/Video_playback/app_video.js"></script>
 </body>
 
 </html>

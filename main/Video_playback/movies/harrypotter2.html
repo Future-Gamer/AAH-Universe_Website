@@ -2,304 +2,295 @@
 <html lang="en">
 
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="/main/Video_playback/style_video.css">
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
-                    rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-          <link rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main/Video_playback/style_video.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-          <title>AAH Universe - Watch Movies</title>
+    <title>AAH Universe - Watch Movies</title>
 </head>
 
 <body>
-          <div class="navbar">
-                    <div class="navbar-container">
-                              <div>
-                                        <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png" alt="">
-                              </div>
-                              <!-- <div class="logo-container">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div>
+                <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+            </div>
+            <!-- <div class="logo-container">
                                         <h1 class="logo" onclick="homepage()">AAH Universe</h1>
                               </div> -->
-                              <div class="menu-container">
-                                        <ul class="menu-list">
-                                                  <li class="menu-list-item" onclick="homepage()">Home
-                                                            <!-- <a href="/main/index.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item active" onclick="moviepage()">Movies
-                                                            <!-- <a href="/main/index_movie.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="seriespage()">Series
-                                                            <!-- <a href="/main/index_series.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="animepage()">Anime
-                                                            <!-- <a href="/main/index_anime.html"></a> -->
-                                                  </li>
-                                                 
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item" onclick="homepage()">Home
+                        <!-- <a href="/main/index.html"></a> -->
+                    </li>
+                    <li class="menu-list-item active" onclick="moviepage()">Movies
+                        <!-- <a href="/main/index_movie.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="seriespage()">Series
+                        <!-- <a href="/main/index_series.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="animepage()">Anime
+                        <!-- <a href="/main/index_anime.html"></a> -->
+                    </li>
 
-                                        </ul>
-                              </div>
-                              <div class="search_user">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <input type="text" placeholder="Search..." id="search_input">
-                                        <div class="search">
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
-                                                  <!-- <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a> -->
 
-                                        </div>
-                              </div>
-                              <div class="profile-container">
-                                        <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
-                                        <div class="profile-text-container">
-                                                  <span class="profile-text">Profile</span>
-                                                  <i class="fa-regular fa-circle-down"></i>
-                                        </div>
-                                        <div>
-                                                  <button class="login-btn" onclick="loginpage()">Login</button>
-                                        </div>
+                </ul>
+            </div>
+            <div class="search_user">
+                <span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search..." id="search_input">
+                </span>
 
-                              </div>
-                    </div>
-          </div>
-          <div class="sidbar">
-                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
-                    <i class="left-menu-icon fa-solid fa-house"></i>
-                    <i class="left-menu-icon fa-solid fa-users"></i>
-                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
-                    <i class="left-menu-icon fa-solid fa-tv"></i>
-                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
-                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
-          </div>
+                <div class="search">
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
 
-          <div class="videoplayback-container">
-                    <div class="videoplayback-heading">
-                              <h5>AAH Universe | Movie | Harry Potter and The Chamber of Secrets
-                              </h5>
-                    </div>
+                </div>
+            </div>
 
-                    <div class="video-container">
-                              <video class="video-file" id="myVideo" controls>
-                                        <source src="/content-videos/movies/HarryPotter-2.mp4" type="video/mp4">
-                              </video>
-                    </div>
+            <div class="profile-container">
+                <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-regular fa-circle-down"></i>
+                </div>
+                <div>
+                    <button class="login-btn" onclick="loginpage()">Login</button>
+                </div>
 
-                    <div class="video-content-details">
-                              <img class="content-image" src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="sidbar">
+        <i class="left-menu-icon fa-solid fa-house" onclick="homepage()"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
 
-                              <div class="content-details">
-                                        <h2>Harry Potter and The Chamber of Secrets</h2>
-                                        <h5>2002 | Movie | 2h 41m</h5>
-                                        <div class="content-desc">
-                                                  Harry Potter lives his second year at Hogwarts with Ron and Hermione
-                                                  when a message on the wall announces that the legendary Chamber of
-                                                  Secrets has been opened. The trio soon realize that, to save the
-                                                  school, it will take a lot of courage.
-                                        </div>
-                                        <div class="movie-details">
-                                                  <h5 id="gen">Adventure | Family | Fantasy</h5>
-                                                  <h3 id="rate">
-                                                            <span>
-                                                                      <a href="https://www.imdb.com/title/tt0295297/">IMDB</a>
-                                                            </span>
-                                                            <i class="bi bi-star-fill"></i>7.4
-                                                            / 10
-                                                            </p>
-                                                  </h3>
-                                        </div>
-                              </div>
-                    </div>
+    <div class="videoplayback-container">
+        <div class="videoplayback-heading">
+            <h5>AAH Universe | Movie | Harry Potter and The Chamber of Secrets
+            </h5>
+        </div>
 
-                    <div class="content-castmembers">
-                              Director
-                    </div>
-                    <div class="castmembers-director">
-                              <div class="castmembers-details">
-                                        <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                  alt="">
-                                        <span>
-                                                  <h4>Chris Columbus</h4>
-                                                  <h2>Director | Writer | Producer</h2>
-                                        </span>
-                              </div>
-                    </div>
+        <div class="video-container">
+            <video class="video-file" id="myVideo" controls>
+                <source src="/content-videos/movies/HarryPotter-2.mp4" type="video/mp4">
+            </video>
+        </div>
 
-                    <div class="content-castmembers">
-                              Writer
-                    </div>
-                    <div class="castmembers-writers">
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Steve Kloves</h4>
-                                                            <h2>Writer | Director | Producer</h2>
-                                                  </span>
-                                        </div>
-                              </span>
+        <div class="video-content-details">
+            <img class="content-image" src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>J.K. Rowling</h4>
-                                                            <h2>Writer | Producer | Additional Crew</h2>
-                                                  </span>
-                                        </div>
-                              </span>
+            <div class="content-details">
+                <h2>Harry Potter and The Chamber of Secrets</h2>
+                <h5>2002 | Movie | 2h 41m</h5>
+                <div class="content-desc">
+                    Harry Potter lives his second year at Hogwarts with Ron and Hermione
+                    when a message on the wall announces that the legendary Chamber of
+                    Secrets has been opened. The trio soon realize that, to save the
+                    school, it will take a lot of courage.
+                </div>
+                <div class="movie-details">
+                    <h5 id="gen">Adventure | Family | Fantasy</h5>
+                    <h3 id="rate">
+                        <span>
+                            <a href="https://www.imdb.com/title/tt0295297/">IMDB</a>
+                        </span>
+                        <i class="bi bi-star-fill"></i>7.4
+                        / 10
+                        </p>
+                    </h3>
+                </div>
+            </div>
+        </div>
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <!-- this block of code is just for the alignment of the content  -->
-                                                  <!-- <img src="/content-images/Movies/Code-8_part-2.jpg" alt="">
+        <div class="content-castmembers">
+            Director
+        </div>
+        <div class="castmembers-director">
+            <div class="castmembers-details">
+                <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                <span>
+                    <h4>Chris Columbus</h4>
+                    <h2>Director | Writer | Producer</h2>
+                </span>
+            </div>
+        </div>
+
+        <div class="content-castmembers">
+            Writer
+        </div>
+        <div class="castmembers-writers">
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Steve Kloves</h4>
+                        <h2>Writer | Director | Producer</h2>
+                    </span>
+                </div>
+            </span>
+
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>J.K. Rowling</h4>
+                        <h2>Writer | Producer | Additional Crew</h2>
+                    </span>
+                </div>
+            </span>
+
+            <span>
+                <div class="castmembers-details">
+                    <!-- this block of code is just for the alignment of the content  -->
+                    <!-- <img src="/content-images/Movies/Code-8_part-2.jpg" alt="">
                                                   <span>
                                                             <h4>J.K. Rowling</h4>
                                                             <h2>Writer | Producer | Additional Crew</h2>
                                                   </span> -->
-                                        </div>
-                              </span>
-                    </div>
+                </div>
+            </span>
+        </div>
 
 
 
-                    <div class="content-castmembers">
-                              Cast
-                    </div>
-                    <div class="castmembers-cast">
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Daniel Radcliffe</h4>
-                                                            <h2>As Harry Potter</h2>
-                                                  </span>
-                                        </div>
+        <div class="content-castmembers">
+            Cast
+        </div>
+        <div class="castmembers-cast">
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Daniel Radcliffe</h4>
+                        <h2>As Harry Potter</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Rupert Grint</h4>
-                                                            <h2>As Ron Weasley</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Rupert Grint</h4>
+                        <h2>As Ron Weasley</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Richard Harris</h4>
-                                                            <h2>As Albus Dumbledore</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Richard Harris</h4>
+                        <h2>As Albus Dumbledore</h2>
+                    </span>
+                </div>
 
-                              </span>
+            </span>
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Emma Watson</h4>
-                                                            <h2>As Hermione Granger</h2>
-                                                  </span>
-                                        </div>
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Emma Watson</h4>
+                        <h2>As Hermione Granger</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Toby Jones</h4>
-                                                            <h2>As Dobby(voice)</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Toby Jones</h4>
+                        <h2>As Dobby(voice)</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Maggie Smith</h4>
-                                                            <h2>As Professor Minerva McGonagall</h2>
-                                                  </span>
-                                        </div>
-                              </span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Maggie Smith</h4>
+                        <h2>As Professor Minerva McGonagall</h2>
+                    </span>
+                </div>
+            </span>
 
-                              <span>
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Alan Rickman</h4>
-                                                            <h2>As Professor Severus Snape</h2>
-                                                  </span>
-                                        </div>
+            <span>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Alan Rickman</h4>
+                        <h2>As Professor Severus Snape</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Robbie Coltrane</h4>
-                                                            <h2>As Rubeus Hagrid</h2>
-                                                  </span>
-                                        </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Robbie Coltrane</h4>
+                        <h2>As Rubeus Hagrid</h2>
+                    </span>
+                </div>
 
-                                        <div class="castmembers-details">
-                                                  <img src="/content-images/Movies/Harry-Potter-2.jpg"
-                                                            alt="">
-                                                  <span>
-                                                            <h4>Bonnie Wrights</h4>
-                                                            <h2>As Ginny Weasley</h2>
-                                                  </span>
-                                        </div>
-                              </span>
-                    </div>
+                <div class="castmembers-details">
+                    <img src="/content-images/Movies/Harry-Potter-2.jpg" alt="">
+                    <span>
+                        <h4>Bonnie Wrights</h4>
+                        <h2>As Ginny Weasley</h2>
+                    </span>
+                </div>
+            </span>
+        </div>
 
-          </div>
+    </div>
 
-          <div class="endbar">
-                    <div class="endbar-socialmedia-icons">
-                              <img src="/main/Images/Project_Logo-removebg-preview.png" alt="">
-                              <abbr title="Discord">
-                                        <i class="fa-brands fa-discord border "></i>
-                              </abbr>
-                              <abbr title="IMDB">
-                                        <i class="fa-brands fa-imdb"></i>
-                              </abbr>
-                              <abbr title="Telegram">
-                                        <i class="fa-brands fa-telegram"></i></i>
-                              </abbr>
-                              <abbr title="Instagram">
-                                        <i class="fa-brands fa-instagram"></i>
-                              </abbr>
-                              <abbr title="Facebook">
-                                        <i class="fa-brands fa-facebook"></i>
-                              </abbr>
-                    </div>
-                    <div class="endbar-copyright">
-                              <i class="fa-regular fa-copyright"></i>aahuniverse.com
-                    </div>
-          </div>
+    <div class="endbar">
+        <div class="endbar-socialmedia-icons">
+            <img src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+            <abbr title="Discord">
+                <i class="fa-brands fa-discord border "></i>
+            </abbr>
+            <abbr title="IMDB">
+                <i class="fa-brands fa-imdb"></i>
+            </abbr>
+            <abbr title="Telegram">
+                <i class="fa-brands fa-telegram"></i></i>
+            </abbr>
+            <abbr title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </abbr>
+            <abbr title="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </abbr>
+        </div>
+        <div class="endbar-copyright">
+            <i class="fa-regular fa-copyright"></i>aahuniverse.com
+        </div>
+    </div>
 
 
-          <!-- <script src="app.js"></script> -->
-          <script src="/main/Video_playback/app_video.js" defer></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="/main/Video_playback/app_video.js" defer></script>
 </body>
 
 </html>
