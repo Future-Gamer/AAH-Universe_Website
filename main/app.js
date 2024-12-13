@@ -211,16 +211,33 @@ function solo_leveling() {
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 
 // search bar
-document.getElementById('search_input').addEventListener('focus', function () {
-   document.querySelectorAll('.card').forEach(function (card) {
-      card.style.opacity = '1';
-      card.style.display = '';
-   });
-});
+// document.getElementById('search_input').addEventListener('focus', function () {
+//    document.querySelectorAll('.card').forEach(function (card) {
+//       card.style.opacity = '1';
+//       card.style.display = '';
+//    });
+// });
 
-document.getElementById('search_input').addEventListener('blur', function () {
-   document.querySelectorAll('.card').forEach(function (card) {
-      card.style.opacity = '0';
-      card.style.display = 'none';
-   });
+// document.getElementById('search_input').addEventListener('blur', function () {
+//    document.querySelectorAll('.card').forEach(function (card) {
+//       card.style.opacity = '0';
+//       card.style.display = 'none';
+//    });
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+   var searchInput = document.getElementById('search_input');
+   if (searchInput) {
+      searchInput.addEventListener('focus', function () {
+         document.querySelectorAll('.card').forEach(function (card) {
+            card.style.opacity = '1';
+         });
+      });
+
+      searchInput.addEventListener('blur', function () {
+         document.querySelectorAll('.card').forEach(function (card) {
+            card.style.opacity = '0';
+         });
+      });
+   }
 });
