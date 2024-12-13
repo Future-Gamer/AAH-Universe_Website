@@ -1,303 +1,292 @@
 <html lang="en">
 
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="style.css">
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
-                    rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-          <link rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-          <title>AAH Universe - Watch Movies</title>
+    <title>AAH Universe - Watch Movies</title>
 </head>
 
 <body>
-          <div class="navbar">
-                    <div class="navbar-container">
-                              <div>
-                                        <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png" alt="">
-                              </div>
-                              <!-- <div class="logo-container">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div>
+                <img class="navbar-logo" src="/main/Images/Project_Logo-removebg-preview.png" alt="">
+            </div>
+            <!-- <div class="logo-container">
                                         <h1 class="logo" onclick="homepage()">AAH Universe</h1>
                               </div> -->
-                              <div class="menu-container">
-                                        <ul class="menu-list">
-                                                  <li class="menu-list-item" onclick="homepage()">Home
-                                                            <!-- <a href="/main/index.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="moviepage()">Movies
-                                                            <!-- <a href="/main/index_movie.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item active" onclick="seriespage()">Series
-                                                            <!-- <a href="/main/index_series.html"></a> -->
-                                                  </li>
-                                                  <li class="menu-list-item" onclick="animepage()">Anime
-                                                            <!-- <a href="/main/index_anime.html"></a> -->
-                                                  </li>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item" onclick="homepage()">Home
+                        <!-- <a href="/main/index.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="moviepage()">Movies
+                        <!-- <a href="/main/index_movie.html"></a> -->
+                    </li>
+                    <li class="menu-list-item active" onclick="seriespage()">Series
+                        <!-- <a href="/main/index_series.html"></a> -->
+                    </li>
+                    <li class="menu-list-item" onclick="animepage()">Anime
+                        <!-- <a href="/main/index_anime.html"></a> -->
+                    </li>
 
-                                        </ul>
-                              </div>
-                              <div class="search_user">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <input type="text" placeholder="Search..." id="search_input">
-                                        <div class="search">
-                                                  <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a>
-                                                  <a href="" class="card">
-                                                            <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
-                                                            <div class="cont">
-                                                                      <h3>The Boys</h3>
-                                                                      <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
-                                                            </div>
-                                                  </a>
+                </ul>
+            </div>
+            <div class="search_user">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..." id="search_input">
+                <div class="search">
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
+                    <a href="" class="card">
+                        <img src="/content-images/Movies/After-We-Fell.jpg" alt="">
+                        <div class="cont">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill"></i>9.6</p>
+                        </div>
+                    </a>
 
-                                        </div>
-                              </div>
-                              <div class="profile-container">
-                                        <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
-                                        <div class="profile-text-container">
-                                                  <span class="profile-text">Profile</span>
-                                                  <i class="fa-regular fa-circle-down"></i>
-                                        </div>
-                                        <div>
-                                                  <button class="login-btn" onclick="loginpage()">Login</button>
-                                        </div>
+                </div>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" alt="" src="/main/Images/profile-image.png">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-regular fa-circle-down"></i>
+                </div>
+                <div>
+                    <button class="login-btn" onclick="loginpage()">Login</button>
+                </div>
 
-                              </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidbar">
+        <i class="left-menu-icon fa-solid fa-house" onclick="homepage()"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+            <!-- Swiper -->
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                space-between="30" autoplay-delay="2500" autoplay-disabled-on-interaction="false">
+
+                <swiper-slide class="swiper-slide">
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/vampire_diaries.jpg');">
+                        <span class="featured-title">The Vampire Diaries</span>
+                        <p class="featured-desc">The lives, loves, dangers and
+                            disasters in the town, Mystic Falls, Virginia.
+                            Creatures of unspeakable horror lurk beneath this
+                            town as a teenage girl is suddenly torn between
+                            two vampire brothers.
+                        </p>
+                        <div class="featured-details">
+                            <h5 id="gen">Drama | Fantasy | Mystery</h5>
+                            <h4>2009 - 2017</h4>
+                            <h3 id="rate">
+                                <span>IMDB</span><i class="bi bi-star-fill"></i>7.7
+                                / 10
+                                </p>
+                            </h3>
+                        </div>
+                        <button class="featured-button" onclick="vampire_diaries()">WATCH
+                            <i class="bi bi-play-btn"></i>
+                        </button>
                     </div>
-          </div>
-          <div class="sidbar">
-                    <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
-                    <i class="left-menu-icon fa-solid fa-house"></i>
-                    <i class="left-menu-icon fa-solid fa-users"></i>
-                    <i class="left-menu-icon fa-solid fa-bookmark"></i>
-                    <i class="left-menu-icon fa-solid fa-tv"></i>
-                    <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
-                    <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
-          </div>
+                </swiper-slide>
 
-          <div class="container">
-                    <div class="content-container">
-                              <!-- Swiper -->
-                              <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
-                                        navigation="true" space-between="30" autoplay-delay="2500"
-                                        autoplay-disabled-on-interaction="false">
+                <swiper-slide>
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/originals.jpg');">
+                        <span class="featured-title">The Originals</span>
 
-                                        <swiper-slide class="swiper-slide">
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/vampire_diaries.jpg');">
-                                                            <span class="featured-title">The Vampire Diaries</span>
-                                                            <p class="featured-desc">The lives, loves, dangers and
-                                                                      disasters in the town, Mystic Falls, Virginia.
-                                                                      Creatures of unspeakable horror lurk beneath this
-                                                                      town as a teenage girl is suddenly torn between
-                                                                      two vampire brothers.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <h5 id="gen">Drama | Fantasy | Mystery</h5>
-                                                                      <h4>2009 - 2017</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>7.7
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button" onclick="vampire_diaries()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
+                        <p class="featured-desc">A family of power-hungry
+                            thousand-year-old vampires look to take back the
+                            city that they built and dominate all those who
+                            have done them wrong.
+                        </p>
+                        <div class="featured-details">
+                            <h5 id="gen">Drama | Horror | Fantasy</h5>
+                            <h4>2013 - 2018</h4>
+                            <h3 id="rate">
+                                <span>IMDB</span><i class="bi bi-star-fill"></i>8.3
+                                / 10
+                                </p>
+                            </h3>
+                        </div>
+                        <button class="featured-button">WATCH
+                            <i class="bi bi-play-btn"></i>
+                        </button>
+                    </div>
+                </swiper-slide>
 
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/originals.jpg');">
-                                                            <span class="featured-title">The Originals</span>
+                <swiper-slide>
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Legacies.jpg');">
+                        <span class="featured-title">The Legacies</span>
+                        <p class="featured-desc">Hope Mikaelson, a tribrid daughter
+                            of a Vampire/Werewolf hybrid, makes her way in the
+                            world.
+                        </p>
+                        <div class="featured-details">
+                            <h5 id="gen">Drama | Horror | Fantasy</h5>
+                            <h4>2018 - 2022</h4>
+                            <h3 id="rate">
+                                <span>IMDB</span><i class="bi bi-star-fill"></i>7.2
+                                / 10
+                                </p>
+                            </h3>
+                        </div>
+                        <button class="featured-button">WATCH
+                            <i class="bi bi-play-btn"></i>
+                        </button>
+                    </div>
+                </swiper-slide>
 
-                                                            <p class="featured-desc">A family of power-hungry
-                                                                      thousand-year-old vampires look to take back the
-                                                                      city that they built and dominate all those who
-                                                                      have done them wrong.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <h5 id="gen">Drama | Horror | Fantasy</h5>
-                                                                      <h4>2013 - 2018</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.3
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
+                <swiper-slide>
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Loki-S2.jpg');">
+                        <span class="featured-title">Loki Season-2</span>
+                        <p class="featured-desc">The mercurial villain Loki resumes
+                            his role as the God of Mischief in a new series
+                            that takes place after the events of “Avengers:
+                            Endgame.”
+                        <div class="featured-details">
+                            <!-- <h6>TV Series</h6> -->
+                            <h5 id="gen">Action | Adventure | Sci-Fi <h4>2019
+                                </h4>
+                                <h3 id="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>8.2
+                                    /10
+                                    </p>
+                                </h3>
+                        </div>
+                        <button class="featured-button">WATCH
+                            <i class="bi bi-play-btn"></i>
+                        </button>
+                    </div>
+                </swiper-slide>
 
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Legacies.jpg');">
-                                                            <span class="featured-title">The Legacies</span>
-                                                            <p class="featured-desc">Hope Mikaelson, a tribrid daughter
-                                                                      of a Vampire/Werewolf hybrid, makes her way in the
-                                                                      world.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <h5 id="gen">Drama | Horror | Fantasy</h5>
-                                                                      <h4>2018 - 2022</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>7.2
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
+                <swiper-slide>
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/how_i_met_your_mother.jpg');">
+                        <span class="featured-title">How I Met Your Mother</span>
+                        <p class="featured-desc">A father recounts to his children -
+                            through a series of flashbacks - the journey he
+                            and his four best friends took leading up to him
+                            meeting their mother.
+                        </p>
+                        <div class="featured-details">
+                            <!-- <h6>A Disney+ Original Series</h6> -->
+                            <h5 id="gen">Comedy | Drama | Romance</h5>
+                            <h4>2005 - 2014</h4>
+                            <h3 id="rate">
+                                <span>IMDB</span><i class="bi bi-star-fill"></i>8.3
+                                / 10
+                                </p>
+                            </h3>
+                        </div>
+                        <button class="featured-button">WATCH
+                            <i class="bi bi-play-btn"></i>
+                        </button>
+                    </div>
+                </swiper-slide>
 
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/Loki-S2.jpg');">
-                                                            <span class="featured-title">Loki Season-2</span>
-                                                            <p class="featured-desc">The mercurial villain Loki resumes
-                                                                      his role as the God of Mischief in a new series
-                                                                      that takes place after the events of “Avengers:
-                                                                      Endgame.”
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Action | Adventure | Sci-Fi <h4>2019
-                                                                                </h4>
-                                                                                <h3 id="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.2
-                                                                                          /10
-                                                                                          </p>
-                                                                                </h3>
-                                                            </div>
-                                                            <button class="featured-button">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
+                <swiper-slide>
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/friends.jpg');">
+                        <span class="featured-title">Friends</span>
+                        <p class="featured-desc">Follows the personal and
+                            professional lives of six twenty to thirty
+                            year-old friends living in the Manhattan borough
+                            of New York City.
+                        </p>
+                        <div class="featured-details">
+                            <!-- <h6>TV Series</h6> -->
+                            <h5 id="gen">Comedy | Romance | Sitcom</h5>
+                            <h4>1994 - 2004</h4>
+                            <h3 id="rate">
+                                <span>IMDB</span><i class="bi bi-star-fill"></i>8.9
+                                / 10
+                                </p>
+                            </h3>
+                        </div>
+                        <button class="featured-button">WATCH
+                            <i class="bi bi-play-btn"></i>
+                        </button>
+                    </div>
+                </swiper-slide>
 
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/how_i_met_your_mother.jpg');">
-                                                            <span class="featured-title">How I Met Your Mother</span>
-                                                            <p class="featured-desc">A father recounts to his children -
-                                                                      through a series of flashbacks - the journey he
-                                                                      and his four best friends took leading up to him
-                                                                      meeting their mother.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>A Disney+ Original Series</h6> -->
-                                                                      <h5 id="gen">Comedy | Drama | Romance</h5>
-                                                                      <h4>2005 - 2014</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.3
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
+                <swiper-slide>
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/lucifer.jpg');">
+                        <span class="featured-title">Lucifer</span>
+                        <p class="featured-desc">Lucifer Morningstar has decided
+                            he's had enough of being the dutiful servant in
+                            Hell and decides to spend some time on Earth to
+                            better understand humanity. He settles in Los
+                            Angeles - the City of Angels.
+                        <div class="featured-details">
+                            <!-- <h6>TV Series</h6> -->
+                            <h5 id="gen">Crime | Drama | Fantasy</h5>
+                            <h4>2016 - 2021</h4>
+                            <h3 id="rate">
+                                <span>IMDB</span><i class="bi bi-star-fill"></i>8.0
+                                / 10
+                                </p>
+                            </h3>
+                        </div>
+                        <button class="featured-button" onclick="lucifer()">WATCH
+                            <i class="bi bi-play-btn"></i>
+                        </button>
+                    </div>
+                </swiper-slide>
 
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/friends.jpg');">
-                                                            <span class="featured-title">Friends</span>
-                                                            <p class="featured-desc">Follows the personal and
-                                                                      professional lives of six twenty to thirty
-                                                                      year-old friends living in the Manhattan borough
-                                                                      of New York City.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Comedy | Romance | Sitcom</h5>
-                                                                      <h4>1994 - 2004</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.9
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
+                <swiper-slide>
+                    <div class="featured-content"
+                        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/cobra_kai.jpg');">
+                        <span class="featured-title">Cobra Kai</span>
+                        <p class="featured-desc">Arthur Fleck, a party clown and a
+                            failed stand-up comedian, leads an impoverished
+                            life with his ailing mother. However, when society
+                            shuns him and brands him as a freak, he decides to
+                            embrace the life of crime and chaos in Gotham
+                            City.
+                        </p>
+                        <div class="featured-details">
+                            <!-- <h6>TV Series</h6> -->
+                            <h5 id="gen">Action | Comedy | Drama</h5>
+                            <h4>2018 - 2025 </h4>
+                            <h3 id="rate">
+                                <span>IMDB</span><i class="bi bi-star-fill"></i>8.4
+                                / 10
+                                </p>
+                            </h3>
+                        </div>
+                        <button class="featured-button">WATCH<i class="bi bi-play-btn"></i>
+                        </button>
+                    </div>
+                </swiper-slide>
 
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/lucifer.jpg');">
-                                                            <span class="featured-title">Lucifer</span>
-                                                            <p class="featured-desc">Lucifer Morningstar has decided
-                                                                      he's had enough of being the dutiful servant in
-                                                                      Hell and decides to spend some time on Earth to
-                                                                      better understand humanity. He settles in Los
-                                                                      Angeles - the City of Angels.
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Crime | Drama | Fantasy</h5>
-                                                                      <h4>2016 - 2021</h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.0
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button" onclick="lucifer()">WATCH
-                                                                      <i class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <swiper-slide>
-                                                  <div class="featured-content"
-                                                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Slider_Image/cobra_kai.jpg');">
-                                                            <span class="featured-title">Cobra Kai</span>
-                                                            <p class="featured-desc">Arthur Fleck, a party clown and a
-                                                                      failed stand-up comedian, leads an impoverished
-                                                                      life with his ailing mother. However, when society
-                                                                      shuns him and brands him as a freak, he decides to
-                                                                      embrace the life of crime and chaos in Gotham
-                                                                      City.
-                                                            </p>
-                                                            <div class="featured-details">
-                                                                      <!-- <h6>TV Series</h6> -->
-                                                                      <h5 id="gen">Action | Comedy | Drama</h5>
-                                                                      <h4>2018 - 2025 </h4>
-                                                                      <h3 id="rate">
-                                                                                <span>IMDB</span><i
-                                                                                          class="bi bi-star-fill"></i>8.4
-                                                                                / 10
-                                                                                </p>
-                                                                      </h3>
-                                                            </div>
-                                                            <button class="featured-button">WATCH<i
-                                                                                class="bi bi-play-btn"></i>
-                                                            </button>
-                                                  </div>
-                                        </swiper-slide>
-
-                                        <!-- <swiper-slide>
+                <!-- <swiper-slide>
                                                   <div class="featured-content"
                                                             style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515) ,url('/content-images/Web-Series/monarch-legacy-of-monsters.jpg');">
                                                             <span class="featured-title">Monarch: Legacy of
@@ -350,486 +339,414 @@
                                                   </div>
                                         </swiper-slide> -->
 
-                                        <!-- <div class="autoplay-progress" slot="container-end">
+                <!-- <div class="autoplay-progress" slot="container-end">
                                                   <svg viewBox="0 0 48 48">
                                                             <circle cx="24" cy="24" r="20"></circle>
                                                   </svg>
                                                   <span></span>
                                         </div> -->
 
-                                        <!-- Swiper JS -->
-                                        <script
-                                                  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-                              </swiper-container>
+            </swiper-container>
 
-                              <div class="movie-list-container">
-                                        <div class="movie-list-title-container">
-                                                  <div class="movie-list-title">
-                                                            <h1>New Releases</h1>
-                                                  </div>
-                                                  <div class="movie-list-view_all">
-                                                            <h3>View-All</h3>
-                                                  </div>
-                                        </div>
-
-                                        <swiper-container class="movie-list-swiper" pagination="true"
-                                                  pagination-clickable="true" navigation="true">
-                                                  <swiper-slide class="movie-list-slide-1">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/shogun.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/shogun.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Shogun</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Drama | History
-                                                                                </h5>
-                                                                                <h4>2024 - present</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.6
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button
-                                                                                class="movie-list-item-button" onclick="shogun()">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/squid-game.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/squid-game.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Squid Game</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Drama | Mystery
-                                                                                </h5>
-                                                                                <h4>2021 - present</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/agatha-all-along.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/agatha-all-along.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Agatha All Along</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Drama | Sci-Fi | Fantasy
-                                                                                </h5>
-                                                                                <h4>2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.3
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/The-Boys.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/the-boys.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">The
-                                                                                Boys</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Superhero | Action | Comedy
-                                                                                </h5>
-                                                                                <h4>2019 - present</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.4
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-                                                  </swiper-slide>
-
-                                                  <swiper-slide class="movie-list-slide-2">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/house-of-the-dragon.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/house-of-the-dragon.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">House of the Dragon</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Drama
-                                                                                </h5>
-                                                                                <h4>2022 - present</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.3
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/rings-of-power.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/rings-of-power.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">The Lord of the Rings: The Rings of Power</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Drama
-                                                                                </h5>
-                                                                                <h4>2022 - present</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>6.9
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/young-seldon.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/young-seldon.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Young Sheldon</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Sitcom | Comedy | Family
-                                                                                </h5>
-                                                                                <h4>2017 - 2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.7
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/superman-and-lois.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/superman-and-lois.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Superman & Lois</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Adventure | Drama
-                                                                                </h5>
-                                                                                <h4>2021 - 2024</h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.7
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-                                                  </swiper-slide>
-                                        </swiper-container>
-                              </div>
-
-                              <div class="movie-list-container">
-                                        <div class="movie-list-title-container">
-                                                  <div class="movie-list-title">
-                                                            <h1>Most Popular</h1>
-                                                  </div>
-                                                  <div class="movie-list-view_all">
-                                                            <h3>View-All</h3>
-                                                  </div>
-                                        </div>
-
-                                        <swiper-container class="movie-list-swiper" pagination="true"
-                                                  pagination-clickable="true" navigation="true">
-                                                  <swiper-slide class="movie-list-slide-1">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/game-of-thrones.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/game-of-thrones.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Game of Thrones</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Dark Fantasy | Drama
-                                                                                </h5>
-                                                                                <h4>2011 - 2019 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>9.2
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/fallout.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/fallout.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Fallout</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Crime | Drama |
-                                                                                          Thriller
-                                                                                </h5>
-                                                                                <h4>2019 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.4
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/Halo.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/halo.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Halo</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Action | Sci-Fi
-                                                                                </h5>
-                                                                                <h4>2022 - 2024 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.3
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/mayor-of-kingstown.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/mayor-of-kingstown.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Mayor of Kingstown</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Crime | Drama | Thriller
-                                                                                </h5>
-                                                                                <h4>2021 - present </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>8.2
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-                                                  </swiper-slide>
-
-                                                  <swiper-slide class="movie-list-slide-2">
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/runaways.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/runaways.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Runaways</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Drama | Sci-Fi
-                                                                                </h5>
-                                                                                <h4>2017 - 2019 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>6.8
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <!-- <p class="movie-list-item-desc"></p> -->
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/XO-kitty.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/xo-kitty.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">XO, Kitty</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Adventure | Family |
-                                                                                          Fantasy
-                                                                                </h5>
-                                                                                <h4>2023 - present </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>6.5
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/Vikings-Valhalla.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/vikings-valhalla.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">Vikings: Valhalla</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Action | Drama | History
-                                                                                </h5>
-                                                                                <h4>2022 - 2024 </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.3
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button
-                                                                                class="movie-list-item-button">WATCH</button>
-                                                            </div>
-
-                                                            <div class="movie-list-item">
-                                                                      <img class="movie-list-item-img"
-                                                                                src="/content-images/Web-Series/The-sex-lives-of-college-girls.jpg"
-                                                                                alt="">
-                                                                      <video class="movie-list-item-trailer" controls>
-                                                                                <source
-                                                                                          src="/Trailer/sex-lives-of-college-girls.mp4">
-                                                                      </video>
-                                                                      <span class="movie-list-item-title">The Sex Lives of College Girls</span>
-                                                                      <div class="movie-list-item-details">
-                                                                                <h5 id="movie-gen">Comedy | Raunchy Comedy
-                                                                                </h5>
-                                                                                <h4>2021 - present </h4>
-                                                                      </div>
-                                                                      <div class="movie-list-item-rating">
-                                                                                <h3 class="rate">
-                                                                                          <span>IMDB</span><i
-                                                                                                    class="bi bi-star-fill"></i>7.8
-                                                                                          / 10
-                                                                                          </p>
-                                                                                </h3>
-                                                                      </div>
-                                                                      <button class="movie-list-item-button"
-                                                                                onclick="harrypotter7_2()">WATCH</button>
-                                                            </div>
-                                                  </swiper-slide>
-                                        </swiper-container>
-                              </div>
-
-
+            <div class="movie-list-container">
+                <div class="movie-list-title-container">
+                    <div class="movie-list-title">
+                        <h1>New Releases</h1>
                     </div>
-          </div>
+                    <div class="movie-list-view_all">
+                        <h3>View-All</h3>
+                    </div>
+                </div>
+
+                <swiper-container class="movie-list-swiper" pagination="true" pagination-clickable="true"
+                    navigation="true">
+                    <swiper-slide class="movie-list-slide-1">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/shogun.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/shogun.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Shogun</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Adventure | Drama | History
+                                </h5>
+                                <h4>2024 - present</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>8.6
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <!-- <p class="movie-list-item-desc"></p> -->
+                            <button class="movie-list-item-button" onclick="shogun()">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/squid-game.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/squid-game.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Squid Game</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Action | Drama | Mystery
+                                </h5>
+                                <h4>2021 - present</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>8
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/agatha-all-along.jpg"
+                                alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/agatha-all-along.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Agatha All Along</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Drama | Sci-Fi | Fantasy
+                                </h5>
+                                <h4>2024</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>7.3
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/The-Boys.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/the-boys.mp4">
+                            </video>
+                            <span class="movie-list-item-title">The
+                                Boys</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Superhero | Action | Comedy
+                                </h5>
+                                <h4>2019 - present</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>8.4
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/house-of-the-dragon.jpg"
+                                alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/house-of-the-dragon.mp4">
+                            </video>
+                            <span class="movie-list-item-title">House of the Dragon</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Action | Adventure | Drama
+                                </h5>
+                                <h4>2022 - present</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>8.3
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <!-- <p class="movie-list-item-desc"></p> -->
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide class="movie-list-slide-2">
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/rings-of-power.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/rings-of-power.mp4">
+                            </video>
+                            <span class="movie-list-item-title">The Lord of the Rings: The Rings of Power</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Action | Adventure | Drama
+                                </h5>
+                                <h4>2022 - present</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>6.9
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/young-seldon.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/young-seldon.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Young Sheldon</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Sitcom | Comedy | Family
+                                </h5>
+                                <h4>2017 - 2024</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>7.7
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/superman-and-lois.jpg"
+                                alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/superman-and-lois.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Superman & Lois</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Action | Adventure | Drama
+                                </h5>
+                                <h4>2021 - 2024</h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>7.7
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+
+            <div class="movie-list-container">
+                <div class="movie-list-title-container">
+                    <div class="movie-list-title">
+                        <h1>Most Popular</h1>
+                    </div>
+                    <div class="movie-list-view_all">
+                        <h3>View-All</h3>
+                    </div>
+                </div>
+
+                <swiper-container class="movie-list-swiper" pagination="true" pagination-clickable="true"
+                    navigation="true">
+                    <swiper-slide class="movie-list-slide-1">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/game-of-thrones.jpg"
+                                alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/game-of-thrones.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Game of Thrones</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Action | Dark Fantasy | Drama
+                                </h5>
+                                <h4>2011 - 2019 </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>9.2
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <!-- <p class="movie-list-item-desc"></p> -->
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/fallout.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/fallout.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Fallout</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Crime | Drama |
+                                    Thriller
+                                </h5>
+                                <h4>2019 </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>8.4
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/Halo.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/halo.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Halo</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Adventure | Action | Sci-Fi
+                                </h5>
+                                <h4>2022 - 2024 </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>7.3
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/mayor-of-kingstown.jpg"
+                                alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/mayor-of-kingstown.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Mayor of Kingstown</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Crime | Drama | Thriller
+                                </h5>
+                                <h4>2021 - present </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>8.2
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/runaways.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/runaways.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Runaways</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Action | Drama | Sci-Fi
+                                </h5>
+                                <h4>2017 - 2019 </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>6.8
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <!-- <p class="movie-list-item-desc"></p> -->
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide class="movie-list-slide-2">
+
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/XO-kitty.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/xo-kitty.mp4">
+                            </video>
+                            <span class="movie-list-item-title">XO, Kitty</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Adventure | Family |
+                                    Fantasy
+                                </h5>
+                                <h4>2023 - present </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>6.5
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="/content-images/Web-Series/Vikings-Valhalla.jpg"
+                                alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/vikings-valhalla.mp4">
+                            </video>
+                            <span class="movie-list-item-title">Vikings: Valhalla</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Action | Drama | History
+                                </h5>
+                                <h4>2022 - 2024 </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>7.3
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img"
+                                src="/content-images/Web-Series/The-sex-lives-of-college-girls.jpg" alt="">
+                            <video class="movie-list-item-trailer" controls>
+                                <source src="/Trailer/sex-lives-of-college-girls.mp4">
+                            </video>
+                            <span class="movie-list-item-title">The Sex Lives of College Girls</span>
+                            <div class="movie-list-item-details">
+                                <h5 id="movie-gen">Comedy | Raunchy Comedy
+                                </h5>
+                                <h4>2021 - present </h4>
+                            </div>
+                            <div class="movie-list-item-rating">
+                                <h3 class="rate">
+                                    <span>IMDB</span><i class="bi bi-star-fill"></i>7.8
+                                    / 10
+                                    </p>
+                                </h3>
+                            </div>
+                            <button class="movie-list-item-button" onclick="harrypotter7_2()">WATCH</button>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+
+
+        </div>
+    </div>
 
 
 
 
-          <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
