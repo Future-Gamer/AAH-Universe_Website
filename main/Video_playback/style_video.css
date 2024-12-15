@@ -290,17 +290,22 @@ body {
     /* position: relative; */
 }
 
+
 .content-image {
     flex: 1;
     border-radius: 20px;
     width: 100px;
-    height: 250px;
-    margin: 20px 30px 20px 5px;
+    height: 300px;
+    /* margin: 20px 30px 20px 5px; */
+    /* margin-top: 20px; */
+    margin-bottom: 50px;
+    margin-right: 20px;
 }
 
 .content-details {
     flex: 5;
 }
+
 
 .content-details h2 {
     font-family: "Grey Qo", cursive;
@@ -425,6 +430,8 @@ body {
     height: 100px;
     width: 80px;
     border-radius: 20px;
+    background-image: url(/main/Images/no-Image.png);
+    background-size: 80px 100px;
 }
 
 .castmembers-details span h4 {
@@ -432,6 +439,7 @@ body {
     font-weight: bolder;
     margin-top: 30px;
     margin-left: 15px;
+    /* width: auto; */
 }
 
 .castmembers-details span h2 {
