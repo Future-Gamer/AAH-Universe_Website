@@ -453,7 +453,7 @@ body {
     background-color: rgb(255, 255, 255);
     height: 250px;
     /* margin-top: 10px; */
-    margin-left: 50px;
+    /* margin-left: 50px; */
     background-image: url("/main/Images/bottom_background.jpg");
     background-blend-mode: darken;
 }
@@ -462,7 +462,7 @@ body {
     display: flex;
     border-bottom: 2px solid rgb(255, 255, 255);
     width: 425px;
-    margin-left: 20px;
+    margin-left: 70px;
 }
 
 .endbar .endbar-socialmedia-icons img {
@@ -507,7 +507,7 @@ body {
     font-size: 15px;
     color: #f3d7a2;
     margin-top: 130px;
-    margin-left: 20px;
+    margin-left: 70px;
     margin-right: 5px;
 }
 
